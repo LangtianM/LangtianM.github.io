@@ -12,6 +12,7 @@ profile:
     <p>6185 Medical Sciences Center</p>
     <p>1300 University Avenue</p>
     <p>Madison, WI, 53706</p>
+    <p>langtian.ma AT wisc.edu</p>
 
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"

@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: （马朗天）
+subtitle:
 
 profile:
   align: right

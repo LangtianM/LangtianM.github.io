@@ -25,4 +25,5 @@ My name is Langtian (Landon) Ma and I'm a first-year Ph.D. student in the [Depar
 
 Actually, it is the philosophical significance of statistics that attracts me to this field. You can find my thoughts on statistics from a philosophical perspective [here](https://langtianm.github.io/blog/2024/Second-order/).
 
+[Curriculum Vitae](https://github.com/LangtianM/LangtianMa_CV/blob/main/LangtianMa_CV.pdf)
 

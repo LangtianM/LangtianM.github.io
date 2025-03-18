@@ -903,11 +903,13 @@
     <\itemize>
       <item><strong|Addition (First Half):><next-line>For the first <math|2<rsup|k-1>> entries, form each new entry by adding pairs of consecutive entries from the previous column. That is, for row <math|i>, compute:
 
-      <equation*|<with|mode|text|New<nbsp>entry>=<around*|\<nobracket\>|2i-1|\<nobracket\>>+<around*|\<nobracket\>|2i|\<nobracket\>>.>
+      <\equation*>
+        New entry <math|=<around|(|<text|entry in row >2*i-1|)>+<around|(|<text|entry in row >2*i|)>>.
+      </equation*>
 
       <item><strong|Subtraction (Second Half):><next-line>For the remaining <math|2<rsup|k-1>> entries, compute each new entry by subtracting the entry in row <math|2i-1 >from the entry in row <math|2i> in the previous column:
 
-      <equation*|<with|mode|text|New<nbsp>entry>=<around*|\<nobracket\>|2i|\<nobracket\>>-<around*|\<nobracket\>|2i-1|\<nobracket\>>.>
+      <equation*|New entry <math|=<around|(|<text|entry in row >2*i|)>-<around|(|<text|entry in row >2*i-1|)>>.>
     </itemize>
 
     <item><strong|Create a Scaling Column:><next-line>Add an additional column (the <math|<around*|(|k+1|)>>th column) where all entries are <math|2<rsup|k-1>>, except the first entry, which is <math|2<rsup|k>>.
@@ -1035,7 +1037,7 @@
     <associate|auto-18|<tuple|2.6.3|7>>
     <associate|auto-19|<tuple|3|8>>
     <associate|auto-2|<tuple|1|1>>
-    <associate|auto-20|<tuple|6|9>>
+    <associate|auto-20|<tuple|6|8>>
     <associate|auto-21|<tuple|2.7|9>>
     <associate|auto-22|<tuple|2.7.1|9>>
     <associate|auto-23|<tuple|2.7.2|10>>
@@ -1079,10 +1081,10 @@
     <associate|auto-58|<tuple|3.4.1|20>>
     <associate|auto-59|<tuple|14|20>>
     <associate|auto-6|<tuple|3|3>>
-    <associate|auto-60|<tuple|3.4.2|20>>
+    <associate|auto-60|<tuple|3.4.2|21>>
     <associate|auto-61|<tuple|15|21>>
     <associate|auto-62|<tuple|15|21>>
-    <associate|auto-63|<tuple|16|21>>
+    <associate|auto-63|<tuple|16|22>>
     <associate|auto-64|<tuple|3.4.3|22>>
     <associate|auto-65|<tuple|17|22>>
     <associate|auto-66|<tuple|3.4.4|22>>
@@ -1092,8 +1094,7 @@
     <associate|eq:2block|<tuple|3|21>>
     <associate|eq:box|<tuple|2|6>>
     <associate|fig:ofat|<tuple|15|21>>
-    <associate|ofat|<tuple|15|?>>
-    <associate|table:abc|<tuple|16|21>>
+    <associate|table:abc|<tuple|16|22>>
     <associate|table:ofat|<tuple|15|21>>
     <associate|yate|<tuple|14|20>>
   </collection>

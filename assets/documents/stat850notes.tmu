@@ -5,6 +5,84 @@
 <\body>
   <doc-data|<doc-title|STAT 850 Notes>|<doc-author|<author-data|<author-name|Langtian Ma>>>>
 
+  <\table-of-contents|toc>
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|1<space|2spc>Randomized Block Design> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1><vspace|0.5fn>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|2<space|2spc>Factorial treatment structure> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-4><vspace|0.5fn>
+
+    <with|par-left|1tab|2.1<space|2spc>Model Setting <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-5>>
+
+    <with|par-left|1tab|2.2<space|2spc>Compare differences between treatments <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-7>>
+
+    <with|par-left|1tab|2.3<space|2spc>Least-squares estimation for an unreplicated 2\<times\>3 design <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-8>>
+
+    <with|par-left|1tab|2.4<space|2spc>Experiment with Replication <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-10>>
+
+    <with|par-left|1tab|2.5<space|2spc>Model Checking <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-12>>
+
+    <with|par-left|1tab|2.6<space|2spc>Transformations <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-14>>
+
+    <with|par-left|2tab|2.6.1<space|2spc>Taylor Power Transformation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-15>>
+
+    <with|par-left|2tab|2.6.2<space|2spc>Box-Cox Transformation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-17>>
+
+    <with|par-left|2tab|2.6.3<space|2spc>Maximum Likelihood Estimation of Box-Cox <with|mode|math|\<lambda\>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-18>>
+
+    <with|par-left|1tab|2.7<space|2spc>Confidence Intervals <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-21>>
+
+    <with|par-left|2tab|2.7.1<space|2spc>When interactions are not significant <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-22>>
+
+    <with|par-left|2tab|2.7.2<space|2spc>When interactions are significant <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-23>>
+
+    <with|par-left|1tab|2.8<space|2spc>Two-way Factorial with Blocks \ <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-24>>
+
+    <with|par-left|2tab|2.8.1<space|2spc>No Replicates Within Blocks <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-25>>
+
+    <with|par-left|2tab|2.8.2<space|2spc>With Replicates Within Blocks <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-27>>
+
+    <with|par-left|2tab|2.8.3<space|2spc>Advantages of Two-level Factorial Designs <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-29>>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|3<space|2spc>Experimental Design> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-30><vspace|0.5fn>
+
+    <with|par-left|1tab|3.1<space|2spc>Comparison of designs <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-31>>
+
+    <with|par-left|2tab|3.1.1<space|2spc>OFAT v.s. Factorial <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-32>>
+
+    <with|par-left|2tab|3.1.2<space|2spc>Central Composite Design <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-37>>
+
+    <with|par-left|2tab|3.1.3<space|2spc><with|mode|math|2<rsup|3>> Design <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-42>>
+
+    <with|par-left|2tab|3.1.4<space|2spc>Box-Behnken design <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-45>>
+
+    <with|par-left|1tab|3.2<space|2spc>Analysis of Factorial Design <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-47>>
+
+    <with|par-left|2tab|3.2.1<space|2spc><with|mode|math|2<rsup|2>> Design <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-48>>
+
+    <with|par-left|2tab|3.2.2<space|2spc>Generalization to <with|mode|math|2<rsup|3>> Design <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-51>>
+
+    <with|par-left|2tab|3.2.3<space|2spc>Regression Formulation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-54>>
+
+    <with|par-left|1tab|3.3<space|2spc>Yates Algorithm for <with|mode|math|2<rsup|k>> Experiments <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-55>>
+
+    <with|par-left|1tab|3.4<space|2spc>Factorial Design with blocks <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-57>>
+
+    <with|par-left|2tab|3.4.1<space|2spc><with|mode|math|2<rsup|2>> Design in 2 Blocks of Size 2 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-58>>
+
+    <with|par-left|2tab|3.4.2<space|2spc><with|mode|math|2<rsup|3>> in 2 Blocks of Size 4 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-60>>
+
+    <with|par-left|2tab|3.4.3<space|2spc><with|mode|math|2<rsup|3>> in 4 Blocks of Size 2 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-64>>
+
+    <with|par-left|2tab|3.4.4<space|2spc>Partial Confounding <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-66>>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|Appendix A<space|2spc>R output intepretation> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-67><vspace|0.5fn>
+
+    <with|par-left|1tab|Linear Model for <with|font-family|tt|time <with|mode|math|\<sim\>> poison> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-68>>
+
+    <with|par-left|1tab|Linear Model for <with|font-family|tt|y <with|mode|math|\<sim\>> p + q + p*q> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-69>>
+
+    <with|par-left|1tab|Analysis of Variance (ANOVA) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-70>>
+  </table-of-contents>
+
   <section|Randomized Block Design>
 
   <with|font-series|bold|Problem Setting:>
@@ -382,7 +460,7 @@
   <\example>
     For the Poison data, we present the ANOVA table after the two transformations.
 
-    <big-table|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|l>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|1ln>|<cwith|1|-1|2|2|cell-halign|r>|<cwith|1|-1|3|3|cell-halign|r>|<cwith|1|-1|4|4|cell-halign|r>|<cwith|1|-1|5|5|cell-halign|r>|<cwith|1|-1|6|6|cell-halign|r>|<cwith|1|-1|6|6|cell-rborder|0ln>|<cwith|1|-1|1|-1|cell-valign|c>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|5|5|1|-1|cell-bborder|1ln>|<cwith|9|9|1|-1|cell-bborder|1ln>|<table|<row|<cell|>|<cell|Df>|<cell|Sum Sq>|<cell|Mean Sq>|<cell|F value>|<cell|P-value>>|<row|<cell|Poison>|<cell|2>|<cell|34.877>|<cell|17.4386>|<cell|70.6302>|<cell|<math|5.17<math-up|e>-13>>>|<row|<cell|Treatment>|<cell|3>|<cell|20.414>|<cell|6.8048>|<cell|27.5610>|<cell|<math|2.48<math-up|e>-09>>>|<row|<cell|Interaction>|<cell|6>|<cell|1.571>|<cell|0.2618>|<cell|1.0603>|<cell|0.4046>>|<row|<cell|Residuals>|<cell|35>|<cell|8.643>|<cell|0.2469>|<cell|>|<cell|>>|<row|<cell|Poison>|<cell|2>|<cell|11.926>|<cell|5.9631>|<cell|66.5525>|<cell|<math|1.18<math-up|e>-12>>>|<row|<cell|Treatment>|<cell|3>|<cell|7.158>|<cell|2.3860>|<cell|26.6295>|<cell|<math|3.76<math-up|e>-09>>>|<row|<cell|Interaction>|<cell|6>|<cell|0.486>|<cell|0.0810>|<cell|0.9040>|<cell|0.5032>>|<row|<cell|Residuals>|<cell|35>|<cell|3.136>|<cell|0.0896>|<cell|>|<cell|>>>>>|ANOVA table after simple Taylor power transformation (<math|y<rsup|<around*|(|\<lambda\>|)>>=y<rsup|\<lambda\>>> with <math|\<lambda\>=-1>) (above) and Box-Cox transformation (below).>
+    <big-table|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|l>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|1ln>|<cwith|1|-1|2|2|cell-halign|r>|<cwith|1|-1|3|3|cell-halign|r>|<cwith|1|-1|4|4|cell-halign|r>|<cwith|1|-1|5|5|cell-halign|r>|<cwith|1|-1|6|6|cell-halign|r>|<cwith|1|-1|6|6|cell-rborder|0ln>|<cwith|1|-1|1|-1|cell-valign|c>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|5|5|1|-1|cell-bborder|1ln>|<cwith|9|9|1|-1|cell-bborder|1ln>|<table|<row|<cell|>|<cell|Df>|<cell|Sum Sq>|<cell|Mean Sq>|<cell|F value>|<cell|P-value>>|<row|<cell|Poison>|<cell|2>|<cell|34.877>|<cell|17.4386>|<cell|70.6302>|<cell|<math|5.17<math-up|e>-13>>>|<row|<cell|Treatment>|<cell|3>|<cell|20.414>|<cell|6.8048>|<cell|27.5610>|<cell|<math|2.48<math-up|e>-09>>>|<row|<cell|Interaction>|<cell|6>|<cell|1.571>|<cell|0.2618>|<cell|1.0603>|<cell|0.4046>>|<row|<cell|Residuals>|<cell|<with|color|red|35>>|<cell|8.643>|<cell|0.2469>|<cell|>|<cell|>>|<row|<cell|Poison>|<cell|2>|<cell|11.926>|<cell|5.9631>|<cell|66.5525>|<cell|<math|1.18<math-up|e>-12>>>|<row|<cell|Treatment>|<cell|3>|<cell|7.158>|<cell|2.3860>|<cell|26.6295>|<cell|<math|3.76<math-up|e>-09>>>|<row|<cell|Interaction>|<cell|6>|<cell|0.486>|<cell|0.0810>|<cell|0.9040>|<cell|0.5032>>|<row|<cell|Residuals>|<cell|<with|color|red|35>>|<cell|3.136>|<cell|0.0896>|<cell|>|<cell|>>>>>|ANOVA table after simple Taylor power transformation (<math|y<rsup|<around*|(|\<lambda\>|)>>=y<rsup|\<lambda\>>> with <math|\<lambda\>=-1>) (above) and Box-Cox transformation (below).>
 
     <\remark>
       The residual Df is reduced by 1 to compensate for the estimation of <math|\<lambda\>>.
@@ -1009,9 +1087,301 @@
 
   \;
 
-  \;
+  <appendix|R output intepretation >
 
-  \;
+  (The following contents are generated by ChatGPT 4.5)
+
+  <subsection*|Linear Model for <with|font-family|tt|time <math|\<sim\>> poison>>
+
+  <\verbatim-code>
+    y \<less\>- c(0.31,0.45,0.46,0.43,0.36,0.29,0.40,0.23,0.22,0.21,0.18,0.23,
+
+    0.82,1.10,0.88,0.72,0.92,0.61,0.49,1.24,0.30,0.37,0.38,0.29,0.43,0.45,
+
+    0.63,0.76,0.44,0.35,0.31,0.40,0.23,0.25,0.24,0.22,0.45,0.71,0.66,0.62,
+
+    0.56,1.02,0.71,0.38,0.30,0.36,0.31,0.33)
+
+    \;
+
+    p \<less\>- factor(rep(rep(1:3,rep(4,3)),4))
+
+    q \<less\>- factor(rep(1:4,rep(12,4)))
+
+    \;
+
+    summary(lm(y ~ p+q+p*q))
+
+    anova(lm(y ~ p+q+p*q))
+
+    \;
+
+    <\code>
+      Call:
+
+      lm(formula = y ~ p + q + p * q)
+
+      \;
+
+      Residuals:
+
+      \ \ \ \ \ Min \ \ \ \ \ \ 1Q \ \ Median \ \ \ \ \ \ 3Q \ \ \ \ \ Max\ 
+
+      -0.32500 -0.04875 \ 0.00500 \ 0.04312 \ 0.42500\ 
+
+      \;
+
+      Coefficients:
+
+      \ \ \ \ \ \ \ \ \ \ \ \ Estimate Std. Error t value Pr(\>\|t\|) \ \ \ 
+
+      (Intercept) \ 0.41250 \ \ \ 0.07457 \ \ 5.532 2.94e-06 ***
+
+      p2 \ \ \ \ \ \ \ \ \ -0.09250 \ \ \ 0.10546 \ -0.877 \ \ 0.3862 \ \ \ 
+
+      p3 \ \ \ \ \ \ \ \ \ -0.20250 \ \ \ 0.10546 \ -1.920 \ \ 0.0628 . \ 
+
+      q2 \ \ \ \ \ \ \ \ \ \ 0.46750 \ \ \ 0.10546 \ \ 4.433 8.37e-05 ***
+
+      q3 \ \ \ \ \ \ \ \ \ \ 0.15500 \ \ \ 0.10546 \ \ 1.470 \ \ 0.1503 \ \ \ 
+
+      q4 \ \ \ \ \ \ \ \ \ \ 0.19750 \ \ \ 0.10546 \ \ 1.873 \ \ 0.0692 . \ 
+
+      p2:q2 \ \ \ \ \ \ \ 0.02750 \ \ \ 0.14914 \ \ 0.184 \ \ 0.8547 \ \ \ 
+
+      p3:q2 \ \ \ \ \ \ -0.34250 \ \ \ 0.14914 \ -2.297 \ \ 0.0276 * \ 
+
+      p2:q3 \ \ \ \ \ \ -0.10000 \ \ \ 0.14914 \ -0.671 \ \ 0.5068 \ \ \ 
+
+      p3:q3 \ \ \ \ \ \ -0.13000 \ \ \ 0.14914 \ -0.872 \ \ 0.3892 \ \ \ 
+
+      p2:q4 \ \ \ \ \ \ \ 0.15000 \ \ \ 0.14914 \ \ 1.006 \ \ 0.3212 \ \ \ 
+
+      p3:q4 \ \ \ \ \ \ -0.08250 \ \ \ 0.14914 \ -0.553 \ \ 0.5836 \ \ \ 
+
+      ---
+
+      Signif. codes: \ 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+      \;
+
+      Residual standard error: 0.1491 on 36 degrees of freedom
+
+      Multiple R-squared: \ 0.7335,	Adjusted R-squared: \ 0.6521\ 
+
+      F-statistic: \ 9.01 on 11 and 36 DF, \ p-value: 1.986e-07
+
+      \;
+
+      Analysis of Variance Table
+
+      \;
+
+      Response: y
+
+      \ \ \ \ \ \ \ \ \ \ Df \ Sum Sq Mean Sq F value \ \ \ Pr(\>F) \ \ \ 
+
+      p \ \ \ \ \ \ \ \ \ 2 1.03301 0.51651 23.2217 3.331e-07 ***
+
+      q \ \ \ \ \ \ \ \ \ 3 0.92121 0.30707 13.8056 3.777e-06 ***
+
+      p:q \ \ \ \ \ \ \ 6 0.25014 0.04169 \ 1.8743 \ \ \ 0.1123 \ \ \ 
+
+      Residuals 36 0.80073 0.02224 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+      ---
+
+      Signif. codes: \ 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+    </code>
+  </verbatim-code>
+
+  The linear regression model is defined as:
+
+  <\equation*>
+    <text|time><rsub|i>=\<beta\><rsub|0>+\<beta\><rsub|1><text|poison2><rsub|i>+\<beta\><rsub|2><text|poison3><rsub|i>+\<beta\><rsub|3><text|poison4><rsub|i>+\<varepsilon\><rsub|i>,<space|1em>\<varepsilon\><rsub|i>\<sim\>N<around|(|0,\<sigma\><rsup|2>|)>
+  </equation*>
+
+  From the R output, the estimated coefficients are:
+
+  <\align*>
+    <tformat|<table|<row|<cell|<wide|\<beta\>|^><rsub|0>>|<cell|=61.00<space|1em><around|(|<text|Intercept>|)>>>|<row|<cell|<wide|\<beta\>|^><rsub|1>>|<cell|=5.00<space|1em><around|(|<text|poison2>|)>>>|<row|<cell|<wide|\<beta\>|^><rsub|2>>|<cell|=7.00<space|1em><around|(|<text|poison3>|)>>>|<row|<cell|<wide|\<beta\>|^><rsub|3>>|<cell|=3.021\<times\>10<rsup|-15>\<approx\>0<space|1em><around|(|<text|poison4>|)>>>>>
+  </align*>
+
+  The fitted linear model can be explicitly written as:
+
+  <\equation*>
+    <wide|<text|time>|^><rsub|i>=61+5\<cdot\><text|poison2><rsub|i>+7\<cdot\><text|poison3><rsub|i>.
+  </equation*>
+
+  The residual standard error is given by:
+
+  <\equation*>
+    <wide|\<sigma\>|^>=2.366,
+  </equation*>
+
+  with degrees of freedom (df) = 20.
+
+  The model's adjusted <math|R<rsup|2>> is:
+
+  <\equation*>
+    R<rsub|a*d*j><rsup|2>=0.6212.
+  </equation*>
+
+  <subsection*|Linear Model for <with|font-family|tt|y <math|\<sim\>> p + q + p*q>>
+
+  <\verbatim-code>
+    y \<less\>- c(0.31,0.45,0.46,0.43,0.36,0.29,0.40,0.23,0.22,0.21,0.18,0.23,
+
+    0.82,1.10,0.88,0.72,0.92,0.61,0.49,1.24,0.30,0.37,0.38,0.29,0.43,0.45,
+
+    0.63,0.76,0.44,0.35,0.31,0.40,0.23,0.25,0.24,0.22,0.45,0.71,0.66,0.62,
+
+    0.56,1.02,0.71,0.38,0.30,0.36,0.31,0.33)
+
+    \;
+
+    p \<less\>- factor(rep(rep(1:3,rep(4,3)),4))
+
+    q \<less\>- factor(rep(1:4,rep(12,4)))
+
+    \;
+
+    options(contrasts = c("contr.sum","contr.sum"))
+
+    summary(lm(y ~ p+q+p*q))
+
+    anova(lm(y ~ p+q+p*q))
+
+    \;
+
+    <\code>
+      Call:
+
+      lm(formula = y ~ p + q + p * q)
+
+      \;
+
+      Residuals:
+
+      \ \ \ \ \ Min \ \ \ \ \ \ 1Q \ \ Median \ \ \ \ \ \ 3Q \ \ \ \ \ Max\ 
+
+      -0.32500 -0.04875 \ 0.00500 \ 0.04312 \ 0.42500\ 
+
+      \;
+
+      Coefficients:
+
+      \ \ \ \ \ \ \ \ \ \ \ \ Estimate Std. Error t value Pr(\>\|t\|) \ \ \ 
+
+      (Intercept) \ 0.47938 \ \ \ 0.02153 \ 22.269 \ \< 2e-16 ***
+
+      p1 \ \ \ \ \ \ \ \ \ \ 0.13813 \ \ \ 0.03044 \ \ 4.537 6.12e-05 ***
+
+      p2 \ \ \ \ \ \ \ \ \ \ 0.06500 \ \ \ 0.03044 \ \ 2.135 \ \ 0.0396 * \ 
+
+      q1 \ \ \ \ \ \ \ \ \ -0.16521 \ \ \ 0.03728 \ -4.431 8.42e-05 ***
+
+      q2 \ \ \ \ \ \ \ \ \ \ 0.19729 \ \ \ 0.03728 \ \ 5.291 6.15e-06 ***
+
+      q3 \ \ \ \ \ \ \ \ \ -0.08688 \ \ \ 0.03728 \ -2.330 \ \ 0.0255 * \ 
+
+      p1:q1 \ \ \ \ \ \ -0.03979 \ \ \ 0.05273 \ -0.755 \ \ 0.4554 \ \ \ 
+
+      p2:q1 \ \ \ \ \ \ -0.05917 \ \ \ 0.05273 \ -1.122 \ \ 0.2692 \ \ \ 
+
+      p1:q2 \ \ \ \ \ \ \ 0.06521 \ \ \ 0.05273 \ \ 1.237 \ \ 0.2242 \ \ \ 
+
+      p2:q2 \ \ \ \ \ \ \ 0.07333 \ \ \ 0.05273 \ \ 1.391 \ \ 0.1728 \ \ \ 
+
+      p1:q3 \ \ \ \ \ \ \ 0.03687 \ \ \ 0.05273 \ \ 0.699 \ \ 0.4888 \ \ \ 
+
+      p2:q3 \ \ \ \ \ \ -0.08250 \ \ \ 0.05273 \ -1.565 \ \ 0.1264 \ \ \ 
+
+      ---
+
+      Signif. codes: \ 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+      \;
+
+      Residual standard error: 0.1491 on 36 degrees of freedom
+
+      Multiple R-squared: \ 0.7335,	Adjusted R-squared: \ 0.6521\ 
+
+      F-statistic: \ 9.01 on 11 and 36 DF, \ p-value: 1.986e-07
+
+      \;
+
+      Analysis of Variance Table
+
+      \;
+
+      Response: y
+
+      \ \ \ \ \ \ \ \ \ \ Df \ Sum Sq Mean Sq F value \ \ \ Pr(\>F) \ \ \ 
+
+      p \ \ \ \ \ \ \ \ \ 2 1.03301 0.51651 23.2217 3.331e-07 ***
+
+      q \ \ \ \ \ \ \ \ \ 3 0.92121 0.30707 13.8056 3.777e-06 ***
+
+      p:q \ \ \ \ \ \ \ 6 0.25014 0.04169 \ 1.8743 \ \ \ 0.1123 \ \ \ 
+
+      Residuals 36 0.80073 0.02224 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+      ---
+
+      Signif. codes: \ 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+    </code>
+  </verbatim-code>
+
+  The two-factor interaction linear regression model is defined mathematically as:
+
+  <\equation*>
+    y<rsub|i*j*k>=\<mu\>+\<alpha\><rsub|i>+\<beta\><rsub|j>+<around|(|\<alpha\>*\<beta\>|)><rsub|i*j>+\<varepsilon\><rsub|i*j*k>,<space|1em>\<varepsilon\><rsub|i*j*k>\<sim\>N<around|(|0,\<sigma\><rsup|2>|)>
+  </equation*>
+
+  where <math|i=1,2,3> (levels of <math|p>), <math|j=1,2,3,4> (levels of <math|q>), and <math|k> is the observation index.
+
+  From the R output, the estimated coefficients (with baseline categories <math|p=1,q=1>) are:
+
+  <\align*>
+    <tformat|<table|<row|<cell|<wide|\<mu\>|^>>|<cell|=0.4125>>|<row|<cell|<wide|\<alpha\>|^><rsub|2>>|<cell|=-0.0925,<space|1em><wide|\<alpha\>|^><rsub|3>=-0.2025>>|<row|<cell|<wide|\<beta\>|^><rsub|2>>|<cell|=0.4675,<space|1em><wide|\<beta\>|^><rsub|3>=0.1550,<space|1em><wide|\<beta\>|^><rsub|4>=0.1975>>|<row|<cell|<around|(|<wide|\<alpha\>*\<beta\>|^>|)><rsub|22>>|<cell|=0.0275,<space|1em><around|(|<wide|\<alpha\>*\<beta\>|^>|)><rsub|32>=-0.3425>>|<row|<cell|<around|(|<wide|\<alpha\>*\<beta\>|^>|)><rsub|23>>|<cell|=-0.1000,<space|1em><around|(|<wide|\<alpha\>*\<beta\>|^>|)><rsub|33>=-0.1300>>|<row|<cell|<around|(|<wide|\<alpha\>*\<beta\>|^>|)><rsub|24>>|<cell|=0.1500,<space|1em><around|(|<wide|\<alpha\>*\<beta\>|^>|)><rsub|34>=-0.0825>>>>
+  </align*>
+
+  The fitted interaction model is explicitly written as:
+
+  <\equation*>
+    <wide|y|^><rsub|i*j*k>=0.4125+<wide|\<alpha\>|^><rsub|i>+<wide|\<beta\>|^><rsub|j>+<around|(|<wide|\<alpha\>*\<beta\>|^>|)><rsub|i*j>.
+  </equation*>
+
+  The residual standard error is:
+
+  <\equation*>
+    <wide|\<sigma\>|^>=0.1491,
+  </equation*>
+
+  with degrees of freedom (df) = 36.
+
+  The adjusted <math|R<rsup|2>> for this model is:
+
+  <\equation*>
+    R<rsub|a*d*j><rsup|2>=0.6521.
+  </equation*>
+
+  <subsection*|Analysis of Variance (ANOVA)>
+
+  The ANOVA decomposition is expressed mathematically as:
+
+  <\equation*>
+    <text|SSTotal>=<text|SS><rsub|p>+<text|SS><rsub|q>+<text|SS><rsub|p:q>+<text|SSResidual>,
+  </equation*>
+
+  where:
+
+  <\align*>
+    <tformat|<table|<row|<cell|<text|DF><rsub|p>>|<cell|=2,<space|1em><text|SS><rsub|p>=1.0330,<space|1em>F<rsub|p>=23.2217,<space|1em>p\<less\>0.001>>|<row|<cell|<text|DF><rsub|q>>|<cell|=3,<space|1em><text|SS><rsub|q>=0.9212,<space|1em>F<rsub|q>=13.8056,<space|1em>p\<less\>0.001>>|<row|<cell|<text|DF><rsub|p:q>>|<cell|=6,<space|1em><text|SS><rsub|p:q>=0.2501,<space|1em>F<rsub|p:q>=1.8743,<space|1em>p=0.1123>>|<row|<cell|<text|DFResidual>>|<cell|=36,<space|1em><text|SSResidual>=0.8007>>>>
+  </align*>
+
+  Thus, the main effects of <math|p> and <math|q> are statistically significant, while their interaction effect (<math|p:q>) is not statistically significant at the conventional 5% level.
 </body>
 
 <\initial>
@@ -1023,80 +1393,84 @@
 
 <\references>
   <\collection>
-    <associate|2factmodel|<tuple|1|2>>
-    <associate|4blocks_ex1|<tuple|17|22>>
+    <associate|2factmodel|<tuple|1|3>>
+    <associate|4blocks_ex1|<tuple|17|23>>
     <associate|auto-1|<tuple|1|1>>
-    <associate|auto-10|<tuple|2.4|5>>
-    <associate|auto-11|<tuple|5|5>>
-    <associate|auto-12|<tuple|2.5|5>>
-    <associate|auto-13|<tuple|1|6>>
-    <associate|auto-14|<tuple|2.6|6>>
-    <associate|auto-15|<tuple|2.6.1|6>>
-    <associate|auto-16|<tuple|2|7>>
-    <associate|auto-17|<tuple|2.6.2|7>>
-    <associate|auto-18|<tuple|2.6.3|7>>
-    <associate|auto-19|<tuple|3|8>>
-    <associate|auto-2|<tuple|1|1>>
-    <associate|auto-20|<tuple|6|8>>
-    <associate|auto-21|<tuple|2.7|9>>
-    <associate|auto-22|<tuple|2.7.1|9>>
-    <associate|auto-23|<tuple|2.7.2|10>>
-    <associate|auto-24|<tuple|2.8|11>>
-    <associate|auto-25|<tuple|2.8.1|11>>
-    <associate|auto-26|<tuple|7|11>>
-    <associate|auto-27|<tuple|2.8.2|11>>
+    <associate|auto-10|<tuple|2.4|6>>
+    <associate|auto-11|<tuple|5|6>>
+    <associate|auto-12|<tuple|2.5|6>>
+    <associate|auto-13|<tuple|1|7>>
+    <associate|auto-14|<tuple|2.6|7>>
+    <associate|auto-15|<tuple|2.6.1|7>>
+    <associate|auto-16|<tuple|2|8>>
+    <associate|auto-17|<tuple|2.6.2|8>>
+    <associate|auto-18|<tuple|2.6.3|8>>
+    <associate|auto-19|<tuple|3|9>>
+    <associate|auto-2|<tuple|1|2>>
+    <associate|auto-20|<tuple|6|9>>
+    <associate|auto-21|<tuple|2.7|10>>
+    <associate|auto-22|<tuple|2.7.1|10>>
+    <associate|auto-23|<tuple|2.7.2|11>>
+    <associate|auto-24|<tuple|2.8|12>>
+    <associate|auto-25|<tuple|2.8.1|12>>
+    <associate|auto-26|<tuple|7|12>>
+    <associate|auto-27|<tuple|2.8.2|12>>
     <associate|auto-28|<tuple|8|12>>
     <associate|auto-29|<tuple|2.8.3|12>>
     <associate|auto-3|<tuple|2|2>>
-    <associate|auto-30|<tuple|3|12>>
-    <associate|auto-31|<tuple|3.1|12>>
-    <associate|auto-32|<tuple|3.1.1|12>>
-    <associate|auto-33|<tuple|9|13>>
-    <associate|auto-34|<tuple|4|13>>
-    <associate|auto-35|<tuple|10|13>>
-    <associate|auto-36|<tuple|5|13>>
-    <associate|auto-37|<tuple|3.1.2|13>>
-    <associate|auto-38|<tuple|6|13>>
-    <associate|auto-39|<tuple|7|13>>
-    <associate|auto-4|<tuple|2|2>>
-    <associate|auto-40|<tuple|8|13>>
-    <associate|auto-41|<tuple|11|14>>
-    <associate|auto-42|<tuple|3.1.3|14>>
-    <associate|auto-43|<tuple|9|14>>
-    <associate|auto-44|<tuple|10|14>>
-    <associate|auto-45|<tuple|3.1.4|15>>
-    <associate|auto-46|<tuple|11|15>>
-    <associate|auto-47|<tuple|3.2|15>>
-    <associate|auto-48|<tuple|3.2.1|15>>
-    <associate|auto-49|<tuple|12|16>>
-    <associate|auto-5|<tuple|2.1|2>>
-    <associate|auto-50|<tuple|12|16>>
-    <associate|auto-51|<tuple|3.2.2|17>>
-    <associate|auto-52|<tuple|13|17>>
-    <associate|auto-53|<tuple|13|18>>
-    <associate|auto-54|<tuple|3.2.3|18>>
-    <associate|auto-55|<tuple|3.3|19>>
-    <associate|auto-56|<tuple|14|20>>
-    <associate|auto-57|<tuple|3.4|20>>
-    <associate|auto-58|<tuple|3.4.1|20>>
-    <associate|auto-59|<tuple|14|20>>
+    <associate|auto-30|<tuple|3|13>>
+    <associate|auto-31|<tuple|3.1|13>>
+    <associate|auto-32|<tuple|3.1.1|13>>
+    <associate|auto-33|<tuple|9|14>>
+    <associate|auto-34|<tuple|4|14>>
+    <associate|auto-35|<tuple|10|14>>
+    <associate|auto-36|<tuple|5|14>>
+    <associate|auto-37|<tuple|3.1.2|14>>
+    <associate|auto-38|<tuple|6|14>>
+    <associate|auto-39|<tuple|7|14>>
+    <associate|auto-4|<tuple|2|3>>
+    <associate|auto-40|<tuple|8|14>>
+    <associate|auto-41|<tuple|11|15>>
+    <associate|auto-42|<tuple|3.1.3|15>>
+    <associate|auto-43|<tuple|9|15>>
+    <associate|auto-44|<tuple|10|15>>
+    <associate|auto-45|<tuple|3.1.4|16>>
+    <associate|auto-46|<tuple|11|16>>
+    <associate|auto-47|<tuple|3.2|16>>
+    <associate|auto-48|<tuple|3.2.1|16>>
+    <associate|auto-49|<tuple|12|17>>
+    <associate|auto-5|<tuple|2.1|3>>
+    <associate|auto-50|<tuple|12|17>>
+    <associate|auto-51|<tuple|3.2.2|18>>
+    <associate|auto-52|<tuple|13|18>>
+    <associate|auto-53|<tuple|13|19>>
+    <associate|auto-54|<tuple|3.2.3|19>>
+    <associate|auto-55|<tuple|3.3|20>>
+    <associate|auto-56|<tuple|14|21>>
+    <associate|auto-57|<tuple|3.4|21>>
+    <associate|auto-58|<tuple|3.4.1|21>>
+    <associate|auto-59|<tuple|14|21>>
     <associate|auto-6|<tuple|3|3>>
-    <associate|auto-60|<tuple|3.4.2|21>>
-    <associate|auto-61|<tuple|15|21>>
-    <associate|auto-62|<tuple|15|21>>
-    <associate|auto-63|<tuple|16|22>>
-    <associate|auto-64|<tuple|3.4.3|22>>
-    <associate|auto-65|<tuple|17|22>>
-    <associate|auto-66|<tuple|3.4.4|22>>
-    <associate|auto-7|<tuple|2.2|3>>
-    <associate|auto-8|<tuple|2.3|4>>
-    <associate|auto-9|<tuple|4|4>>
-    <associate|eq:2block|<tuple|3|21>>
-    <associate|eq:box|<tuple|2|6>>
-    <associate|fig:ofat|<tuple|15|21>>
-    <associate|table:abc|<tuple|16|22>>
-    <associate|table:ofat|<tuple|15|21>>
-    <associate|yate|<tuple|14|20>>
+    <associate|auto-60|<tuple|3.4.2|22>>
+    <associate|auto-61|<tuple|15|22>>
+    <associate|auto-62|<tuple|15|22>>
+    <associate|auto-63|<tuple|16|23>>
+    <associate|auto-64|<tuple|3.4.3|23>>
+    <associate|auto-65|<tuple|17|23>>
+    <associate|auto-66|<tuple|3.4.4|23>>
+    <associate|auto-67|<tuple|A|23>>
+    <associate|auto-68|<tuple|A|23>>
+    <associate|auto-69|<tuple|A|25>>
+    <associate|auto-7|<tuple|2.2|4>>
+    <associate|auto-70|<tuple|A|26>>
+    <associate|auto-8|<tuple|2.3|5>>
+    <associate|auto-9|<tuple|4|5>>
+    <associate|eq:2block|<tuple|3|22>>
+    <associate|eq:box|<tuple|2|7>>
+    <associate|fig:ofat|<tuple|15|22>>
+    <associate|table:abc|<tuple|16|23>>
+    <associate|table:ofat|<tuple|15|22>>
+    <associate|yate|<tuple|14|21>>
   </collection>
 </references>
 
@@ -1121,7 +1495,7 @@
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|6>||OFAT Design>|<pageref|auto-38>>
 
-      <tuple|normal|<surround|<hidden-binding|<tuple>|7>||<with|mode|<quote|math>|2<rsup|2>> Deisgn>|<pageref|auto-39>>
+      <tuple|normal|<surround|<hidden-binding|<tuple>|7>||<with|mode|<quote|math>|2<rsup|2>> Design>|<pageref|auto-39>>
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|8>||Central Composite >|<pageref|auto-40>>
 
@@ -1231,7 +1605,7 @@
 
       <with|par-left|<quote|2tab>|2.7.1<space|2spc>When interactions are not significant <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-22>>
 
-      <with|par-left|<quote|2tab>|2.7.2<space|2spc>When interatcions are significant <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-23>>
+      <with|par-left|<quote|2tab>|2.7.2<space|2spc>When interactions are significant <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-23>>
 
       <with|par-left|<quote|1tab>|2.8<space|2spc>Two-way Factorial with Blocks \ <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-24>>
 
@@ -1243,7 +1617,7 @@
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|3<space|2spc>Experimental Design> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-30><vspace|0.5fn>
 
-      <with|par-left|<quote|1tab>|3.1<space|2spc>Comparasion of designs <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-31>>
+      <with|par-left|<quote|1tab>|3.1<space|2spc>Comparison of designs <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-31>>
 
       <with|par-left|<quote|2tab>|3.1.1<space|2spc>OFAT v.s. Factorial <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-32>>
 
@@ -1272,6 +1646,14 @@
       <with|par-left|<quote|2tab>|3.4.3<space|2spc><with|mode|<quote|math>|2<rsup|3>> in 4 Blocks of Size 2 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-64>>
 
       <with|par-left|<quote|2tab>|3.4.4<space|2spc>Partial Confounding <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-66>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix A<space|2spc>R output intepretation> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-67><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|Linear Model for <with|font-family|<quote|tt>|time <with|mode|<quote|math>|\<sim\>> poison> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-68>>
+
+      <with|par-left|<quote|1tab>|Linear Model for <with|font-family|<quote|tt>|y <with|mode|<quote|math>|\<sim\>> p + q + p*q> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-69>>
+
+      <with|par-left|<quote|1tab>|Analysis of Variance (ANOVA) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-70>>
     </associate>
   </collection>
 </auxiliary>

@@ -6,7 +6,7 @@ permalink: /miscellaneous/
 nav: true
 ---
 
-Thanks for visiting this page! Beside my academic life, I'm also interested in photography, literature and philosophy. You can find my photography works on my [Instagram](https://www.instagram.com/langtianma/). I would like to share some of my works here.
+Thanks for visiting this page! Beside my academic life, I'm also interested in photography, literature and philosophy. I would like to share some of my photography works here.
 
 ## Madison
 

@@ -2226,7 +2226,7 @@
   <paragraph|Estimate of <math|t<rsub|A>-t<rsub|C>>.>
 
   <\align*>
-    <tformat|<table|<row|<cell|<wide|t|^><rsub|A>-<wide|t|^><rsub|C>>|<cell|=<frac|1|8>*<around*|[|9*Y<rsub|1*A>-Y<rsub|2*B>-8*Y<rsub|<space|-0.17em>\<cdot\>C>-5*<around|(|Y<rsub|1\<cdot\>>-Y<rsub|2\<cdot\>>|)>|]>>>|<row|<cell|>|<cell|=<frac|1|8>*<around*|(|8*Y<rsub|1*A>-<space|0.17em>Y<rsub|2*B>-<space|0.17em>5*Y<rsub|1*C>-<space|0.17em>3*Y<rsub|2*C>-<space|0.17em><big|sum><rsub|j\<in\><around|{|D,E,F|}>><space|-0.17em><around|(|Y<rsub|1*j>-Y<rsub|2*j>|)>|)>,>>>>
+    <tformat|<table|<row|<cell|<wide|t|^><rsub|A>-<wide|t|^><rsub|C>>|<cell|=<frac|1|8>*<around*|[|9*Y<rsub|1*A>-Y<rsub|2*B>-8*Y<rsub|<space|-0.17em>\<cdot\>C>-5*<around|(|Y<rsub|1\<cdot\>>-Y<rsub|2\<cdot\>>|)>|]>>>|<row|<cell|>|<cell|=<frac|1|8>*<around*|(|8*Y<rsub|1*A>-<space|0.17em>5*Y<rsub|1*C>-<space|0.17em>3*Y<rsub|2*C>-<space|0.17em><big|sum><rsub|j\<in\><around|{|D,E,F|}>><space|-0.17em><around|(|Y<rsub|1*j>-Y<rsub|2*j>|)>|)>,>>>>
   </align*>
 
   where <math|Y<rsub|<space|-0.17em>\<cdot\>C>=Y<rsub|1*C>+Y<rsub|2*C>> and <math|Y<rsub|i\<bullet\>>=<big|sum><rsub|j>Y<rsub|i*j>>. Its variance is
@@ -2241,7 +2241,7 @@
 
   <subsection|Balanced Incomplete Block Design>
 
-  Let <math|v> be the numebr of treatments, <math|b> be the number of blocks, <math|r> be the replicate of each treatment, <math|k\<less\>v> be the unites per block. A <with|font-series|bold|balanced ncomplete­block design> (BIBD) with parameters<nbsp><math|<around*|(|v,b,r,k,\<lambda\>|)>>, where <math|\<lambda\>> means each pair of treatments occurs together in <math|\<lambda\>> blocks, is a way of arranging <math|v> treatments into<nbsp><math|b><nbsp>blocks so that
+  Let <math|v> be the number of treatments, <math|b> be the number of blocks, <math|r> be the replicate of each treatment, <math|k\<less\>v> be the unites per block. A <with|font-series|bold|balanced incomplete­block design> (BIBD) with parameters<nbsp><math|<around*|(|v,b,r,k,\<lambda\>|)>>, where <math|\<lambda\>> means each pair of treatments occurs together in <math|\<lambda\>> blocks, is a way of arranging <math|v> treatments into<nbsp><math|b><nbsp>blocks so that
 
   <\enumerate>
     <item>Each block contains exactly<nbsp><math|k><nbsp>distinct treatments (so “incomplete” means<nbsp><math|k\<less\>v>).
@@ -2269,8 +2269,22 @@
     <equation*|<with|math-level|0|math-display|false|<with|math-level|0|math-display|false|<with|math-level|0|math-display|true|\<lambda\><with|mode|text|  >=<with|mode|text|  ><frac|r<with|mode|text| ><around*|(|k-1|)>|v-1>>>>.>
   </enumerate>
 
+  <strong|Properties of a Balanced Incomplete Block Design>
+
+  <\itemize>
+    <item><strong|Estimability of treatment contrasts.><next-line>Every linear contrast among the treatment effects can be uniquely estimated under the standard BIBD model.
+
+    <item><strong|Uniform precision of pairwise comparisons.><next-line>The variance of the estimator for any difference between two treatments is the same for all<nbsp><math|<around*|(|<stack|<tformat|<table|<row|<cell|t>>|<row|<cell|2>>>>>|)>><nbsp>pairs.
+
+    <item><strong|Minimized average confidence­interval length.><next-line>Over all pairwise contrasts, a BIBD tends to yield the shortest average length of<nbsp><math|<around*|(|1-\<alpha\>|)>>%-confidence intervals.
+  </itemize>
+
+  <strong|Limitation>
+
+  <itemize|<item><strong|Existence constraints.><next-line>Feasible BIBDs occur only for specific integer solutions<nbsp><math|<around*|(|t,b,r,k,\<lambda\>|)>>; for many parameter combinations no design exists.>
+
   <\example>
-    6 treatments with 30 units grouped in 6 blocks of 5 units.Below is the simplest balanced incomplete­block design (a BIBD) that meets your requirements:
+    <with|font-series|bold|(BIBD<math|<around*|(|6,6,5,5,4|)>>)> 6 treatments with 30 units grouped in 6 blocks of 5 units.Below is the simplest balanced incomplete­block design (a BIBD) that meets your requirements:
 
     <\itemize>
       <item><strong|Treatments>:<nbsp><math|v=6><nbsp>(call them<nbsp><math|A,B,C,D,E,F>)
@@ -2330,8 +2344,178 @@
       A, B, C, D, E
     </cell>|<\cell>
       F
-    </cell>>>>>|>
+    </cell>>>>>|BIBD<math|<around*|(|6,6,5,5,4|)>>>
   </example>
+
+  <\example>
+    <with|font-series|bold|(Incomplete–block design with <math|v=6>, <math|b=6>, <math|k=4>, <math|r=4>)>\ 
+
+    Six treatments <math|<around|{|A,\<ldots\>,F|}>>, six blocks of size 4, each treatment in <math|r=4> blocks (omitted twice), never repeated within a block. A BIBD would require
+
+    <equation*|\<lambda\><with|mode|text|  >=<with|mode|text|  ><frac|r<with|mode|text| ><around*|(|k-1|)>|v-1><with|mode|text|  >=<with|mode|text|  ><frac|4\<cdot\>3|5><with|mode|text|  >=<with|mode|text|  ><frac|12|5>,>
+
+    which is not an integer. Since<nbsp><math|\<lambda\>><nbsp>must be a whole number, <with|font-series|bold|no BIBD can exist for these parameters.>\ 
+
+    <with|font-series|bold|General variance formula.> For any contrast <math|<math-bf|c><rprime|'><wide|\<beta\>|^>>,
+
+    <\equation*>
+      Var<around|(|<math-bf|c><rprime|'><wide|\<beta\>|^>|)>=\<sigma\><rsup|2><space|0.17em><math-bf|c><rprime|'><around|(|<math-bf|X><rprime|'><math-bf|X>|)><rsup|-1><math-bf|c>.
+    </equation*>
+
+    <vspace*|1fn><with|font-series|bold|Design I (Missing pairs: <math|<around|(|A*B|)>,<around|(|A*C|)>,<around|(|B*C|)>,<around|(|D*E|)>,<around|(|D*F|)>,<around|(|E*F|)>>).>
+
+    <\itemize>
+      <item>Notice this “splits” the six treatments into two triangles<nbsp><math|<around*|{|A,B,C|}>><nbsp>and<nbsp><math|<around*|{|D,E,F|}>>.
+
+      <item>As a result, for the three “within­triangle” pairs
+
+      <equation*|AB,<with|mode|text|  >AC,<with|mode|text|  >BC<with|mode|text| and >DE,<with|mode|text|  >DF,<with|mode|text|  >EF>
+
+      each pair<nbsp><em|never><nbsp>appears together in exactly two blocks (those two in which the pair is omitted), and<nbsp><em|always><nbsp>appears in the other four. This gives them higher precision.
+
+      <item>The remaining nine pairs (one from each triangle across triangles, e.g.<nbsp><math|A><nbsp>vs.<nbsp><math|D>,<nbsp><math|B><nbsp>vs.<math|E>, etc.) each co­occur in only three blocks, so are estimated with slightly larger SD.
+    </itemize>
+
+    <big-table|<tabular|<tformat|<cwith|1|3|1|2|cell-hyphen|t>|<cwith|3|3|1|1|cell-bborder|0ln>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|1ln>|<cwith|1|-1|2|2|cell-lborder|1ln>|<cwith|1|1|1|-1|cell-tborder|0ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|2|1|-1|cell-tborder|1ln>|<cwith|1|1|1|1|cell-lborder|0ln>|<cwith|1|1|2|2|cell-rborder|0ln>|<table|<row|<\cell>
+      Contrast
+    </cell>|<\cell>
+      SD (Design I)
+    </cell>>|<row|<\cell>
+      <math|AB,AC,BC,DE,DF,EF>
+    </cell>|<\cell>
+      <math|0.7303<with|mode|text| >\<sigma\>>
+    </cell>>|<row|<\cell>
+      the other 9 pairs
+    </cell>|<\cell>
+      <math|0.7601<with|mode|text| >\<sigma\>>
+    </cell>>>>>|Variance of design I>
+
+    <vspace*|1fn><with|font-series|bold|Design II (Missing pairs: <math|<around|(|A*B|)>,<around|(|A*C|)>,<around|(|B*D|)>,<around|(|C*E|)>,<around|(|D*F|)>,<around|(|E*F|)>>).>
+
+    <\itemize>
+      <item>This pattern “mixes” treatments more evenly across blocks.
+
+      <item>Consequently, six of the contrasts attain the best precision, another six are slightly worse, and the remaining three are just a hair larger.
+    </itemize>
+
+    <big-table|<tabular|<tformat|<cwith|1|4|1|2|cell-hyphen|t>|<cwith|4|4|1|1|cell-bborder|0ln>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|1ln>|<cwith|1|-1|2|2|cell-lborder|1ln>|<cwith|1|1|1|-1|cell-tborder|0ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|2|1|-1|cell-tborder|1ln>|<cwith|1|1|1|1|cell-lborder|0ln>|<cwith|1|1|2|2|cell-rborder|0ln>|<table|<row|<\cell>
+      Contrast
+    </cell>|<\cell>
+      SD (Design II)
+    </cell>>|<row|<\cell>
+      <math|AB,AC,BD,CE,DF,EF>
+    </cell>|<\cell>
+      <math|0.7321<with|mode|text| >\<sigma\>>
+    </cell>>|<row|<\cell>
+      <math|AD,BF,DE,FC,EA,CB>
+    </cell>|<\cell>
+      <math|0.7579<with|mode|text| >\<sigma\>>
+    </cell>>|<row|<\cell>
+      <math|AF,BE,DC>
+    </cell>|<\cell>
+      <math|0.7596<with|mode|text| >\<sigma\>>
+    </cell>>>>>|Variance of design II>
+
+    <vspace*|1fn><with|font-series|bold|Comparison.> Design I gives maximum efficiency for its six primary contrasts; Design II spreads precision more evenly. Choose according to which pairs are of greatest interest.
+  </example>
+
+  <\remark>
+    Note if the observations were obtained from 4 complete blocks of size 6, the standard deviation would be <math|\<sigma\>/<sqrt|2>\<approx\>0.707\<sigma\>>
+
+    Switching from 4 RCBs of size 6 to 6 blocks of size 4 incurs only a small efficiency penalty (6–15%) in SD of treatment differences, while offering potential gains in reducing<nbsp><math|\<sigma\>><nbsp>via more homogeneous blocking and greater logistical flexibility. The choice of how to omit treatments—Design I versus Design II—lets you “tune” which pairs receive the best precision.
+  </remark>
+
+  <\example>
+    (Unbalanced Design) Construct an incomplete–block arrangement for six treatments <math|A,B,C,D,E,F> on <math|N=25> experimental units, grouped into <math|b=5> blocks of size <math|k=5>. Each block omits exactly one treatment, so one treatment must appear in all blocks. Label the blocks <math|1,\<ldots\>,5>, and choose <math|A> to be the “always–included” treatment. A convenient allocation is:
+
+    <\big-table>
+      <\equation*>
+        <tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|1ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|3|3|cell-halign|c>|<cwith|1|-1|4|4|cell-halign|c>|<cwith|1|-1|5|5|cell-halign|c>|<cwith|1|-1|6|6|cell-halign|c>|<cwith|1|-1|6|6|cell-rborder|0ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<table|<row|<cell|<text|Block>>|<cell|I>|<cell|I*I>|<cell|I*I*I>|<cell|I*V>|<cell|V>>|<row|<cell|<text|Treatments>>|<cell|<tabular*|<tformat|<table|<row|<cell|A>>|<row|<cell|B>>|<row|<cell|C>>|<row|<cell|D>>|<row|<cell|E>>>>>>|<cell|<tabular*|<tformat|<table|<row|<cell|A>>|<row|<cell|B>>|<row|<cell|C>>|<row|<cell|D>>|<row|<cell|F>>>>>>|<cell|<tabular*|<tformat|<table|<row|<cell|A>>|<row|<cell|B>>|<row|<cell|D>>|<row|<cell|E>>|<row|<cell|F>>>>>>|<cell|<tabular*|<tformat|<table|<row|<cell|A>>|<row|<cell|B>>|<row|<cell|D>>|<row|<cell|E>>|<row|<cell|F>>>>>>|<cell|<tabular*|<tformat|<table|<row|<cell|A>>|<row|<cell|C>>|<row|<cell|D>>|<row|<cell|E>>|<row|<cell|F>>>>>>>>>>
+      </equation*>
+    </big-table|Unblanced Design>
+
+    <\itemize>
+      <item><math|v=6> treatments, <math|b=5> blocks, each of size <math|k=5>.
+
+      <item>Treatment <math|A> occurs in all <math|5> blocks; each of <math|B,C,D,E,F> occurs in exactly <math|4> blocks.
+
+      <item>Each block omits a different treatment, so that no block repeats.
+
+      <item>This design is <em|not> balanced since the replication numbers differ, but it may be useful when one treatment must serve as a control (appearing in every block) and each other treatment must be compared to it under as homogeneous block conditions as possible.
+    </itemize>
+  </example>
+
+  <\example>
+    (Unequal-Block Design)We have
+
+    <\itemize>
+      <item><strong|Treatments>:<nbsp><math|A,B,C,D,E,F,G><nbsp>(<math|v=7>).
+
+      <item><strong|Total units>:<nbsp><math|35>.
+
+      <item><strong|Blocks>:<nbsp><math|5><nbsp>blocks of sizes<nbsp><math|5,6,7,7,10>.
+
+      <item><strong|Replication>: each treatment must appear<nbsp><math|r=35/7=5><nbsp>times.
+    </itemize>
+
+    Because block V holds<nbsp><math|10\<gtr\>7><nbsp>units, some treatments must be repeated there. One convenient allocation is:
+
+    <big-table|<tabular|<tformat|<twith|table-hmode|min>|<twith|table-width|1par>|<cwith|1|-1|1|-1|cell-hyphen|t>|<cwith|1|1|1|-1|cell-tborder|0ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|2|1|-1|cell-tborder|1ln>|<cwith|1|1|3|3|cell-rborder|0ln>|<cwith|1|1|1|2|cell-tborder|0ln>|<cwith|6|6|1|2|cell-bborder|0ln>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-rborder|1ln>|<cwith|1|-1|3|3|cell-lborder|1ln>|<table|<row|<\cell>
+      Block
+    </cell>|<\cell>
+      Size
+    </cell>|<\cell>
+      Multiset of treatments
+    </cell>>|<row|<\cell>
+      I
+    </cell>|<\cell>
+      5
+    </cell>|<\cell>
+      <math|<around*|{|A,B,C,D,E|}>>
+    </cell>>|<row|<\cell>
+      II
+    </cell>|<\cell>
+      6
+    </cell>|<\cell>
+      <math|<around*|{|A,B,C,D,F,G|}>>
+    </cell>>|<row|<\cell>
+      III
+    </cell>|<\cell>
+      7
+    </cell>|<\cell>
+      <math|<around*|{|A,B,C,D,E,F,G|}>>
+    </cell>>|<row|<\cell>
+      IV
+    </cell>|<\cell>
+      7
+    </cell>|<\cell>
+      <math|<around*|{|A,B,C,D,E,F,G|}>>
+    </cell>>|<row|<\cell>
+      V
+    </cell>|<\cell>
+      10
+    </cell>|<\cell>
+      <math|<around*|{|A,B,C,D,E,E,F,F,G,G|}>>
+    </cell>>>>>|Unequal Block Design>
+
+    <\itemize>
+      <item><strong|Within­block replication><nbsp>(in block V) is a legitimate way to attain the required overall replication when<nbsp><math|k<rsub|i>\<gtr\>v>.
+
+      <item><strong|Analysis><nbsp>is still a simple two­way ANOVA with blocks and treatments; just build the design matrix<nbsp><math|X><nbsp>according to the above multiplicities.
+    </itemize>
+
+    This design thus achieves a perfectly balanced replication<nbsp><math|r=5><nbsp>for each treatment while respecting the pre­specified block­size pattern<nbsp><math|<around*|(|5,6,7,7,10|)>>.
+  </example>
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
 
   \;
 
@@ -2369,25 +2553,30 @@
     <associate|auto-103|<tuple|6.2.2|40>>
     <associate|auto-104|<tuple|28|41>>
     <associate|auto-105|<tuple|6.3|41>>
-    <associate|auto-106|<tuple|6.4|42>>
+    <associate|auto-106|<tuple|6.4|41>>
     <associate|auto-107|<tuple|6.4.1|42>>
-    <associate|auto-108|<tuple|6.4.2|?>>
-    <associate|auto-109|<tuple|29|?>>
+    <associate|auto-108|<tuple|6.4.2|42>>
+    <associate|auto-109|<tuple|29|42>>
     <associate|auto-11|<tuple|5|6>>
-    <associate|auto-110|<tuple|6.5|?>>
-    <associate|auto-111|<tuple|7|?>>
-    <associate|auto-112|<tuple|7.1|?>>
-    <associate|auto-113|<tuple|7.1.0.1|?>>
-    <associate|auto-114|<tuple|7.1.0.2|?>>
-    <associate|auto-115|<tuple|7.1.0.3|?>>
-    <associate|auto-116|<tuple|7.2|?>>
-    <associate|auto-117|<tuple|7.2.0.1|?>>
-    <associate|auto-118|<tuple|7.2.0.2|?>>
-    <associate|auto-119|<tuple|7.3|?>>
+    <associate|auto-110|<tuple|6.5|42>>
+    <associate|auto-111|<tuple|7|43>>
+    <associate|auto-112|<tuple|7.1|43>>
+    <associate|auto-113|<tuple|7.1.0.1|43>>
+    <associate|auto-114|<tuple|7.1.0.2|43>>
+    <associate|auto-115|<tuple|7.1.0.3|44>>
+    <associate|auto-116|<tuple|7.2|44>>
+    <associate|auto-117|<tuple|7.2.0.1|44>>
+    <associate|auto-118|<tuple|7.2.0.2|44>>
+    <associate|auto-119|<tuple|7.3|45>>
     <associate|auto-12|<tuple|2.5|6>>
-    <associate|auto-120|<tuple|30|?>>
-    <associate|auto-121|<tuple|A|?>>
-    <associate|auto-122|<tuple|31|?>>
+    <associate|auto-120|<tuple|30|46>>
+    <associate|auto-121|<tuple|31|46>>
+    <associate|auto-122|<tuple|32|46>>
+    <associate|auto-123|<tuple|33|?>>
+    <associate|auto-124|<tuple|34|?>>
+    <associate|auto-125|<tuple|A|?>>
+    <associate|auto-126|<tuple|35|?>>
+    <associate|auto-127|<tuple|35|?>>
     <associate|auto-13|<tuple|1|7>>
     <associate|auto-14|<tuple|2.6|7>>
     <associate|auto-15|<tuple|2.6.1|7>>
@@ -2490,7 +2679,7 @@
     <associate|fig:ofat|<tuple|15|22>>
     <associate|fold|<tuple|24|32>>
     <associate|model4.1|<tuple|5|24>>
-    <associate|table:BP|<tuple|31|42>>
+    <associate|table:BP|<tuple|35|46>>
     <associate|table:abc|<tuple|16|23>>
     <associate|table:corr|<tuple|26|39>>
     <associate|table:ofat|<tuple|15|23>>
@@ -2630,9 +2819,13 @@
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|28>||ANOVA Table of Split-plot Design>|<pageref|auto-104>>
 
-      <tuple|normal|<\surround|<hidden-binding|<tuple>|29>|>
+      <tuple|normal|<surround|<hidden-binding|<tuple>|29>||ANOVA table for the split-plot experiment>|<pageref|auto-109>>
+
+      <tuple|normal|<surround|<hidden-binding|<tuple>|30>||>|<pageref|auto-120>>
+
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|31>|>
         Plackett–Burman Table
-      </surround>|<pageref|auto-107>>
+      </surround>|<pageref|auto-122>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Randomized Block Design> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1><vspace|0.5fn>
@@ -2759,7 +2952,33 @@
 
       <with|par-left|<quote|1tab>|6.3<space|2spc>Split-plot with Blocks <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-105>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix A<space|2spc>Plackett–Burman Table> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-106><vspace|0.5fn>
+      <with|par-left|<quote|1tab>|6.4<space|2spc>Split-Plot with Two Subplot Factors <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-106>>
+
+      <with|par-left|<quote|2tab>|6.4.1<space|2spc>Model Specification <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-107>>
+
+      <with|par-left|<quote|2tab>|6.4.2<space|2spc>Full Orthogonal Decomposition <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-108>>
+
+      <with|par-left|<quote|1tab>|6.5<space|2spc>Final Remarks on Split-Plot Design <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-110>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|7<space|2spc>Incomplete Block Designs> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-111><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|7.1<space|2spc>Direct Comparisons <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-112>>
+
+      <with|par-left|<quote|3tab>|Comparisons among the treatments in both blocks. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-113>>
+
+      <with|par-left|<quote|3tab>|Comparison of <with|mode|<quote|math>|A> versus <with|mode|<quote|math>|B>. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-114>>
+
+      <with|par-left|<quote|3tab>|Comparison of <with|mode|<quote|math>|A> versus <with|mode|<quote|math>|C>. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-115>>
+
+      <with|par-left|<quote|1tab>|7.2<space|2spc>Least­Squares Analysis <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-116>>
+
+      <with|par-left|<quote|3tab>|Estimate of <with|mode|<quote|math>|t<rsub|A>-t<rsub|B>>. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-117>>
+
+      <with|par-left|<quote|3tab>|Estimate of <with|mode|<quote|math>|t<rsub|A>-t<rsub|C>>. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-118>>
+
+      <with|par-left|<quote|1tab>|7.3<space|2spc>Balanced Incomplete Block Design <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-119>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix A<space|2spc>Plackett–Burman Table> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-121><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

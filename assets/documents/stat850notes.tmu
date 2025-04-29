@@ -130,8 +130,36 @@
 
     <with|par-left|1tab|6.3<space|2spc>Split-plot with Blocks <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-105>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|Appendix A<space|2spc>Plackett–Burman Table> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-106><vspace|0.5fn>
+    <with|par-left|1tab|6.4<space|2spc>Split-Plot with Two Subplot Factors <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-106>>
+
+    <with|par-left|2tab|6.4.1<space|2spc>Model Specification <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-107>>
+
+    <with|par-left|2tab|6.4.2<space|2spc>Full Orthogonal Decomposition <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-108>>
+
+    <with|par-left|1tab|6.5<space|2spc>Final Remarks on Split-Plot Design <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-110>>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|7<space|2spc>Incomplete Block Designs> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-111><vspace|0.5fn>
+
+    <with|par-left|1tab|7.1<space|2spc>Direct Comparisons <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-112>>
+
+    <with|par-left|3tab|Comparisons among the treatments in both blocks. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-113>>
+
+    <with|par-left|3tab|Comparison of <with|mode|math|A> versus <with|mode|math|B>. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-114>>
+
+    <with|par-left|3tab|Comparison of <with|mode|math|A> versus <with|mode|math|C>. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-115>>
+
+    <with|par-left|1tab|7.2<space|2spc>Least­Squares Analysis <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-116>>
+
+    <with|par-left|3tab|Estimate of <with|mode|math|t<rsub|A>-t<rsub|B>>. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-117>>
+
+    <with|par-left|3tab|Estimate of <with|mode|math|t<rsub|A>-t<rsub|C>>. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-118>>
+
+    <with|par-left|1tab|7.3<space|2spc>Balanced Incomplete Block Design <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-119>>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|Appendix A<space|2spc>Plackett–Burman Table> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-125><vspace|0.5fn>
   </table-of-contents>
+
+  <new-page>
 
   <section|Randomized Block Design>
 
@@ -2507,21 +2535,119 @@
     This design thus achieves a perfectly balanced replication<nbsp><math|r=5><nbsp>for each treatment while respecting the pre­specified block­size pattern<nbsp><math|<around*|(|5,6,7,7,10|)>>.
   </example>
 
-  \;
+  <\subsection>
+    <strong|Cyclic Balanced Incomplete Block Designs>
+  </subsection>
 
-  \;
+  <\itemize>
+    <item><strong|Definition.><next-line>A<nbsp><em|cyclic design><nbsp>is a BIBD in which every block can be obtained by applying a fixed cyclic permutation (rotation) to the treatments in an initial “starter” block.
 
-  \;
+    <item><strong|Construction procedure.>
 
-  \;
+    <\enumerate>
+      <item><strong|Select an initial block><nbsp>of size<nbsp><math|k><nbsp>from the<nbsp><math|t><nbsp>treatments.
 
-  \;
+      <item><strong|Generate subsequent blocks><nbsp>by cyclically rotating the labels of the treatments in the starter block through all<nbsp><math|t><nbsp>positions.
 
-  \;
+      <item><strong|Validate balance.><nbsp>The starter block must be chosen so that each unordered pair of treatments appears exactly<nbsp><math|\<lambda\>><nbsp>times across the<nbsp><math|b><nbsp>rotated blocks.
+    </enumerate>
 
-  \;
+    <item><strong|Illustrative example (<math|t=b=7,<with|mode|text|  >k=r=3,<with|mode|text|  >\<lambda\>=1>).>
 
-  \;
+    <\enumerate>
+      <item><strong|Inferior choice:><nbsp>If the starter block is<nbsp><math|<around*|(|A<with|mode|text| >B<with|mode|text| >C|)>>, cyclic rotation yields
+
+      <equation*|<around*|(|ABC|)>,<with|mode|text| ><around*|(|BCD|)>,<with|mode|text| ><around*|(|CDE|)>,<with|mode|text| ><around*|(|DEF|)>,<with|mode|text| ><around*|(|EFG|)>,<with|mode|text| ><around*|(|FGA|)>,<with|mode|text| ><around*|(|GAB|)>.>
+
+      In this arrangement some treatment­pairs occur multiple times while others occur only once, violating the balance requirement.
+
+      <item><strong|Valid BIBD starter:><nbsp>If instead one uses<nbsp><math|<around*|(|A<with|mode|text| >B<with|mode|text| >D|)>>, cyclic rotation produces
+
+      <equation*|<around*|(|ABD|)>,<with|mode|text| ><around*|(|BCE|)>,<with|mode|text| ><around*|(|CDF|)>,<with|mode|text| ><around*|(|DEG|)>,<with|mode|text| ><around*|(|EFA|)>,<with|mode|text| ><around*|(|FGB|)>,<with|mode|text| ><around*|(|GAC|)>,>
+
+      which satisfies
+
+      <equation*|t=7,b=7,k=3,r=3,\<lambda\>=1,>
+
+      and hence constitutes a proper cyclic BIBD.
+    </enumerate>
+  </itemize>
+
+  <subsection|Latin Squres>
+
+  A<nbsp><strong|Latin­square design><nbsp>provides a way to control two orthogonal nuisance factors simultaneously—commonly called “row” and “column” blocks—while comparing<nbsp><math|t><nbsp>treatments. Its key features are:
+
+  <\enumerate>
+    <item><strong|Layout and blocking structure>
+
+    <\itemize>
+      <item>There are<nbsp><math|t<rsup|2>><nbsp>experimental units arranged in a<nbsp><math|t\<times\>t><nbsp>grid.
+
+      <item><strong|Row blocks:><nbsp><math|t><nbsp>horizontal strips, each containing one of each treatment.
+
+      <item><strong|Column blocks:><nbsp><math|t><nbsp>vertical strips, each also containing one of each treatment.
+
+      <item>Thus each treatment appears exactly once in every row and once in every column.
+    </itemize>
+
+    <item><strong|Connection with randomized­block designs>
+
+    <\itemize>
+      <item>Viewed marginally, the rows themselves form a randomized-complete-block design (RCBD) for the<nbsp><math|t>treatments (one replicate per row).
+
+      <item>Likewise, the columns form an independent RCBD.
+    </itemize>
+
+    <item><strong|Canonical example (<nbsp><math|t=4><nbsp>)>
+
+    <equation*|<tabular|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|3|3|cell-halign|c>|<cwith|1|-1|4|4|cell-halign|c>|<table|<row|<cell|<with|math-level|0|math-display|false|A>>|<cell|<with|math-level|0|math-display|false|B>>|<cell|<with|math-level|0|math-display|false|C>>|<cell|<with|math-level|0|math-display|false|D>>>|<row|<cell|<with|math-level|0|math-display|false|B>>|<cell|<with|math-level|0|math-display|false|D>>|<cell|<with|math-level|0|math-display|false|A>>|<cell|<with|math-level|0|math-display|false|C>>>|<row|<cell|<with|math-level|0|math-display|false|C>>|<cell|<with|math-level|0|math-display|false|A>>|<cell|<with|math-level|0|math-display|false|D>>|<cell|<with|math-level|0|math-display|false|B>>>|<row|<cell|<with|math-level|0|math-display|false|D>>|<cell|<with|math-level|0|math-display|false|C>>|<cell|<with|math-level|0|math-display|false|B>>|<cell|<with|math-level|0|math-display|false|A>>>>>>>
+
+    In this<nbsp><math|4\<times\>4><nbsp>Latin square, each of the treatments<nbsp><math|A,B,C,D><nbsp>appears exactly once in each row and each column.
+
+    <item><strong|Statistical model><next-line>For the response<nbsp><math|y<rsub|ij>><nbsp>observed in row<nbsp><math|i><nbsp>and column<nbsp><math|j>, let<nbsp><math|k<around*|(|i,j|)>><nbsp>denote the treatment assigned there. The usual additive model is
+
+    <equation*|y<rsub|ij>=\<mu\>+r<rsub|i>+c<rsub|j>+\<tau\><rsub|<with|mode|text| >k<around*|(|i,j|)>>+\<varepsilon\><rsub|ij>,>
+
+    subject to the usual side­conditions<next-line><math|<big|sum><rsub|i=1><rsup|t>r<rsub|i>=0,<with|mode|text|  ><big|sum><rsub|j=1><rsup|t>c<rsub|j>=0,<with|mode|text|  ><big|sum><rsub|h=1><rsup|t>\<tau\><rsub|h>=0,><nbsp>and<nbsp><math|\<varepsilon\><rsub|ij><above|\<sim\>|<with|mode|text|iid>>N<around*|(|0,\<sigma\><rsup|2>|)>>.
+
+    <item><strong|Analysis and degrees of freedom>
+
+    <\itemize>
+      <item><strong|Total:><nbsp><math|t<rsup|2>-1>
+
+      <item><strong|Row effects:><nbsp><math|t-1>
+
+      <item><strong|Column effects:><nbsp><math|t-1>
+
+      <item><strong|Treatment effects:><nbsp><math|t-1>
+
+      <item><strong|Error:><nbsp><math|<around*|(|t-1|)><around*|(|t-2|)>><next-line>One then performs an ANOVA splitting sums of squares accordingly, testing treatment differences against the mean­square error.
+    </itemize>
+
+    <item><strong|Advantages and limitations>
+
+    <\itemize>
+      <item><strong|Advantages:>
+
+      <\itemize>
+        <item>Controls two blocking factors simultaneously, thus reducing experimental error when both sources are important.
+
+        <item>Requires only one replicate per treatment (efficient in unit usage).
+      </itemize>
+
+      <item><strong|Limitations:>
+
+      <\itemize>
+        <item>Requires exactly<nbsp><math|t<rsup|2>><nbsp>units and equal block sizes.
+
+        <item>Assumes no interaction among treatments and the two blocking factors.
+
+        <item>Suitable only when both row and column blocks are genuinely irrelevant to treatment ordering (no ordinal or carry-over effects).
+      </itemize>
+    </itemize>
+  </enumerate>
+
+  <new-page>
 
   <appendix|Plackett–Burman Table>
 
@@ -2540,150 +2666,151 @@
 <\references>
   <\collection>
     <associate|2^2design|<tuple|3.2.1|17>>
-    <associate|2^2not|<tuple|12|17>>
+    <associate|2^2not|<tuple|12|18>>
     <associate|2factmodel|<tuple|1|4>>
     <associate|4blocks_2^4|<tuple|18|24>>
-    <associate|4blocks_ex1|<tuple|17|23>>
-    <associate|FacModel|<tuple|3|17>>
+    <associate|4blocks_ex1|<tuple|17|24>>
+    <associate|FacModel|<tuple|3|18>>
     <associate|auto-1|<tuple|1|2>>
     <associate|auto-10|<tuple|2.4|6>>
-    <associate|auto-100|<tuple|27|39>>
-    <associate|auto-101|<tuple|6.2|39>>
-    <associate|auto-102|<tuple|6.2.1|39>>
-    <associate|auto-103|<tuple|6.2.2|40>>
+    <associate|auto-100|<tuple|27|40>>
+    <associate|auto-101|<tuple|6.2|40>>
+    <associate|auto-102|<tuple|6.2.1|40>>
+    <associate|auto-103|<tuple|6.2.2|41>>
     <associate|auto-104|<tuple|28|41>>
     <associate|auto-105|<tuple|6.3|41>>
-    <associate|auto-106|<tuple|6.4|41>>
+    <associate|auto-106|<tuple|6.4|42>>
     <associate|auto-107|<tuple|6.4.1|42>>
-    <associate|auto-108|<tuple|6.4.2|42>>
-    <associate|auto-109|<tuple|29|42>>
+    <associate|auto-108|<tuple|6.4.2|43>>
+    <associate|auto-109|<tuple|29|43>>
     <associate|auto-11|<tuple|5|6>>
-    <associate|auto-110|<tuple|6.5|42>>
-    <associate|auto-111|<tuple|7|43>>
-    <associate|auto-112|<tuple|7.1|43>>
-    <associate|auto-113|<tuple|7.1.0.1|43>>
-    <associate|auto-114|<tuple|7.1.0.2|43>>
+    <associate|auto-110|<tuple|6.5|43>>
+    <associate|auto-111|<tuple|7|44>>
+    <associate|auto-112|<tuple|7.1|44>>
+    <associate|auto-113|<tuple|7.1.0.1|44>>
+    <associate|auto-114|<tuple|7.1.0.2|44>>
     <associate|auto-115|<tuple|7.1.0.3|44>>
-    <associate|auto-116|<tuple|7.2|44>>
-    <associate|auto-117|<tuple|7.2.0.1|44>>
-    <associate|auto-118|<tuple|7.2.0.2|44>>
+    <associate|auto-116|<tuple|7.2|45>>
+    <associate|auto-117|<tuple|7.2.0.1|45>>
+    <associate|auto-118|<tuple|7.2.0.2|45>>
     <associate|auto-119|<tuple|7.3|45>>
-    <associate|auto-12|<tuple|2.5|6>>
-    <associate|auto-120|<tuple|30|46>>
-    <associate|auto-121|<tuple|31|46>>
-    <associate|auto-122|<tuple|32|46>>
-    <associate|auto-123|<tuple|33|?>>
-    <associate|auto-124|<tuple|34|?>>
-    <associate|auto-125|<tuple|A|?>>
-    <associate|auto-126|<tuple|35|?>>
-    <associate|auto-127|<tuple|35|?>>
+    <associate|auto-12|<tuple|2.5|7>>
+    <associate|auto-120|<tuple|30|47>>
+    <associate|auto-121|<tuple|31|47>>
+    <associate|auto-122|<tuple|32|47>>
+    <associate|auto-123|<tuple|33|48>>
+    <associate|auto-124|<tuple|34|48>>
+    <associate|auto-125|<tuple|7.4|49>>
+    <associate|auto-126|<tuple|7.5|49>>
+    <associate|auto-127|<tuple|A|49>>
+    <associate|auto-128|<tuple|35|?>>
     <associate|auto-13|<tuple|1|7>>
     <associate|auto-14|<tuple|2.6|7>>
     <associate|auto-15|<tuple|2.6.1|7>>
     <associate|auto-16|<tuple|2|8>>
     <associate|auto-17|<tuple|2.6.2|8>>
-    <associate|auto-18|<tuple|2.6.3|8>>
-    <associate|auto-19|<tuple|3|9>>
+    <associate|auto-18|<tuple|2.6.3|9>>
+    <associate|auto-19|<tuple|3|10>>
     <associate|auto-2|<tuple|1|2>>
     <associate|auto-20|<tuple|6|10>>
     <associate|auto-21|<tuple|2.7|10>>
     <associate|auto-22|<tuple|2.7.1|10>>
-    <associate|auto-23|<tuple|2.7.2|11>>
-    <associate|auto-24|<tuple|2.8|12>>
-    <associate|auto-25|<tuple|2.8.1|12>>
-    <associate|auto-26|<tuple|7|12>>
+    <associate|auto-23|<tuple|2.7.2|12>>
+    <associate|auto-24|<tuple|2.8|13>>
+    <associate|auto-25|<tuple|2.8.1|13>>
+    <associate|auto-26|<tuple|7|13>>
     <associate|auto-27|<tuple|2.8.2|13>>
     <associate|auto-28|<tuple|8|13>>
-    <associate|auto-29|<tuple|2.8.3|13>>
+    <associate|auto-29|<tuple|2.8.3|14>>
     <associate|auto-3|<tuple|2|3>>
     <associate|auto-30|<tuple|3|14>>
     <associate|auto-31|<tuple|3.1|14>>
     <associate|auto-32|<tuple|3.1.1|14>>
-    <associate|auto-33|<tuple|9|14>>
-    <associate|auto-34|<tuple|4|14>>
-    <associate|auto-35|<tuple|10|14>>
-    <associate|auto-36|<tuple|5|14>>
+    <associate|auto-33|<tuple|9|15>>
+    <associate|auto-34|<tuple|4|15>>
+    <associate|auto-35|<tuple|10|15>>
+    <associate|auto-36|<tuple|5|15>>
     <associate|auto-37|<tuple|3.1.2|15>>
     <associate|auto-38|<tuple|6|15>>
     <associate|auto-39|<tuple|7|15>>
     <associate|auto-4|<tuple|2|3>>
     <associate|auto-40|<tuple|8|15>>
-    <associate|auto-41|<tuple|11|15>>
+    <associate|auto-41|<tuple|11|16>>
     <associate|auto-42|<tuple|3.1.3|16>>
     <associate|auto-43|<tuple|9|16>>
     <associate|auto-44|<tuple|10|16>>
-    <associate|auto-45|<tuple|3.1.4|16>>
-    <associate|auto-46|<tuple|11|16>>
+    <associate|auto-45|<tuple|3.1.4|17>>
+    <associate|auto-46|<tuple|11|17>>
     <associate|auto-47|<tuple|3.2|17>>
     <associate|auto-48|<tuple|3.2.1|17>>
-    <associate|auto-49|<tuple|12|17>>
+    <associate|auto-49|<tuple|12|18>>
     <associate|auto-5|<tuple|2.1|3>>
-    <associate|auto-50|<tuple|12|17>>
-    <associate|auto-51|<tuple|3.2.2|18>>
-    <associate|auto-52|<tuple|13|18>>
+    <associate|auto-50|<tuple|12|18>>
+    <associate|auto-51|<tuple|3.2.2|19>>
+    <associate|auto-52|<tuple|13|19>>
     <associate|auto-53|<tuple|13|20>>
-    <associate|auto-54|<tuple|3.2.3|20>>
+    <associate|auto-54|<tuple|3.2.3|21>>
     <associate|auto-55|<tuple|3.3|21>>
-    <associate|auto-56|<tuple|14|21>>
+    <associate|auto-56|<tuple|14|22>>
     <associate|auto-57|<tuple|3.4|22>>
     <associate|auto-58|<tuple|3.4.1|22>>
     <associate|auto-59|<tuple|14|22>>
     <associate|auto-6|<tuple|3|4>>
-    <associate|auto-60|<tuple|3.4.2|22>>
-    <associate|auto-61|<tuple|15|22>>
+    <associate|auto-60|<tuple|3.4.2|23>>
+    <associate|auto-61|<tuple|15|23>>
     <associate|auto-62|<tuple|15|23>>
-    <associate|auto-63|<tuple|16|23>>
-    <associate|auto-64|<tuple|3.4.3|23>>
-    <associate|auto-65|<tuple|17|23>>
+    <associate|auto-63|<tuple|16|24>>
+    <associate|auto-64|<tuple|3.4.3|24>>
+    <associate|auto-65|<tuple|17|24>>
     <associate|auto-66|<tuple|3.4.4|24>>
     <associate|auto-67|<tuple|18|24>>
-    <associate|auto-68|<tuple|3.4.5|24>>
-    <associate|auto-69|<tuple|4|24>>
+    <associate|auto-68|<tuple|3.4.5|25>>
+    <associate|auto-69|<tuple|4|25>>
     <associate|auto-7|<tuple|2.2|4>>
-    <associate|auto-70|<tuple|4.1|24>>
+    <associate|auto-70|<tuple|4.1|25>>
     <associate|auto-71|<tuple|4.2|25>>
-    <associate|auto-72|<tuple|19|25>>
-    <associate|auto-73|<tuple|4.3|26>>
+    <associate|auto-72|<tuple|19|26>>
+    <associate|auto-73|<tuple|4.3|27>>
     <associate|auto-74|<tuple|4.3.1|27>>
     <associate|auto-75|<tuple|4.3.2|27>>
-    <associate|auto-76|<tuple|4.3.3|27>>
+    <associate|auto-76|<tuple|4.3.3|28>>
     <associate|auto-77|<tuple|20|28>>
-    <associate|auto-78|<tuple|4.3.4|28>>
+    <associate|auto-78|<tuple|4.3.4|29>>
     <associate|auto-79|<tuple|21|29>>
     <associate|auto-8|<tuple|2.3|5>>
     <associate|auto-80|<tuple|4.3.5|29>>
-    <associate|auto-81|<tuple|4.4|30>>
+    <associate|auto-81|<tuple|4.4|31>>
     <associate|auto-82|<tuple|4.4.1|31>>
-    <associate|auto-83|<tuple|22|31>>
-    <associate|auto-84|<tuple|23|31>>
-    <associate|auto-85|<tuple|4.4.2|31>>
+    <associate|auto-83|<tuple|22|32>>
+    <associate|auto-84|<tuple|23|32>>
+    <associate|auto-85|<tuple|4.4.2|32>>
     <associate|auto-86|<tuple|24|32>>
-    <associate|auto-87|<tuple|4.4.3|32>>
-    <associate|auto-88|<tuple|5|32>>
-    <associate|auto-89|<tuple|5.1|32>>
+    <associate|auto-87|<tuple|4.4.3|33>>
+    <associate|auto-88|<tuple|5|33>>
+    <associate|auto-89|<tuple|5.1|33>>
     <associate|auto-9|<tuple|4|5>>
-    <associate|auto-90|<tuple|5.1.1|33>>
+    <associate|auto-90|<tuple|5.1.1|34>>
     <associate|auto-91|<tuple|5.1.2|34>>
     <associate|auto-92|<tuple|5.2|35>>
     <associate|auto-93|<tuple|5.2.1|36>>
-    <associate|auto-94|<tuple|5.2.2|36>>
-    <associate|auto-95|<tuple|25|37>>
-    <associate|auto-96|<tuple|5.2.3|37>>
-    <associate|auto-97|<tuple|6|38>>
-    <associate|auto-98|<tuple|6.1|38>>
+    <associate|auto-94|<tuple|5.2.2|37>>
+    <associate|auto-95|<tuple|25|38>>
+    <associate|auto-96|<tuple|5.2.3|38>>
+    <associate|auto-97|<tuple|6|39>>
+    <associate|auto-98|<tuple|6.1|39>>
     <associate|auto-99|<tuple|26|39>>
     <associate|eq:2block|<tuple|4|23>>
-    <associate|eq:box|<tuple|2|7>>
-    <associate|eq:defre|<tuple|6|25>>
+    <associate|eq:box|<tuple|2|8>>
+    <associate|eq:defre|<tuple|6|26>>
     <associate|eq:mix|<tuple|7|33>>
-    <associate|fig:ofat|<tuple|15|22>>
+    <associate|fig:ofat|<tuple|15|23>>
     <associate|fold|<tuple|24|32>>
-    <associate|model4.1|<tuple|5|24>>
-    <associate|table:BP|<tuple|35|46>>
-    <associate|table:abc|<tuple|16|23>>
+    <associate|model4.1|<tuple|5|25>>
+    <associate|table:BP|<tuple|35|49>>
+    <associate|table:abc|<tuple|16|24>>
     <associate|table:corr|<tuple|26|39>>
     <associate|table:ofat|<tuple|15|23>>
-    <associate|yate|<tuple|14|21>>
+    <associate|yate|<tuple|14|22>>
   </collection>
 </references>
 
@@ -2821,11 +2948,19 @@
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|29>||ANOVA table for the split-plot experiment>|<pageref|auto-109>>
 
-      <tuple|normal|<surround|<hidden-binding|<tuple>|30>||>|<pageref|auto-120>>
+      <tuple|normal|<surround|<hidden-binding|<tuple>|30>||BIBD<with|mode|<quote|math>|<around*|(|6,6,5,5,4|)>>>|<pageref|auto-120>>
 
-      <tuple|normal|<\surround|<hidden-binding|<tuple>|31>|>
+      <tuple|normal|<surround|<hidden-binding|<tuple>|31>||Variance of design I>|<pageref|auto-121>>
+
+      <tuple|normal|<surround|<hidden-binding|<tuple>|32>||Variance of design II>|<pageref|auto-122>>
+
+      <tuple|normal|<surround|<hidden-binding|<tuple>|33>||Unblanced Design>|<pageref|auto-123>>
+
+      <tuple|normal|<surround|<hidden-binding|<tuple>|34>||Unequal Block Design>|<pageref|auto-124>>
+
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|35>|>
         Plackett–Burman Table
-      </surround>|<pageref|auto-122>>
+      </surround>|<pageref|auto-127>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Randomized Block Design> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1><vspace|0.5fn>
@@ -2978,7 +3113,9 @@
 
       <with|par-left|<quote|1tab>|7.3<space|2spc>Balanced Incomplete Block Design <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-119>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix A<space|2spc>Plackett–Burman Table> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-121><vspace|0.5fn>
+      <with|par-left|<quote|2tab>|7.3.1<space|2spc> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-125>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix A<space|2spc>Plackett–Burman Table> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-126><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

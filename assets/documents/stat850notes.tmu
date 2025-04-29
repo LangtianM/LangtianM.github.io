@@ -120,7 +120,17 @@
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|6<space|2spc>Split-Plot Design> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-97><vspace|0.5fn>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|Appendix A<space|2spc>Plackett–Burman Table> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-98><vspace|0.5fn>
+    <with|par-left|1tab|6.1<space|2spc>Motivating Example: Corrosion Resistance <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-98>>
+
+    <with|par-left|1tab|6.2<space|2spc>Split-Plot Model <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-101>>
+
+    <with|par-left|2tab|6.2.1<space|2spc>Model Formulation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-102>>
+
+    <with|par-left|2tab|6.2.2<space|2spc>ANOVA for split-plot design <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-103>>
+
+    <with|par-left|1tab|6.3<space|2spc>Split-plot with Blocks <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-105>>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|Appendix A<space|2spc>Plackett–Burman Table> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-106><vspace|0.5fn>
   </table-of-contents>
 
   <section|Randomized Block Design>
@@ -2073,21 +2083,255 @@
 
   <equation*|\<bbb-E\><around*|[|MS<rsub|WP>|]>=<frac|q|<around*|(|b-1|)><around*|(|p-1|)>><with|mode|text| >\<bbb-E\><around*|[|SS<rsub|WP>|]><with|mode|text|  >=<with|mode|text|  >q<with|mode|text| >\<sigma\><rsub|w><rsup|2><with|mode|text|  >+<with|mode|text|  >\<sigma\><rsub|s><rsup|2>,>
 
-  exactly as in the block­free split­plot design.
+  exactly as in the block free split­plot design.
 
-  \;
+  <subsection|Split-Plot with Two Subplot Factors>
 
-  \;
+  Now suppose that within each whole­plot (block<nbsp><math|\<times\>><nbsp><math|P>) we implement a full factorial in two subplot factors<nbsp><math|Q><nbsp>(with<nbsp><math|q><nbsp>levels) and<nbsp><math|R><nbsp>(with<nbsp><math|r><nbsp>levels). The observation index becomes<nbsp><math|y<rsub|i j k l>><nbsp>for block<nbsp><math|i>, whole­plot<nbsp><math|j>, subplot levels<nbsp><math|k>and<nbsp><math|l>.
 
-  \;
+  <subsubsection|Model Specification>
 
-  \;
+  <equation*|<tabular|<tformat|<cwith|1|-1|1|1|cell-halign|r>|<cwith|1|-1|2|2|cell-halign|l>|<table|<row|<cell|<with|math-level|0|math-display|true|y<rsub|i j k l>>>|<cell|<with|math-level|0|math-display|true|=\<mu\>+p<rsub|j>+\<epsilon\><rsub|i j><rsup|<around*|(|w|)>>+q<rsub|k>+r<rsub|l>+<around*|(|q r|)><rsub|k l>+<around*|(|p q|)><rsub|j k>+<around*|(|p r|)><rsub|j l>+<around*|(|p q r|)><rsub|j k l>+\<epsilon\><rsub|i j k l><rsup|<around*|(|s|)>>,>>>>>>>
 
-  \;
+  with all effects subject to their appropriate sum­to­zero constraints. In particular, the three­factor interaction is defined by
 
-  <strong|>
+  <equation*|<around*|(|p q r|)><rsub|j k l>=\<mu\><rsub|j k l>-<around*|(|\<mu\>+p<rsub|j>+q<rsub|k>+r<rsub|l>+<around*|(|p q|)><rsub|j k>+<around*|(|p r|)><rsub|j l>+<around*|(|q r|)><rsub|k l>|)>,>
 
-  \;
+  and its unbiased estimate is
+
+  <equation*|<wide|<around*|(|p q r|)>|^><rsub|j k l>=y<rsub|\<cdot\>j k l>-<around*|{|<with|mode|text| >y<rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>+<around*|(|y<rsub|\<cdot\>j\<cdot\>\<cdot\>>-y<rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)>+<around*|(|y<rsub|\<cdot\>\<cdot\>k\<cdot\>>-y<rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)>+<around*|(|y<rsub|\<cdot\>\<cdot\>\<cdot\>l>-y<rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)>|}>>
+
+  <equation*|-<around*|{|<around*|(|y<rsub|\<cdot\>j k\<cdot\>>-y<rsub|\<cdot\>j\<cdot\>\<cdot\>>-y<rsub|\<cdot\>\<cdot\>k\<cdot\>>+y<rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)>+<around*|(|y<rsub|\<cdot\>j\<cdot\>l>-y<rsub|\<cdot\>j\<cdot\>\<cdot\>>-y<rsub|\<cdot\>\<cdot\>\<cdot\>l>+y<rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)>+<around*|(|y<rsub|\<cdot\>\<cdot\>k l>-y<rsub|\<cdot\>\<cdot\>k\<cdot\>>-y<rsub|\<cdot\>\<cdot\>\<cdot\>l>+y<rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)>|}>.>
+
+  <subsubsection|Full Orthogonal Decomposition>
+
+  Analogous to the two­factor split­plot, one can write each<nbsp><math|y<rsub|i j k l>><nbsp>as the sum of ten orthogonal components:
+
+  <equation*|<tabular|<tformat|<cwith|1|-1|1|1|cell-halign|r>|<cwith|1|-1|2|2|cell-halign|l>|<table|<row|<cell|<with|math-level|0|math-display|true|y<rsub|i j k l>>>|<cell|<with|math-level|0|math-display|true|=y<rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>+<around*|(|y<rsub|\<cdot\>j\<cdot\>\<cdot\>>-y<rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)>+<around*|(|y<rsub|i j\<cdot\>\<cdot\>>-y<rsub|\<cdot\>j\<cdot\>\<cdot\>>|)>+<around*|(|y<rsub|\<cdot\>\<cdot\>k\<cdot\>>-y<rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)>+<around*|(|y<rsub|\<cdot\>\<cdot\>\<cdot\>l>-y<rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)>>>>|<row|<cell|>|<cell|<with|math-level|0|math-display|true|+<around*|(|y<rsub|\<cdot\>j k\<cdot\>>-y<rsub|\<cdot\>j\<cdot\>\<cdot\>>-y<rsub|\<cdot\>\<cdot\>k\<cdot\>>+y<rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)>+<around*|(|y<rsub|\<cdot\>j\<cdot\>l>-y<rsub|\<cdot\>j\<cdot\>\<cdot\>>-y<rsub|\<cdot\>\<cdot\>\<cdot\>l>+y<rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)>>>>|<row|<cell|>|<cell|<with|math-level|0|math-display|true|+<around*|(|y<rsub|\<cdot\>\<cdot\>kl>-y<rsub|\<cdot\>\<cdot\>k\<cdot\>>-y<rsub|\<cdot\>\<cdot\>\<cdot\>l>+y<rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)>+<around*|(|y<rsub|\<cdot\>j k l>-\<ldots\><around*|\<nobracket\>|+y<rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)>|\<nobracket\>>>>>|<row|<cell|>|<cell|<with|math-level|0|math-display|true|+<around*|(|y<rsub|i j k l>-y<rsub|i j\<cdot\>\<cdot\>>-y<rsub|\<cdot\>j k l>+y<rsub|\<cdot\>j\<cdot\>\<cdot\>>|)>,>>>>>>>
+
+  thus isolating the grand mean, three whole­plot terms, three two­factor interactions, the three­factor interaction, and the subplot error. This orthogonal decomposition underpins the construction of the corresponding ANOVA table and the derivation of each expected mean square for valid F-tests.
+
+  <big-table|<with|par-mode|center|<assign|arraystretch|<macro|1.3>> <tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|l>|<cwith|1|-1|2|2|cell-halign|l>|<cwith|1|-1|3|3|cell-halign|l>|<cwith|1|-1|1|-1|cell-valign|c>|<cwith|1|-1|1|-1|cell-tborder|0ln>|<cwith|1|-1|1|-1|cell-bborder|0ln>|<cwith|1|-1|1|-1|cell-lborder|0ln>|<cwith|1|-1|1|-1|cell-rborder|0ln>|<cwith|2|2|1|-1|cell-tborder|1ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|3|1|1|cell-lborder|0ln>|<cwith|2|3|3|3|cell-rborder|0ln>|<cwith|4|4|1|-1|cell-tborder|1ln>|<cwith|3|3|1|-1|cell-bborder|1ln>|<cwith|4|4|1|1|cell-lborder|0ln>|<cwith|4|4|3|3|cell-rborder|0ln>|<cwith|5|5|1|-1|cell-tborder|1ln>|<cwith|4|4|1|-1|cell-bborder|1ln>|<cwith|5|11|1|1|cell-lborder|0ln>|<cwith|5|11|3|3|cell-rborder|0ln>|<cwith|12|12|1|-1|cell-tborder|1ln>|<cwith|11|11|1|-1|cell-bborder|1ln>|<cwith|12|12|1|-1|cell-bborder|1ln>|<cwith|12|12|1|1|cell-lborder|0ln>|<cwith|12|12|3|3|cell-rborder|0ln>|<table|<row|<cell|<with|font-series|bold|Source>>|<cell|<with|font-series|bold|SS>>|<cell|<with|font-series|bold|DF>>>|<row|<cell|<math|P>>|<cell|<math|b*q*r*<big|sum><rsub|j><around*|(|<wide|y|\<bar\>><rsub|\<cdot\>j\<cdot\>\<cdot\>>-<wide|y|\<bar\>><rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>>>|<cell|<math|p-1>>>|<row|<cell|Whole plot error>|<cell|<math|q*r*<big|sum><rsub|i,j><around*|(|<wide|y|\<bar\>><rsub|i*j\<cdot\>\<cdot\>>-<wide|y|\<bar\>><rsub|\<cdot\>j\<cdot\>\<cdot\>>|)><rsup|2>>>|<cell|<math|<around|(|b-1|)>*p>>>|<row|<cell|Whole plot total>|<cell|<math|q*r*<big|sum><rsub|i,j><around*|(|<wide|y|\<bar\>><rsub|i*j\<cdot\>\<cdot\>>-<wide|y|\<bar\>><rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>>>|<cell|<math|b*p-1>>>|<row|<cell|<math|Q>>|<cell|<math|b*p*r*<big|sum><rsub|k><around*|(|<wide|y|\<bar\>><rsub|\<cdot\>\<cdot\>k\<cdot\>>-<wide|y|\<bar\>><rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>>>|<cell|<math|q-1>>>|<row|<cell|<math|R>>|<cell|<math|b*p*q*<big|sum><rsub|l><around*|(|<wide|y|\<bar\>><rsub|\<cdot\>\<cdot\>\<cdot\>l>-<wide|y|\<bar\>><rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>>>|<cell|<math|r-1>>>|<row|<cell|<math|Q*R>>|<cell|<emdash>>|<cell|<math|<around|(|q-1|)>*<around|(|r-1|)>>>>|<row|<cell|<math|P*Q>>|<cell|<math|b*r*<big|sum><rsub|j,k><around*|(|<wide|y|\<bar\>><rsub|\<cdot\>j*k\<cdot\>>-<wide|y|\<bar\>><rsub|\<cdot\>j\<cdot\>\<cdot\>>-<wide|y|\<bar\>><rsub|\<cdot\>\<cdot\>k\<cdot\>>+<wide|y|\<bar\>><rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>>>|<cell|<math|<around|(|p-1|)>*<around|(|q-1|)>>>>|<row|<cell|<math|P*R>>|<cell|<math|b*q*<big|sum><rsub|j,l><around*|(|<wide|y|\<bar\>><rsub|\<cdot\>j\<cdot\>l>-<wide|y|\<bar\>><rsub|\<cdot\>j\<cdot\>\<cdot\>>-<wide|y|\<bar\>><rsub|\<cdot\>\<cdot\>\<cdot\>l>+<wide|y|\<bar\>><rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>>>|<cell|<math|<around|(|p-1|)>*<around|(|r-1|)>>>>|<row|<cell|<math|P*Q*R>>|<cell|<math|b*<big|sum><rsub|j,k,l><around*|(|<wide|y|\<bar\>><rsub|\<cdot\>j*k*l>-<wide|y|\<bar\>><rsub|\<cdot\>j*k\<cdot\>>-<wide|y|\<bar\>><rsub|\<cdot\>j\<cdot\>l>-<wide|y|\<bar\>><rsub|\<cdot\>\<cdot\>k*l>+<wide|y|\<bar\>><rsub|\<cdot\>j\<cdot\>\<cdot\>>+<wide|y|\<bar\>><rsub|\<cdot\>\<cdot\>k\<cdot\>>+<wide|y|\<bar\>><rsub|\<cdot\>\<cdot\>\<cdot\>l>-<wide|y|\<bar\>><rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>>>|<cell|<math|<around|(|p-1|)>*<around|(|q-1|)>*<around|(|r-1|)>>>>|<row|<cell|Subplot error>|<cell|<math|<big|sum><rsub|i,j,k><around*|(|y<rsub|i*j*k*l>-<wide|y|\<bar\>><rsub|i*j\<cdot\>\<cdot\>>-<wide|y|\<bar\>><rsub|\<cdot\>j*k*l>+<wide|y|\<bar\>><rsub|\<cdot\>j\<cdot\>\<cdot\>>|)><rsup|2>>>|<cell|<math|<around|(|b-1|)>*p*<around|(|q*r-1|)>>>>|<row|<cell|Total>|<cell|<math|<big|sum><rsub|i,j,k><around*|(|y<rsub|i*j*k*l>-<wide|y|\<bar\>><rsub|\<cdot\>\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>>>|<cell|<math|b*p*q*r-1>>>>>> >|ANOVA table for the split-plot experiment>
+
+  <subsection|Final Remarks on Split-Plot Design>
+
+  <strong|Advantages>
+
+  <\itemize>
+    <item><strong|Enhanced subplot precision:><nbsp>Subplot­factor comparisons use the smaller subplot­error MS, yielding more precise inferences than a fully randomized design.
+
+    <item><strong|Practical logistics:><nbsp>Accommodates hard­to­change whole­plot treatments without complete rerandomization.
+  </itemize>
+
+  <strong|Disadvantages>
+
+  <\enumerate>
+    <item><strong|Fewer error df:><nbsp>Two variance components (<math|\<sigma\><rsub|w><rsup|2>,\<sigma\><rsub|s><rsup|2>>) consume more degrees of freedom than a single residual term.
+
+    <item><strong|Uneven precision trade­off:><nbsp>Because whole­plot df<nbsp><math|\<ll\>><nbsp>subplot df, the loss in whole­plot precision often outweighs the gain in subplot precision.
+
+    <item><strong|Reduced power for some interactions:><nbsp>Tests involving whole­plot factors have less error df than in a completely randomized design.
+
+    <item><strong|Multiple SEs required:><nbsp>Up to four distinct MS estimates complicate graphical or tabular comparisons.
+
+    <item><strong|Complex inference:><nbsp>Exact distributions for whole­plot MS are not closed­form, making some tests and CIs more involved.
+  </enumerate>
+
+  <strong|Take-Away><next-line>Split­plot designs suit experiments constrained by hard-to-change factors but sacrifice uniform precision. When all treatment contrasts require similar accuracy, alternative factorial layouts typically outperform.
+
+  <section|Incomplete Block Designs>
+
+  We wish to compare six treatments <math|A,B,C,D,E,F> using two blocks (indexed by <math|i=1,2>), each of size<nbsp>5. The allocation is
+
+  <\equation*>
+    <tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|l>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|l>|<cwith|1|-1|2|2|cell-rborder|0ln>|<table|<row|<cell|<text|Block >1:>|<cell|A,<space|0.17em>C,<space|0.17em>D,<space|0.17em>E,<space|0.17em>F,>>|<row|<cell|<text|Block >2:>|<cell|B,<space|0.17em>C,<space|0.17em>D,<space|0.17em>E,<space|0.17em>F.>>>>>
+  </equation*>
+
+  Let <math|\<sigma\><rsup|2>> denote the common within­block error variance. We denote by <math|Y<rsub|i*j>> the observed yield for treatment <math|j\<in\><around|{|A,\<ldots\>,F|}>> in block <math|i>, except that the pair <math|<around|(|i,j|)>=<around|(|1,B|)>> and <math|<around|(|2,A|)>> are unobserved by design.
+
+  <subsection|Direct Comparisons>
+
+  <paragraph|Comparisons among the treatments in both blocks.> For any two treatments <math|j,k\<in\><around|{|C,D,E,F|}>>, each appears once in each block. Hence an unbiased estimator of the treatment difference <math|t<rsub|j>-t<rsub|k>> is
+
+  <\equation*>
+    <frac|<around|(|Y<rsub|1*j>-Y<rsub|1*k>|)>+<around|(|Y<rsub|2*j>-Y<rsub|2*k>|)>|2>,
+  </equation*>
+
+  which has variance
+
+  <\equation*>
+    Var<around*|[|<tfrac|1|2><around*|(|<around|(|Y<rsub|1*j>-Y<rsub|1*k>|)>+<around|(|Y<rsub|2*j>-Y<rsub|2*k>|)>|)>|]>=\<sigma\><rsup|2>.
+  </equation*>
+
+  <paragraph|Comparison of <math|A> versus <math|B>.> Because <math|A> appears only in Block<nbsp>1 and <math|B> only in Block<nbsp>2, we must adjust for the block effect. Define the block­effect estimator
+
+  <\equation*>
+    <wide|b|^>=<wide*|<frac|1|4>*<big|sum><rsub|j\<in\><around|{|C,D,E,F|}>>Y<rsub|1*j>|\<wide-underbrace\>><rsub|Y<rsub|1\<cdot\>>>-<frac|1|4>*<big|sum><rsub|j\<in\><around|{|C,D,E,F|}>>Y<rsub|2*j>,
+  </equation*>
+
+  which satisfies <math|Var<around|(|<wide|b|^>|)>=<frac|\<sigma\><rsup|2>|2>>. Then an unbiased estimator of <math|t<rsub|A>-t<rsub|B>> is
+
+  <\equation*>
+    <around|(|Y<rsub|1*A>-Y<rsub|2*B>|)><space|0.27em>-<space|0.27em><wide|b|^>,
+  </equation*>
+
+  with variance
+
+  <\equation*>
+    Var<around|(|Y<rsub|1*A>-Y<rsub|2*B>-<wide|b|^>|)>=2*<space|0.17em>\<sigma\><rsup|2>+<frac|\<sigma\><rsup|2>|2>=<frac|5*<space|0.17em>\<sigma\><rsup|2>|2>.
+  </equation*>
+
+  <paragraph|Comparison of <math|A> versus <math|C>.>Here <math|C> is observed in both blocks but <math|A> only in Block<nbsp>1. One may form the estimator
+
+  <\equation*>
+    Y<rsub|1*A><space|0.27em>-<space|0.27em><frac|<space|0.17em>Y<rsub|1*C>+Y<rsub|2*C>+<wide|b|^><space|0.17em>|2>,
+  </equation*>
+
+  which is unbiased for <math|t<rsub|A>-t<rsub|C>> and has variance
+
+  <\equation*>
+    Var<around*|[|Y<rsub|1*A>-<tfrac|1|2><around|(|Y<rsub|1*C>+Y<rsub|2*C>+<wide|b|^>|)>|]>=\<sigma\><rsup|2>+<frac|\<sigma\><rsup|2>|2>=<frac|3*<space|0.17em>\<sigma\><rsup|2>|2>.
+  </equation*>
+
+  (See, however, the least­squares solution below for the exact efficiency factor.)
+
+  <subsection|Least­Squares Analysis>
+
+  We fit the standard one­way two­block model with treatment effects and block effects:
+
+  <\equation*>
+    Y<rsub|i*j>=\<mu\>+b<rsub|i>+t<rsub|j>+\<epsilon\><rsub|i*j>,<space|1em>i=1,2,<space|0.27em>j\<in\><around|{|A,\<ldots\>,F|}>,
+  </equation*>
+
+  where <math|\<epsilon\><rsub|i*j><above|\<sim\>|<text|i.i.d.>>N<around|(|0,\<sigma\><rsup|2>|)>>, subject to the constraints
+
+  <\equation*>
+    b<rsub|1>+b<rsub|2>=0,<space|1em><big|sum><rsub|j>t<rsub|j>=0.
+  </equation*>
+
+  Omitting the two empty cells <math|<around|(|1,B|)>> and <math|<around|(|2,A|)>>, the normal­equations yield the following estimates.
+
+  <paragraph|Estimate of <math|t<rsub|A>-t<rsub|B>>.>
+
+  <\align*>
+    <tformat|<table|<row|<cell|<wide|t|^><rsub|A>-<wide|t|^><rsub|B>>|<cell|=<frac|5|4>*<around*|[|<around|(|Y<rsub|1*A>-Y<rsub|2*B>|)>-<around|(|Y<rsub|1\<cdot\>>-Y<rsub|2\<cdot\>>|)>|]>>>|<row|<cell|>|<cell|=<frac|1|4>*<around*|(|4*Y<rsub|1*A><space|0.27em>-<space|0.27em>4*Y<rsub|2*B><space|0.27em>-<space|0.27em><big|sum><rsub|j\<in\><around|{|C,D,E,F|}>>Y<rsub|1*j><space|0.27em>+<space|0.27em><big|sum><rsub|j\<in\><around|{|C,D,E,F|}>>Y<rsub|2*j>|)>,>>>>
+  </align*>
+
+  with
+
+  <\equation*>
+    Var<around*|(|<wide|t|^><rsub|A>-<wide|t|^><rsub|B>|)>=<frac|5*<space|0.17em>\<sigma\><rsup|2>|2>.
+  </equation*>
+
+  <paragraph|Estimate of <math|t<rsub|A>-t<rsub|C>>.>
+
+  <\align*>
+    <tformat|<table|<row|<cell|<wide|t|^><rsub|A>-<wide|t|^><rsub|C>>|<cell|=<frac|1|8>*<around*|[|9*Y<rsub|1*A>-Y<rsub|2*B>-8*Y<rsub|<space|-0.17em>\<cdot\>C>-5*<around|(|Y<rsub|1\<cdot\>>-Y<rsub|2\<cdot\>>|)>|]>>>|<row|<cell|>|<cell|=<frac|1|8>*<around*|(|8*Y<rsub|1*A>-<space|0.17em>Y<rsub|2*B>-<space|0.17em>5*Y<rsub|1*C>-<space|0.17em>3*Y<rsub|2*C>-<space|0.17em><big|sum><rsub|j\<in\><around|{|D,E,F|}>><space|-0.17em><around|(|Y<rsub|1*j>-Y<rsub|2*j>|)>|)>,>>>>
+  </align*>
+
+  where <math|Y<rsub|<space|-0.17em>\<cdot\>C>=Y<rsub|1*C>+Y<rsub|2*C>> and <math|Y<rsub|i\<bullet\>>=<big|sum><rsub|j>Y<rsub|i*j>>. Its variance is
+
+  <\equation*>
+    Var<around*|(|<wide|t|^><rsub|A>-<wide|t|^><rsub|C>|)>=<frac|\<sigma\><rsup|2>|8<rsup|2>>*<around*|(|8<rsup|2>+1<rsup|2>+5<rsup|2>+3<rsup|2>+6|)>=<frac|13*<space|0.17em>\<sigma\><rsup|2>|8>.
+  </equation*>
+
+  Here the “<math|6>” arises from the two missing observations (one each in Blocks<nbsp>1 and<nbsp>2).
+
+  <vspace*|2fn>These formulas quantify the relative efficiencies of direct versus least­squares estimators in an incomplete­block setting. The least­squares approach automatically accounts for the unequal replication of <math|A> and <math|B> across blocks and yields the correct variance factors.
+
+  <subsection|Balanced Incomplete Block Design>
+
+  Let <math|v> be the numebr of treatments, <math|b> be the number of blocks, <math|r> be the replicate of each treatment, <math|k\<less\>v> be the unites per block. A <with|font-series|bold|balanced ncomplete­block design> (BIBD) with parameters<nbsp><math|<around*|(|v,b,r,k,\<lambda\>|)>>, where <math|\<lambda\>> means each pair of treatments occurs together in <math|\<lambda\>> blocks, is a way of arranging <math|v> treatments into<nbsp><math|b><nbsp>blocks so that
+
+  <\enumerate>
+    <item>Each block contains exactly<nbsp><math|k><nbsp>distinct treatments (so “incomplete” means<nbsp><math|k\<less\>v>).
+
+    <item>Each treatment appears in exactly<nbsp><math|r><nbsp>blocks.
+
+    <item>Every unordered pair of distinct treatments occurs together in exactly<nbsp><math|\<lambda\>><nbsp>blocks (the “balanced” condition).
+  </enumerate>
+
+  These parameters are not independent but must satisfy two counting identities:
+
+  <\enumerate>
+    <item><strong|Total­unit count><next-line>Counting “treatment­in­block” incidences in two ways gives
+
+    <equation*|v<with|mode|text| >r<with|mode|text|  >=<with|mode|text|  >b<with|mode|text| >k.>
+
+    On the left is “each of<nbsp><math|v><nbsp>treatments appears in<nbsp><math|r><nbsp>blocks,” for a total of<nbsp><math|v<with|mode|text| >r><nbsp>incidences; on the right is “each of<nbsp><math|b>blocks contains<nbsp><math|k><nbsp>treatments,” for a total of<nbsp><math|b<with|mode|text| >k>.
+
+    <item><strong|Pair­co­occurrence count><next-line>Fix any one treatment<nbsp><math|T>. It appears in<nbsp><math|r><nbsp>blocks; in each of those blocks it co­occurs with<nbsp><math|<around*|(|k-1|)>><nbsp>other treatments, giving<nbsp><math|r<with|mode|text| ><around*|(|k-1|)>><nbsp>ordered “<math|T>–other” incidences. On the other hand, each of the other<nbsp><math|<around*|(|v-1|)>>treatments co­occurs with<nbsp><math|T><nbsp>in exactly<nbsp><math|\<lambda\>><nbsp>blocks, for a total of<nbsp><math|\<lambda\><with|mode|text| ><around*|(|v-1|)>><nbsp>“<math|T>–other” incidences. Equating,
+
+    <equation*|r<with|mode|text| ><around*|(|k-1|)><with|mode|text|  >=<with|mode|text|  >\<lambda\><with|mode|text| ><around*|(|v-1|)>.>
+
+    Solving for<nbsp><math|\<lambda\>><nbsp>yields the standard formula
+
+    <equation*|<with|math-level|0|math-display|false|<with|math-level|0|math-display|false|<with|math-level|0|math-display|true|\<lambda\><with|mode|text|  >=<with|mode|text|  ><frac|r<with|mode|text| ><around*|(|k-1|)>|v-1>>>>.>
+  </enumerate>
+
+  <\example>
+    6 treatments with 30 units grouped in 6 blocks of 5 units.Below is the simplest balanced incomplete­block design (a BIBD) that meets your requirements:
+
+    <\itemize>
+      <item><strong|Treatments>:<nbsp><math|v=6><nbsp>(call them<nbsp><math|A,B,C,D,E,F>)
+
+      <item><strong|Blocks>:<nbsp><math|b=6>, each of size<nbsp><math|k=5>
+
+      <item><strong|Replications>: each treatment appears<nbsp><math|r=5><nbsp>times
+
+      <item><strong|Each pair of treatments occurs together in>
+
+      <equation*|\<lambda\><with|mode|text|  >=<with|mode|text|  ><frac|r<with|mode|text| ><around*|(|k-1|)>|v-1><with|mode|text|  >=<with|mode|text|  ><frac|5\<cdot\><around*|(|5-1|)>|6-1><with|mode|text|  >=<with|mode|text|  >4>
+
+      blocks.
+    </itemize>
+
+    Because<nbsp><math|v r=b k><nbsp>(<math|6\<cdot\>5=6\<cdot\>5>), such a BIBD exists and is in fact the<nbsp><em|complement><nbsp>of the trivial one­treatment­per­block design: simply omit each treatment exactly once. Concretely, number your blocks<nbsp><math|i=1,\<ldots\>,6>, and let Block<nbsp><math|i><nbsp>contain all treatments except treatment<nbsp><math|i>. In alphabetical labels:
+
+    <big-table|<tabular|<tformat|<twith|table-hmode|min>|<twith|table-width|1par>|<cwith|1|-1|1|-1|cell-hyphen|t>|<cwith|7|7|3|3|cell-bborder|0ln>|<cwith|1|-1|3|3|cell-rborder|0ln>|<cwith|7|7|2|2|cell-bborder|0ln>|<cwith|1|-1|2|2|cell-lborder|1ln>|<cwith|1|-1|1|1|cell-rborder|1ln>|<cwith|1|-1|2|2|cell-rborder|1ln>|<cwith|1|-1|3|3|cell-lborder|1ln>|<cwith|1|1|1|-1|cell-tborder|0ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|2|1|-1|cell-tborder|1ln>|<cwith|1|1|1|1|cell-lborder|0ln>|<cwith|1|1|3|3|cell-rborder|0ln>|<table|<row|<\cell>
+      Block
+    </cell>|<\cell>
+      Treatments included
+    </cell>|<\cell>
+      Omitted
+    </cell>>|<row|<\cell>
+      1
+    </cell>|<\cell>
+      B, C, D, E, F
+    </cell>|<\cell>
+      A
+    </cell>>|<row|<\cell>
+      2
+    </cell>|<\cell>
+      A, C, D, E, F
+    </cell>|<\cell>
+      B
+    </cell>>|<row|<\cell>
+      3
+    </cell>|<\cell>
+      A, B, D, E, F
+    </cell>|<\cell>
+      C
+    </cell>>|<row|<\cell>
+      4
+    </cell>|<\cell>
+      A, B, C, E, F
+    </cell>|<\cell>
+      D
+    </cell>>|<row|<\cell>
+      5
+    </cell>|<\cell>
+      A, B, C, D, F
+    </cell>|<\cell>
+      E
+    </cell>>|<row|<\cell>
+      6
+    </cell>|<\cell>
+      A, B, C, D, E
+    </cell>|<\cell>
+      F
+    </cell>>>>>|>
+  </example>
 
   \;
 
@@ -2121,14 +2365,29 @@
     <associate|auto-10|<tuple|2.4|6>>
     <associate|auto-100|<tuple|27|39>>
     <associate|auto-101|<tuple|6.2|39>>
-    <associate|auto-102|<tuple|6.2.1|41>>
-    <associate|auto-103|<tuple|6.2.2|41>>
-    <associate|auto-104|<tuple|28|?>>
-    <associate|auto-105|<tuple|6.3|?>>
-    <associate|auto-106|<tuple|A|?>>
-    <associate|auto-107|<tuple|29|?>>
+    <associate|auto-102|<tuple|6.2.1|39>>
+    <associate|auto-103|<tuple|6.2.2|40>>
+    <associate|auto-104|<tuple|28|41>>
+    <associate|auto-105|<tuple|6.3|41>>
+    <associate|auto-106|<tuple|6.4|42>>
+    <associate|auto-107|<tuple|6.4.1|42>>
+    <associate|auto-108|<tuple|6.4.2|?>>
+    <associate|auto-109|<tuple|29|?>>
     <associate|auto-11|<tuple|5|6>>
+    <associate|auto-110|<tuple|6.5|?>>
+    <associate|auto-111|<tuple|7|?>>
+    <associate|auto-112|<tuple|7.1|?>>
+    <associate|auto-113|<tuple|7.1.0.1|?>>
+    <associate|auto-114|<tuple|7.1.0.2|?>>
+    <associate|auto-115|<tuple|7.1.0.3|?>>
+    <associate|auto-116|<tuple|7.2|?>>
+    <associate|auto-117|<tuple|7.2.0.1|?>>
+    <associate|auto-118|<tuple|7.2.0.2|?>>
+    <associate|auto-119|<tuple|7.3|?>>
     <associate|auto-12|<tuple|2.5|6>>
+    <associate|auto-120|<tuple|30|?>>
+    <associate|auto-121|<tuple|A|?>>
+    <associate|auto-122|<tuple|31|?>>
     <associate|auto-13|<tuple|1|7>>
     <associate|auto-14|<tuple|2.6|7>>
     <associate|auto-15|<tuple|2.6.1|7>>
@@ -2144,24 +2403,24 @@
     <associate|auto-24|<tuple|2.8|12>>
     <associate|auto-25|<tuple|2.8.1|12>>
     <associate|auto-26|<tuple|7|12>>
-    <associate|auto-27|<tuple|2.8.2|12>>
+    <associate|auto-27|<tuple|2.8.2|13>>
     <associate|auto-28|<tuple|8|13>>
     <associate|auto-29|<tuple|2.8.3|13>>
     <associate|auto-3|<tuple|2|3>>
-    <associate|auto-30|<tuple|3|13>>
-    <associate|auto-31|<tuple|3.1|13>>
-    <associate|auto-32|<tuple|3.1.1|13>>
+    <associate|auto-30|<tuple|3|14>>
+    <associate|auto-31|<tuple|3.1|14>>
+    <associate|auto-32|<tuple|3.1.1|14>>
     <associate|auto-33|<tuple|9|14>>
     <associate|auto-34|<tuple|4|14>>
     <associate|auto-35|<tuple|10|14>>
     <associate|auto-36|<tuple|5|14>>
-    <associate|auto-37|<tuple|3.1.2|14>>
+    <associate|auto-37|<tuple|3.1.2|15>>
     <associate|auto-38|<tuple|6|15>>
     <associate|auto-39|<tuple|7|15>>
     <associate|auto-4|<tuple|2|3>>
     <associate|auto-40|<tuple|8|15>>
     <associate|auto-41|<tuple|11|15>>
-    <associate|auto-42|<tuple|3.1.3|15>>
+    <associate|auto-42|<tuple|3.1.3|16>>
     <associate|auto-43|<tuple|9|16>>
     <associate|auto-44|<tuple|10|16>>
     <associate|auto-45|<tuple|3.1.4|16>>
@@ -2177,8 +2436,8 @@
     <associate|auto-54|<tuple|3.2.3|20>>
     <associate|auto-55|<tuple|3.3|21>>
     <associate|auto-56|<tuple|14|21>>
-    <associate|auto-57|<tuple|3.4|21>>
-    <associate|auto-58|<tuple|3.4.1|21>>
+    <associate|auto-57|<tuple|3.4|22>>
+    <associate|auto-58|<tuple|3.4.1|22>>
     <associate|auto-59|<tuple|14|22>>
     <associate|auto-6|<tuple|3|4>>
     <associate|auto-60|<tuple|3.4.2|22>>
@@ -2208,21 +2467,21 @@
     <associate|auto-82|<tuple|4.4.1|31>>
     <associate|auto-83|<tuple|22|31>>
     <associate|auto-84|<tuple|23|31>>
-    <associate|auto-85|<tuple|4.4.2|32>>
+    <associate|auto-85|<tuple|4.4.2|31>>
     <associate|auto-86|<tuple|24|32>>
     <associate|auto-87|<tuple|4.4.3|32>>
-    <associate|auto-88|<tuple|5|33>>
-    <associate|auto-89|<tuple|5.1|33>>
+    <associate|auto-88|<tuple|5|32>>
+    <associate|auto-89|<tuple|5.1|32>>
     <associate|auto-9|<tuple|4|5>>
-    <associate|auto-90|<tuple|5.1.1|34>>
+    <associate|auto-90|<tuple|5.1.1|33>>
     <associate|auto-91|<tuple|5.1.2|34>>
     <associate|auto-92|<tuple|5.2|35>>
     <associate|auto-93|<tuple|5.2.1|36>>
-    <associate|auto-94|<tuple|5.2.2|37>>
+    <associate|auto-94|<tuple|5.2.2|36>>
     <associate|auto-95|<tuple|25|37>>
     <associate|auto-96|<tuple|5.2.3|37>>
     <associate|auto-97|<tuple|6|38>>
-    <associate|auto-98|<tuple|6.1|39>>
+    <associate|auto-98|<tuple|6.1|38>>
     <associate|auto-99|<tuple|26|39>>
     <associate|eq:2block|<tuple|4|23>>
     <associate|eq:box|<tuple|2|7>>
@@ -2231,7 +2490,7 @@
     <associate|fig:ofat|<tuple|15|22>>
     <associate|fold|<tuple|24|32>>
     <associate|model4.1|<tuple|5|24>>
-    <associate|table:BP|<tuple|29|41>>
+    <associate|table:BP|<tuple|31|42>>
     <associate|table:abc|<tuple|16|23>>
     <associate|table:corr|<tuple|26|39>>
     <associate|table:ofat|<tuple|15|23>>
@@ -2369,9 +2628,11 @@
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|27>||>|<pageref|auto-100>>
 
-      <tuple|normal|<\surround|<hidden-binding|<tuple>|28>|>
+      <tuple|normal|<surround|<hidden-binding|<tuple>|28>||ANOVA Table of Split-plot Design>|<pageref|auto-104>>
+
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|29>|>
         Plackett–Burman Table
-      </surround>|<pageref|auto-103>>
+      </surround>|<pageref|auto-107>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Randomized Block Design> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1><vspace|0.5fn>
@@ -2490,9 +2751,15 @@
 
       <with|par-left|<quote|1tab>|6.1<space|2spc>Motivating Example: Corrosion Resistance <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-98>>
 
-      <with|par-left|<quote|1tab>|6.2<space|2spc>Model Formulation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-101>>
+      <with|par-left|<quote|1tab>|6.2<space|2spc>Split-Plot Model <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-101>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix A<space|2spc>Plackett–Burman Table> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-102><vspace|0.5fn>
+      <with|par-left|<quote|2tab>|6.2.1<space|2spc>Model Formulation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-102>>
+
+      <with|par-left|<quote|2tab>|6.2.2<space|2spc>ANOVA for split-plot design <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-103>>
+
+      <with|par-left|<quote|1tab>|6.3<space|2spc>Split-plot with Blocks <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-105>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix A<space|2spc>Plackett–Burman Table> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-106><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

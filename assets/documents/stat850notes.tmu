@@ -104,7 +104,23 @@
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|5<space|2spc>Random Effects Model> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-88><vspace|0.5fn>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|Appendix A<space|2spc>Plackett–Burman Table> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-89><vspace|0.5fn>
+    <with|par-left|1tab|5.1<space|2spc>General Case: Mixed Effects Model <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-89>>
+
+    <with|par-left|2tab|5.1.1<space|2spc>Recap: estimable function and its properties <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-90>>
+
+    <with|par-left|2tab|5.1.2<space|2spc>Estimation of contrasts <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-91>>
+
+    <with|par-left|1tab|5.2<space|2spc>One-way Random Effects Model <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-92>>
+
+    <with|par-left|2tab|5.2.1<space|2spc>Estimation of random effects <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-93>>
+
+    <with|par-left|2tab|5.2.2<space|2spc>Estimation of variances <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-94>>
+
+    <with|par-left|2tab|5.2.3<space|2spc>Hypothesis test <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-96>>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|6<space|2spc>Split-Plot Design> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-97><vspace|0.5fn>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|Appendix A<space|2spc>Plackett–Burman Table> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-98><vspace|0.5fn>
   </table-of-contents>
 
   <section|Randomized Block Design>
@@ -1523,43 +1539,7 @@
 
   <section|Random Effects Model>
 
-  <subsection|One-way Random Effects Model>
-
-  Consider the one­way random­effects model given by
-
-  <equation*|y<rsub|i j><with|mode|text|  >=<with|mode|text|  >\<mu\><with|mode|text|  >+<with|mode|text|  >a<rsub|i><with|mode|text|  >+<with|mode|text|  >\<varepsilon\><rsub|i j>,i=1,\<ldots\>,t,<with|mode|text|  >j=1,\<ldots\>,n,>
-
-  where:
-
-  <\enumerate>
-    <item>The group effects<nbsp><math|a<rsub|i>><nbsp>are independent and identically distributed with
-
-    <equation*|E<around*|[|a<rsub|i>|]>=0,Var<around*|(|a<rsub|i>|)>=\<sigma\><rsub|a><rsup|2>,Cov<around*|(|a<rsub|i>,a<rsub|i<rsup|\<prime\>>>|)>=0<with|mode|text|  ><with|mode|text|  ><around*|(|i\<neq\>i<rsup|\<prime\>>|)>.>
-
-    <item>The within­group errors<nbsp><math|\<varepsilon\><rsub|ij>><nbsp>are independent and identically distributed with
-
-    <equation*|E<around*|[|\<varepsilon\><rsub|i j>|]>=0,Var<around*|(|\<varepsilon\><rsub|i j>|)>=\<sigma\><rsup|2>,>
-
-    and
-
-    <equation*|Cov<around*|(|\<varepsilon\><rsub|i j>,\<varepsilon\><rsub|i<rsup|\<prime\>>j<rsup|\<prime\>>>|)>=0<with|mode|text|whenever<nbsp>>i\<neq\>i<rsup|\<prime\>><with|mode|text|<nbsp>or<nbsp>>j\<neq\>j<rsup|\<prime\>>.>
-
-    <item>The group effects and the errors are mutually independent:
-
-    <equation*|Cov<around*|(|a<rsub|i>,\<varepsilon\><rsub|i<rsup|\<prime\>>j<rsup|\<prime\>>>|)>=0<with|mode|text| for<nbsp>all >i,i<rsup|\<prime\>>,j<rsup|\<prime\>>.>
-  </enumerate>
-
-  Under these assumptions, the marginal moments of<nbsp><math|y<rsub|ij>><nbsp>are
-
-  <equation*|Var<around*|(|y<rsub|ij>|)>=Var<around*|(|a<rsub|i>|)>+Var<around*|(|\<varepsilon\><rsub|i j>|)>=\<sigma\><rsub|a><rsup|2>+\<sigma\><rsup|2>,\<forall\><with|mode|text| >i,j,>
-
-  <equation*|Cov<around*|(|y<rsub|i j>,<with|mode|text| >y<rsub|i k>|)>=Cov<around*|(|a<rsub|i>+\<varepsilon\><rsub|i j>,<with|mode|text| >a<rsub|i>+\<varepsilon\><rsub|i k>|)>=Var<around*|(|a<rsub|i>|)>=\<sigma\><rsub|a><rsup|2>,j\<neq\>k,>
-
-  <equation*|Cov<around*|(|y<rsub|i j>,<with|mode|text| >y<rsub|i<rsup|\<prime\>>j<rsup|\<prime\>>>|)>=0,i\<neq\>i<rsup|\<prime\>>,>
-
-  so that observations from distinct groups are uncorrelated, while observations within the same group share the common component<nbsp><math|a<rsub|i>>.
-
-  <subsection|Mixed Effects Model>
+  <subsection|General Case: Mixed Effects Model>
 
   Consider the following mixed­effects formulation for a three­way ANOVA structure:
 
@@ -1581,7 +1561,7 @@
 
   This model admits the compact matrix representation
 
-  <equation*|<with|math-font-series|bold|y>=<with|math-font-series|bold|X><with|mode|text| ><with|math-font-series|bold|\<beta\>>+<with|math-font-series|bold|Z><with|mode|text| ><with|math-font-series|bold|a>+<with|math-font-series|bold|\<varepsilon\>>,>
+  <equation|<with|math-font-series|bold|y>=<with|math-font-series|bold|X><with|mode|text| ><with|math-font-series|bold|\<beta\>>+<with|math-font-series|bold|Z><with|mode|text| ><with|math-font-series|bold|a>+<with|math-font-series|bold|\<varepsilon\>>,<label|eq:mix>>
 
   where
 
@@ -1611,7 +1591,7 @@
 
   Continuous­sum constraints<nbsp><math|<big|sum><rsub|i>\<alpha\><rsub|i>=0><nbsp>and<nbsp><math|<big|sum><rsub|i>c<rsub|i j>=0><nbsp>ensure identifiability of fixed and interaction effects.
 
-  <subsubsection|Estimation of mixed effects model>
+  <subsubsection|Recap: estimable function and its properties>
 
   Now we recall the definition and some properties of estimable functions.
 
@@ -1635,7 +1615,7 @@
     is the Best Linear Unbiased Estimator (BLUE) of<nbsp><math|\<psi\>>.
   </theorem>
 
-  <with|font-series|bold|Estimation of <math|<with|math-font-series|bold|\<lambda\>><rsup|<with|math-font-family|ms|T>><with|math-font-series|bold|\<beta\>>>>.\ 
+  <subsubsection|Estimation of contrasts>
 
   Under the linear mixed­effects framework, consider estimation of an estimable contrast<next-line><math|\<psi\>=<with|math-font-series|bold|\<lambda\>><rsup|<with|math-font-family|ms|T>><with|math-font-series|bold|\<beta\>>>. We proceed as follows:
 
@@ -1669,6 +1649,444 @@
 
   <with|font-series|bold|Best linear unbiased predictor of vector <math|a>>.\ 
 
+  Consider the mixed effect model <eqref|eq:mix>, the predictor of<nbsp><math|<with|math-font-series|bold|a>><nbsp>minimizing mean­squared error is the conditional expectation <math|\<bbb-E\><around*|[|a<around*|\||y|]>|\<nobracket\>>>.
+
+  If<nbsp><math|<around*|(|<with|math-font-series|bold|a>,<with|math-font-series|bold|y>|)>><nbsp>is jointly Gaussian, then <math|Cov<around*|(|<with|math-font-series|bold|a>,<with|math-font-series|bold|y>|)>=<with|math-font-series|bold|V><with|mode|text| ><with|math-font-series|bold|Z><rsup|<with|math-font-family|ms|T>>>, and the standard formula for the multivariate normal conditional expectation gives
+
+  <equation*|E<around*|[|<with|math-font-series|bold|a>\<mid\><with|math-font-series|bold|y>|]>=E<around*|[|<with|math-font-series|bold|a>|]>+Cov<around*|(|<with|math-font-series|bold|a>,<with|math-font-series|bold|y>|)><with|mode|text| ><around*|[|Cov<around*|(|<with|math-font-series|bold|y>|)>|]><rsup|-1><around*|(|<with|math-font-series|bold|y>-E<around*|[|<with|math-font-series|bold|y>|]>|)>=<with|math-font-series|bold|V><with|mode|text| ><with|math-font-series|bold|Z><rsup|<with|math-font-family|ms|T>><with|mode|text| ><with|math-font-series|bold|\<Sigma\>><rsup|-1><with|mode|text| ><around*|(|<with|math-font-series|bold|y>-<with|math-font-series|bold|X><with|mode|text| ><with|math-font-series|bold|\<beta\>>|)>.>
+
+  More generally, <math|<with|math-font-series|bold|V><with|mode|text| ><with|math-font-series|bold|Z><rsup|<with|math-font-family|ms|T>><with|mode|text| ><with|math-font-series|bold|\<Sigma\>><rsup|-1><with|mode|text| ><around*|(|<with|math-font-series|bold|y>-<with|math-font-series|bold|X><with|mode|text| ><with|math-font-series|bold|\<beta\>>|)>> is the <with|font-series|bold|best linear unbiased predictor> (BLUP) of <math|a>. Because<nbsp><math|<with|math-font-series|bold|\<beta\>>><nbsp>is typically unknown, one replaces it by its generalized least­squares (or, in balanced designs, OLS) estimator
+
+  <equation*|<wide|<with|math-font-series|bold|\<beta\>>|^>=<around*|(|<with|math-font-series|bold|X><rsup|<with|math-font-family|ms|T>><with|mode|text| ><with|math-font-series|bold|\<Sigma\>><rsup|-1><with|mode|text| ><with|math-font-series|bold|X>|)><rsup|-><with|math-font-series|bold|X><rsup|<with|math-font-family|ms|T>><with|mode|text| ><with|math-font-series|bold|\<Sigma\>><rsup|-1><with|mode|text| ><with|math-font-series|bold|y><with|mode|text|  >=<with|mode|text|  ><around*|(|<with|math-font-series|bold|X><rsup|<with|math-font-family|ms|T>><with|math-font-series|bold|X>|)><rsup|-><with|math-font-series|bold|X><rsup|<with|math-font-family|ms|T>><with|mode|text| ><with|math-font-series|bold|y>.>
+
+  The resulting BLUP is
+
+  <equation*|<wide|<with|math-font-series|bold|a>|^>=<with|math-font-series|bold|V><with|mode|text| ><with|math-font-series|bold|Z><rsup|<with|math-font-family|ms|T>><with|mode|text| ><with|math-font-series|bold|\<Sigma\>><rsup|-1><around*|(|<with|math-font-series|bold|y>-<with|math-font-series|bold|X><with|mode|text| ><wide|<with|math-font-series|bold|\<beta\>>|^>|)>.>
+
+  <subsection|One-way Random Effects Model>
+
+  Now we consider a special case: one­way random­effects model which is defined by
+
+  <equation*|y<rsub|i j><with|mode|text|  >=<with|mode|text|  >\<mu\><with|mode|text|  >+<with|mode|text|  >a<rsub|i><with|mode|text|  >+<with|mode|text|  >\<varepsilon\><rsub|i j>,i=1,\<ldots\>,t,<with|mode|text|  >j=1,\<ldots\>,n,>
+
+  where:
+
+  <\enumerate>
+    <item>The group effects<nbsp><math|a<rsub|i>><nbsp>are independent and identically distributed with
+
+    <equation*|E<around*|[|a<rsub|i>|]>=0,Var<around*|(|a<rsub|i>|)>=\<sigma\><rsub|a><rsup|2>,Cov<around*|(|a<rsub|i>,a<rsub|i<rsup|\<prime\>>>|)>=0<with|mode|text|  ><with|mode|text|  ><around*|(|i\<neq\>i<rsup|\<prime\>>|)>.>
+
+    <item>The within­group errors<nbsp><math|\<varepsilon\><rsub|ij>><nbsp>are independent and identically distributed with
+
+    <equation*|E<around*|[|\<varepsilon\><rsub|i j>|]>=0,Var<around*|(|\<varepsilon\><rsub|i j>|)>=\<sigma\><rsup|2>,>
+
+    and
+
+    <equation*|Cov<around*|(|\<varepsilon\><rsub|i j>,\<varepsilon\><rsub|i<rsup|\<prime\>>j<rsup|\<prime\>>>|)>=0<with|mode|text|whenever<nbsp>>i\<neq\>i<rsup|\<prime\>><with|mode|text|<nbsp>or<nbsp>>j\<neq\>j<rsup|\<prime\>>.>
+
+    <item>The group effects and the errors are mutually independent:
+
+    <equation*|Cov<around*|(|a<rsub|i>,\<varepsilon\><rsub|i<rsup|\<prime\>>j<rsup|\<prime\>>>|)>=0<with|mode|text| for<nbsp>all >i,i<rsup|\<prime\>>,j<rsup|\<prime\>>.>
+  </enumerate>
+
+  Under these assumptions, the marginal moments of<nbsp><math|y<rsub|ij>><nbsp>are
+
+  <equation*|Var<around*|(|y<rsub|ij>|)>=Var<around*|(|a<rsub|i>|)>+Var<around*|(|\<varepsilon\><rsub|i j>|)>=\<sigma\><rsub|a><rsup|2>+\<sigma\><rsup|2>,\<forall\><with|mode|text| >i,j,>
+
+  <equation*|Cov<around*|(|y<rsub|i j>,<with|mode|text| >y<rsub|i k>|)>=Cov<around*|(|a<rsub|i>+\<varepsilon\><rsub|i j>,<with|mode|text| >a<rsub|i>+\<varepsilon\><rsub|i k>|)>=Var<around*|(|a<rsub|i>|)>=\<sigma\><rsub|a><rsup|2>,j\<neq\>k,>
+
+  <equation*|Cov<around*|(|y<rsub|i j>,<with|mode|text| >y<rsub|i<rsup|\<prime\>>j<rsup|\<prime\>>>|)>=0,i\<neq\>i<rsup|\<prime\>>,>
+
+  so that observations from distinct groups are uncorrelated, while observations within the same group share the common component<nbsp><math|a<rsub|i>>.\ 
+
+  <subsubsection|Estimation of random effects>
+
+  Now we consider doing estimation and inference in such a model.
+
+  <\enumerate>
+    <item><strong|Design matrices and variance components.><next-line>Writing the model in matrix form<nbsp><math|<with|math-font-series|bold|y>=<with|math-font-series|bold|X><with|mode|text| ><with|math-font-series|bold|\<beta\>>+<with|math-font-series|bold|Z><with|mode|text| ><with|math-font-series|bold|a>+<with|math-font-series|bold|\<varepsilon\>>>, one finds that the ML (or GLS) estimator of the fixed parameters satisfies
+
+    <equation*|<wide|<with|math-font-series|bold|\<beta\>>|^>=<with|math-font-series|bold|y><rsub|\<cdot\>\<cdot\>><with|mode|text| >,>
+
+    i.e. the overall sample mean (since with two observations per group the normal equations collapse to an intercept only). We assume the random­effects covariance is
+
+    <equation*|<with|math-font-series|bold|V>=Cov<around*|(|<with|math-font-series|bold|a>|)>=\<sigma\><rsub|a><rsup|2><with|mode|text| ><with|math-font-series|bold|I><rsub|3>,>
+
+    and the marginal covariance of<nbsp><math|<with|math-font-series|bold|y>><nbsp>is
+
+    <equation*|<with|math-font-series|bold|\<Sigma\>>=<with|math-font-series|bold|Z><with|mode|text| ><with|math-font-series|bold|V><with|mode|text| ><with|math-font-series|bold|Z><rsup|<with|math-font-family|ms|T>><with|mode|text|  >+<with|mode|text|  >\<sigma\><rsup|2><with|mode|text| ><with|math-font-series|bold|I><rsub|6>=blockdiag<around*|(|\<sigma\><rsup|2><with|math-font-series|bold|I><rsub|2>+\<sigma\><rsub|a><rsup|2><with|math-font-series|bold|J><rsub|2>,<with|mode|text|<nbsp>>\<sigma\><rsup|2><with|math-font-series|bold|I><rsub|2>+\<sigma\><rsub|a><rsup|2><with|math-font-series|bold|J><rsub|2>,<with|mode|text|<nbsp>>\<sigma\><rsup|2><with|math-font-series|bold|I><rsub|2>+\<sigma\><rsub|a><rsup|2><with|math-font-series|bold|J><rsub|2>|)>,>
+
+    where<nbsp><math|<with|math-font-series|bold|J><rsub|2>><nbsp>is the<nbsp><math|2\<times\>2><nbsp>matrix of ones.
+
+    <item><strong|Inverse covariance.><next-line>A standard matrix­inverse identity for a compound­symmetric block gives
+
+    <equation*|<around*|(|\<sigma\><rsup|2><with|math-font-series|bold|I><rsub|2>+\<sigma\><rsub|a><rsup|2><with|math-font-series|bold|J><rsub|2>|)><rsup|-1>=<frac|1|\<sigma\><rsup|2>><around*|(|<with|math-font-series|bold|I><rsub|2><with|mode|text|  >-<with|mode|text|  ><frac|\<sigma\><rsub|a><rsup|2>|\<sigma\><rsup|2>+2\<sigma\><rsub|a><rsup|2>><with|mode|text| ><with|math-font-series|bold|J><rsub|2>|)>.>
+
+    Hence
+
+    <equation*|<with|math-font-series|bold|\<Sigma\>><rsup|-1>=<frac|1|\<sigma\><rsup|2>><with|mode|text| >blockdiag<around*|(|<with|math-font-series|bold|I><rsub|2>-<with|math-display|false|math-level|0|<frac|\<sigma\><rsub|a><rsup|2>|\<sigma\><rsup|2>+2\<sigma\><rsub|a><rsup|2>>><with|mode|text| ><with|math-font-series|bold|J><rsub|2>,<with|mode|text|  ><with|math-font-series|bold|I><rsub|2>-<with|math-display|false|math-level|0|<frac|\<sigma\><rsub|a><rsup|2>|\<sigma\><rsup|2>+2\<sigma\><rsub|a><rsup|2>>><with|mode|text| ><with|math-font-series|bold|J><rsub|2>,<with|mode|text|  ><with|math-font-series|bold|I><rsub|2>-<with|math-display|false|math-level|0|<frac|\<sigma\><rsub|a><rsup|2>|\<sigma\><rsup|2>+2\<sigma\><rsub|a><rsup|2>>><with|mode|text| ><with|math-font-series|bold|J><rsub|2>|)>.>
+
+    <item><strong|Derivation of the BLUP.><next-line>The Best Linear Unbiased Predictor of<nbsp><math|<with|math-font-series|bold|a>><nbsp>is
+
+    <equation*|BLUP<around*|(|<with|math-font-series|bold|a>|)>=<with|math-font-series|bold|V><with|mode|text| ><with|math-font-series|bold|Z><rsup|<with|math-font-family|ms|T>><with|mode|text| ><with|math-font-series|bold|\<Sigma\>><rsup|-1><with|mode|text| ><around*|(|<with|math-font-series|bold|y>-<with|math-font-series|bold|X><with|mode|text| ><wide|<with|math-font-series|bold|\<beta\>>|^>|)>.>
+
+    Noting that<nbsp><math|<with|math-font-series|bold|Z><rsup|<with|math-font-family|ms|T>>><nbsp>concatenates the row­sums within each group (i.e.\\ each block has a row of two ones in the corresponding position), one obtains after simplification
+
+    <equation*|BLUP<around*|(|<with|math-font-series|bold|a>|)>=<frac|2*\<sigma\><rsub|a><rsup|2>|\<sigma\><rsup|2>+2*\<sigma\><rsub|a><rsup|2>><around*|(|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|l>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|0ln>|<table|<row|<cell|y<rsub|1.>-y<rsub|..>>>|<row|<cell|y<rsub|2.>-y<rsub|..>>>|<row|<cell|y<rsub|3.>-y<rsub|..>>>>>>|)>,>
+
+    where<nbsp><math|<wide|y|\<bar\>><rsub|i\<cdot\>>=<around*|(|y<rsub|i1>+y<rsub|i2>|)>/2><nbsp>is the<nbsp><math|i>th group mean and <math|<wide|y|\<bar\>><rsub|\<cdot\>\<cdot\>>><nbsp>the overall mean.
+
+    <item><strong|Plug­in estimator><next-line>Replacing<nbsp><math|\<sigma\><rsub|a><rsup|2>><nbsp>and<nbsp><math|\<sigma\><rsup|2>><nbsp>by their estimates<nbsp><math|<wide|\<sigma\>|^><rsub|a><rsup|2>><nbsp>and<nbsp><math|<wide|\<sigma\>|^><rsup|2>><nbsp>yields the empirical BLUP
+  </enumerate>
+
+  This estimator shrinks each group deviation toward zero in proportion to the signal­to­noise ratio<nbsp><math|2\<sigma\><rsub|a><rsup|2>/<around*|(|\<sigma\><rsup|2>+2\<sigma\><rsub|a><rsup|2>|)>>.
+
+  <subsubsection|Estimation of variances>
+
+  Under the one­way random­effects model, one may obtain method­of­moments estimators of the variance components by equating the observed mean squares to their theoretical expectations:
+
+  <equation*|<tabular|<tformat|<cwith|1|-1|1|1|cell-halign|r>|<cwith|1|-1|2|2|cell-halign|l>|<cwith|1|-1|3|3|cell-halign|r>|<cwith|1|-1|4|4|cell-halign|l>|<table|<row|<cell|<with|math-level|0|math-display|true|E<around*|[|MS<rsub|R>|]>>>|<cell|<with|math-level|0|math-display|true|=\<sigma\><rsup|2>,>>|<cell|<with|math-level|0|math-display|true|E<around*|[|MS<rsub|T>|]>>>|<cell|<with|math-level|0|math-display|true|=\<sigma\><rsup|2>+n<with|mode|text| >\<sigma\><rsub|a><rsup|2>.>>>>>>>
+
+  Replacing the expectations with the corresponding sample mean squares,
+
+  <equation*|MS<rsub|R>=<frac|S<rsub|R>|<with|mode|text| >t<around*|(|n-1|)><with|mode|text| >>,MS<rsub|T>=<frac|S<rsub|T>|<with|mode|text| >t-1<with|mode|text| >>,>
+
+  we obtain the moment estimators
+
+  <equation*|<tabular|<tformat|<cwith|1|-1|1|1|cell-halign|r>|<cwith|1|-1|2|2|cell-halign|l>|<table|<row|<cell|<with|math-level|0|math-display|true|<wide|\<sigma\>|^><rsup|2>>>|<cell|<with|math-level|0|math-display|true|=MS<rsub|R>=<frac|S<rsub|R>|<with|mode|text| >t<around*|(|n-1|)><with|mode|text| >>,>>>|<row|<cell|<with|math-level|0|math-display|true|<wide|\<sigma\>|^><rsup|2>+n<with|mode|text| ><wide|\<sigma\>|^><rsub|a><rsup|2>>>|<cell|<with|math-level|0|math-display|true|=MS<rsub|T>=<frac|S<rsub|T>|<with|mode|text| >t-1<with|mode|text| >>.>>>>>>>
+
+  Solving for<nbsp><math|<wide|\<sigma\>|^><rsub|a><rsup|2>><nbsp>yields
+
+  <equation*|<wide|\<sigma\>|^><rsub|a><rsup|2>=<frac|1|<with|mode|text| >n<with|mode|text| >><with|mode|text| ><around*|(|MS<rsub|T>-MS<rsub|R>|)>=<frac|1|<with|mode|text| >n<with|mode|text| >><around*|[|<frac|S<rsub|T>|<with|mode|text| >t-1<with|mode|text| >><with|mode|text|  >-<with|mode|text|  ><frac|S<rsub|R>|<with|mode|text| >t<around*|(|n-1|)><with|mode|text| >>|]>.>
+
+  These estimators are unbiased for<nbsp><math|\<sigma\><rsup|2>><nbsp>and<nbsp><math|\<sigma\><rsub|a><rsup|2>>. However, in finite samples it is possible for<nbsp><math|<wide|\<sigma\>|^><rsub|a><rsup|2>><nbsp>to take a negative value, in which case one typically sets it to zero or employs alternative estimation methods (e.g. restricted maximum likelihood) to ensure nonnegativity.
+
+  <big-table|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|l>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|l>|<cwith|1|-1|3|3|cell-halign|l>|<cwith|1|-1|4|4|cell-halign|l>|<cwith|1|-1|4|4|cell-rborder|0ln>|<cwith|1|-1|1|-1|cell-valign|c>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|4|4|1|-1|cell-bborder|1ln>|<table|<row|<cell|Source>|<cell|Sum of squares>|<cell|DF>|<cell|<math|<math-up|E><around|(|<math-up|MS>|)>>>>|<row|<cell|Treatment>|<cell|<math|S<rsub|T>=n*<big|sum><rsub|i=1><rsup|t><around*|(|y<rsub|i.>-y<rsub|..>|)><rsup|2>>>|<cell|<math|t-1>>|<cell|<math|\<sigma\><rsup|2>+n*\<sigma\><rsub|a><rsup|2>>>>|<row|<cell|Residual>|<cell|<math|S<rsub|R>=<big|sum><rsub|i=1><rsup|t><big|sum><rsub|j=1><rsup|n><around*|(|y<rsub|i*j>-y<rsub|i.>|)><rsup|2>>>|<cell|<math|t*<around|(|n-1|)>>>|<cell|<math|\<sigma\><rsup|2>>>>|<row|<cell|Total>|<cell|<math|S<rsub|D>=<big|sum><rsub|i=1><rsup|t><big|sum><rsub|j=1><rsup|n><around*|(|y<rsub|i*j>-y<rsub|..>|)><rsup|2>>>|<cell|<math|n*t-1>>|<cell|>>>>>|ANOVA Table for Random Effects Model>
+
+  <subsubsection|Hypothesis test>
+
+  Suppose we want to test are there significant random effects in our data, it is equivalent to test\ 
+
+  <\equation*>
+    H<rsub|0>:\<sigma\><rsub|a><rsup|2>=0.
+  </equation*>
+
+  We can derive hypothesis test procedure based on the following theorem.
+
+  <\theorem>
+    Let<nbsp><math|<with|math-font-series|bold|y>\<sim\>N<rsub|nt><around*|(|\<mu\><with|mode|text|><with|math-font-series|bold|I><rsub|nt>,<with|mode|text| ><with|math-font-series|bold|\<Sigma\>>|)>>, where
+
+    <equation*|<with|math-font-series|bold|\<Sigma\>>=\<sigma\><rsup|2><with|mode|text| ><with|math-font-series|bold|I><rsub|nt><with|mode|text|  >+<with|mode|text|  >\<sigma\><rsub|a><rsup|2><with|mode|text| ><with|math-font-series|bold|A>,>
+
+    and<nbsp><math|<with|math-font-series|bold|A>><nbsp>is the block­diagonal matrix with<nbsp><math|t><nbsp>identical blocks of size<nbsp><math|n\<times\>n>, each equal to the matrix of ones<nbsp><math|<with|math-font-series|bold|J><rsub|n>>:
+
+    <equation*|<with|math-font-series|bold|A>=blockdiag<around*|(|<with|math-font-series|bold|J><rsub|n>,<with|math-font-series|bold|J><rsub|n>,\<ldots\>,<with|math-font-series|bold|J><rsub|n>|)>.>
+
+    Define the between­ and within­sum of squares by
+
+    <equation*|S<rsub|T>=n<with|mode|text| ><big|sum><rsub|i=1><rsup|t><around*|(|y<rsub|i\<cdot\>>-y<rsub|\<cdot\>\<cdot\>>|)><rsup|2>,S<rsub|R>=<big|sum><rsub|i=1><rsup|t><big|sum><rsub|j=1><rsup|n><around*|(|y<rsub|i j>-y<rsub|i\<cdot\>>|)><rsup|2>.>
+
+    Then:
+
+    <\enumerate>
+      <item><math|<with|math-level|0|math-display|true|<frac|S<rsub|T>|<with|mode|text| >\<sigma\><rsup|2>+n<with|mode|text| >\<sigma\><rsub|a><rsup|2><with|mode|text| >>\<sim\>\<chi\><rsub|<with|mode|text| >t-1><rsup|2>>>.
+
+      <item><math|<with|math-level|0|math-display|true|<frac|S<rsub|R>|<with|mode|text| >\<sigma\><rsup|2><with|mode|text| >>\<sim\>\<chi\><rsub|<with|mode|text| >t<around*|(|n-1|)>><rsup|2>>>.
+
+      <item><math|S<rsub|T>><nbsp>and<nbsp><math|S<rsub|R>><nbsp>are independent.
+    </enumerate>
+  </theorem>
+
+  Under the full model, the ratio
+
+  <equation*|<frac|<with|math-level|0|math-display|true|S<rsub|T><around*|/|<around*|[|<around*|(|t-1|)><with|mode|text| ><around*|(|\<sigma\><rsup|2>+n<with|mode|text| >\<sigma\><rsub|a><rsup|2>|)>|]>|\<nobracket\>>>|<with|math-level|0|math-display|true|S<rsub|R><around*|/|<around*|[|t<around*|(|n-1|)><with|mode|text| >\<sigma\><rsup|2>|]>|\<nobracket\>>>><with|mode|text|  >\<sim\><with|mode|text|  >F<rsub|<with|mode|text| >t-1,<with|mode|text|  >t<around*|(|n-1|)>>.>
+
+  In particular, under<nbsp><math|H<rsub|0>><nbsp>(when<nbsp><math|\<sigma\><rsub|a><rsup|2>=0>), this simplifies to the test statistic
+
+  <equation*|F=<frac|<with|mode|text| >S<rsub|T>/<around*|(|t-1|)><with|mode|text| >|<with|mode|text| >S<rsub|R>/<around*|{|t<around*|(|n-1|)>|}><with|mode|text| >><with|mode|text|  >\<sim\><with|mode|text|  >F<rsub|<with|mode|text| >t-1,<with|mode|text|  >t<around*|(|n-1|)>>.>
+
+  Hence, at significance level<nbsp><math|\<alpha\>>, one rejects<nbsp><math|H<rsub|0>><nbsp>if
+
+  <equation*|F<with|mode|text|  >\<gtr\><with|mode|text|  >F<rsub|<with|mode|text| >t-1,<with|mode|text|  >t<around*|(|n-1|)>;<with|mode|text|  >\<alpha\>>,>
+
+  where<nbsp><math|F<rsub|<with|mode|text| >\<nu\><rsub|1>,\<nu\><rsub|2>;<with|mode|text| >\<alpha\>>><nbsp>denotes the upper<nbsp><math|\<alpha\>>–quantile of the<nbsp><math|F>-distribution with<nbsp><math|\<nu\><rsub|1>><nbsp>and<nbsp><math|\<nu\><rsub|2>><nbsp>degrees of freedom.
+
+  <\remark>
+    This testing procedure coincides with the classical one­way ANOVA<nbsp><math|F>-test for fixed effects. When<nbsp><math|H<rsub|0>><nbsp>is false (i.e.<nbsp><math|\<sigma\><rsub|a><rsup|2>\<gtr\>0>), the numerator mean square acquires a noncentral chi­square component, yielding a (scaled) noncentral<nbsp><math|F>distribution.
+  </remark>
+
+  <section|Split-Plot Design>
+
+  A<nbsp><strong|split-plot design><nbsp>is a two-stage (or multi-stage) experimental design used when some factors are harder or more expensive to change than others. It was originally developed in agricultural experiments (e.g. for machine-controlled irrigation vs. hand-applied fertilizer), but now appears in many industrial and scientific settings.
+
+  <subsection|Motivating Example: Corrosion Resistance>
+
+  A split­plot experiment was conducted to assess the corrosion resistance (measured by yield) of steel bars under two factors whose levels differ markedly in how readily they can be randomized:
+
+  <\enumerate>
+    <item><strong|Whole­plot factor:><nbsp>Furnace temperature<nbsp><math|P><nbsp>at three levels,
+
+    <equation*|P\<in\><around*|{|360<rsup|\<circ\>>C,<with|mode|text|  >370<rsup|\<circ\>>C,<with|mode|text|  >380<rsup|\<circ\>>C|}>.>
+
+    Because heating the furnace to a new temperature requires a full day's operation, these treatments were applied to<nbsp><em|whole plots><nbsp>(i.e.\\ each “day” of the experiment).
+
+    <item><strong|Sub­plot factor:><nbsp>Surface coating<nbsp><math|Q><nbsp>at four levels,
+
+    <equation*|Q\<in\><around*|{|C<rsub|1>,<with|mode|text| >C<rsub|2>,<with|mode|text| >C<rsub|3>,<with|mode|text| >C<rsub|4>|}>.>
+
+    Within each day's run, the four furnace positions (slots 1–4) received a random permutation of the four coatings; after the furnace reached its designated whole­plot temperature, bars in each slot were coated and then tested.
+  </enumerate>
+
+  The experiment was replicated<nbsp><math|b=2><nbsp>times over six consecutive days (labelled D1–D6). Each replicate thus occupies three days (one per temperature level), and within each day the four coatings are randomized across the four positions. Table <reference|table:corr> summarizes the raw corrosion­resistance readings<nbsp><math|y<rsub|ijk>>, where<nbsp><math|i=1,2><nbsp>indexes the replicate,<nbsp><math|j=1,2,3><nbsp>the temperature level, and<nbsp><math|k=1,\<ldots\>,4><nbsp>the coating.
+
+  <big-table|<tabular|<tformat|<twith|table-hmode|min>|<twith|table-width|1par>|<cwith|1|-1|1|-1|cell-hyphen|t>|<cwith|1|1|1|-1|cell-tborder|0ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|2|1|-1|cell-tborder|1ln>|<cwith|1|1|6|6|cell-rborder|0ln>|<cwith|1|1|1|2|cell-tborder|0ln>|<cwith|7|7|1|2|cell-bborder|0ln>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-rborder|1ln>|<cwith|1|-1|3|3|cell-lborder|1ln>|<table|<row|<\cell>
+    Day
+  </cell>|<\cell>
+    Temp. (<math|<rsup|\<circ\>>>C)
+  </cell>|<\cell>
+    Slot 1
+  </cell>|<\cell>
+    Slot 2
+  </cell>|<\cell>
+    Slot 3
+  </cell>|<\cell>
+    Slot 4
+  </cell>>|<row|<\cell>
+    D1
+  </cell>|<\cell>
+    360
+  </cell>|<\cell>
+    73 (C₂)
+  </cell>|<\cell>
+    83 (C₃)
+  </cell>|<\cell>
+    67 (C₁)
+  </cell>|<\cell>
+    89 (C₄)
+  </cell>>|<row|<\cell>
+    D2
+  </cell>|<\cell>
+    370
+  </cell>|<\cell>
+    65 (C₁)
+  </cell>|<\cell>
+    87 (C₃)
+  </cell>|<\cell>
+    86 (C₄)
+  </cell>|<\cell>
+    91 (C₂)
+  </cell>>|<row|<\cell>
+    D3
+  </cell>|<\cell>
+    380
+  </cell>|<\cell>
+    147 (C₃)
+  </cell>|<\cell>
+    155 (C₁)
+  </cell>|<\cell>
+    127 (C₂)
+  </cell>|<\cell>
+    212 (C₄)
+  </cell>>|<row|<\cell>
+    D4
+  </cell>|<\cell>
+    380
+  </cell>|<\cell>
+    153 (C₄)
+  </cell>|<\cell>
+    90 (C₃)
+  </cell>|<\cell>
+    100 (C₂)
+  </cell>|<\cell>
+    108 (C₁)
+  </cell>>|<row|<\cell>
+    D5
+  </cell>|<\cell>
+    370
+  </cell>|<\cell>
+    150 (C₄)
+  </cell>|<\cell>
+    140 (C₁)
+  </cell>|<\cell>
+    121 (C₃)
+  </cell>|<\cell>
+    142 (C₂)
+  </cell>>|<row|<\cell>
+    D6
+  </cell>|<\cell>
+    360
+  </cell>|<\cell>
+    33 (C₁)
+  </cell>|<\cell>
+    54 (C₄)
+  </cell>|<\cell>
+    8 (C₂)
+  </cell>|<\cell>
+    46 (C₃)
+  </cell>>>>>|Corrosion Resistance Data<label|table:corr>>
+
+  Aggregating these observations yields the following cell means (two replicates per temperature \<times\> coating combination) and marginal means:
+
+  <\big-table>
+    <tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|1ln>|<cwith|1|-1|2|2|cell-halign|r>|<cwith|1|-1|3|3|cell-halign|r>|<cwith|1|-1|4|4|cell-halign|r>|<cwith|1|-1|5|5|cell-halign|r>|<cwith|1|-1|5|5|cell-rborder|1ln>|<cwith|1|-1|6|6|cell-halign|r>|<cwith|1|-1|6|6|cell-rborder|0ln>|<cwith|1|-1|1|-1|cell-valign|c>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|4|4|1|-1|cell-bborder|1ln>|<cwith|7|7|1|-1|cell-bborder|1ln>|<table|<row|<cell|>|<cell|<math|C<rsub|1>>>|<cell|<math|C<rsub|2>>>|<cell|<math|C<rsub|3>>>|<cell|<math|C<rsub|4>>>|<cell|Mean>>|<row|<cell|360>|<cell|67>|<cell|73>|<cell|83>|<cell|89>|<cell|78.00>>|<row|<cell|370>|<cell|65>|<cell|91>|<cell|87>|<cell|86>|<cell|82.25>>|<row|<cell|380>|<cell|155>|<cell|127>|<cell|147>|<cell|212>|<cell|160.25>>|<row|<cell|360>|<cell|33>|<cell|8>|<cell|46>|<cell|54>|<cell|35.25>>|<row|<cell|370>|<cell|140>|<cell|142>|<cell|121>|<cell|150>|<cell|138.25>>|<row|<cell|380>|<cell|108>|<cell|100>|<cell|90>|<cell|153>|<cell|112.75>>|<row|<cell|Mean>|<cell|94.67>|<cell|90.17>|<cell|95.67>|<cell|124>|<cell|101.125>>>>>
+  </big-table|>
+
+  <subsection|Split-Plot Model>
+
+  <subsubsection|Model Formulation>
+
+  Let
+
+  <equation*|y<rsub|i j k><with|mode|text|  >=<with|mode|text|  ><with|mode|text|yield<nbsp>for<nbsp>replicate<nbsp>>i=1,2,<with|mode|text| ><with|mode|text|temperature<nbsp>>j=1,2,3,<with|mode|text| ><with|mode|text|coating<nbsp>>k=1,\<ldots\>,4.>
+
+  We decompose<nbsp><math|y<rsub|i j k>><nbsp>into whole­plot and subplot components as follows:
+
+  <\enumerate>
+    <item><strong|Whole­plot (day) model:>
+
+    <equation*|m<rsub|i j>=\<mu\>+p<rsub|j>+\<epsilon\><rsub|i j><rsup|w>,>
+
+    where
+
+    <\itemize>
+      <item><math|\<mu\>><nbsp>is the grand mean,
+
+      <item><math|p<rsub|j>><nbsp>is the fixed main effect of temperature level<nbsp><math|j>, with<nbsp><math|<big|sum><rsub|j>p<rsub|j>=0>,
+
+      <item><math|\<epsilon\><rsub|i j><rsup|w>><nbsp>is the whole­plot error for replicate<nbsp><math|i>, day<nbsp><math|j>, satisfying<nbsp><math|\<bbb-E\><around*|[|\<epsilon\><rsub|i j><rsup|w>|]>=0><nbsp>and<nbsp><math|Var<around*|(|\<epsilon\><rsub|i j><rsup|w>|)>=\<sigma\><rsub|w><rsup|2>>.
+    </itemize>
+
+    <item><strong|Sub­plot (coating) model within each day:>
+
+    <equation*|y<rsub|i j k>=m<rsub|i j>+q<rsub|k>+<around*|(|p q|)><rsub|j k>+\<epsilon\><rsub|i j k><rsup|s>,>
+
+    where
+
+    <\itemize>
+      <item><math|q<rsub|k>><nbsp>is the fixed main effect of coating<nbsp><math|k>,<nbsp><math|<big|sum><rsub|k>q<rsub|k>=0>,
+
+      <item><math|<around*|(|p q|)><rsub|j k>><nbsp>is the fixed interaction between temperature<nbsp><math|j><nbsp>and coating<nbsp><math|k>, subject to<nbsp><math|<big|sum><rsub|j><around*|(|p q|)><rsub|j k>=0><nbsp>and<nbsp><math|<big|sum><rsub|k><around*|(|p q|)><rsub|j k>=0>,
+
+      <item><math|\<epsilon\><rsub|i j k><rsup|s>><nbsp>is the subplot error with<nbsp><math|\<bbb-E\><around*|[|\<epsilon\><rsub|i j k><rsup|s>|]>=0><nbsp>and<nbsp><math|Var<around*|(|\<epsilon\><rsub|i j k><rsup|s>|)>=\<sigma\><rsub|s><rsup|2>>, independent of<nbsp><math|\<epsilon\><rsub|i<rsup|\<prime\>>j<rsup|\<prime\>>><rsup|w>>.
+    </itemize>
+  </enumerate>
+
+  Equivalently, the split­plot model can be written as
+
+  <equation*|<with|math-level|0|math-display|false|<with|math-level|0|math-display|false|<with|math-level|0|math-display|true|y<rsub|i j k>=<below|<wide*|\<mu\><with|mode|text|  >+<with|mode|text|  >p<rsub|j><with|mode|text|  >+<with|mode|text|  >\<epsilon\><rsub|i j><rsup|w>|\<wide-underbrace*\>>|<with|mode|text|whole­plot<nbsp>(day)<nbsp>model>><with|mode|text|  >+<with|mode|text|  ><below|<wide*|q<rsub|k><with|mode|text|  >+<with|mode|text|  ><around*|(|p q|)><rsub|j k><with|mode|text|  >+<with|mode|text|  >\<epsilon\><rsub|i j k><rsup|s>|\<wide-underbrace*\>>|<with|mode|text|subplot<nbsp>(coating)<nbsp>model>>,>>>>
+
+  Because temperature assignments cannot be rerandomized more than once per day, the variability due to<nbsp><math|\<epsilon\><rsup|w>><nbsp>must be estimated from the variation among whole plots (days). Coating effects and their interactions are estimated from within­day comparisons and thus are tested against the finer­scale error<nbsp><math|\<sigma\><rsub|s><rsup|2>>. This split­plot structure both reflects the physical constraints of the furnace and provides efficient estimation of the subplot (coating) effects while properly accounting for the larger whole­plot variability.
+
+  <subsubsection|ANOVA for split-plot design>
+
+  <strong|Data Decomposition><next-line>Any observation may be decomposed into orthogonal components corresponding to overall mean, main effects, interaction, and residuals:
+
+  <equation*|<tabular|<tformat|<cwith|1|-1|1|1|cell-halign|r>|<cwith|1|-1|2|2|cell-halign|l>|<table|<row|<cell|<with|math-level|0|math-display|true|y<rsub|ijk>>>|<cell|<with|math-level|0|math-display|true|=y<rsub|\<cdot\>\<cdot\>\<cdot\>>+<around*|(|y<rsub|\<cdot\>j\<cdot\>>-y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)>+<around*|(|y<rsub|ij\<cdot\>>-y<rsub|\<cdot\>j\<cdot\>>|)>+<around*|(|y<rsub|\<cdot\>\<cdot\>k>-y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)>+<around*|(|y<rsub|\<cdot\>jk>-y<rsub|\<cdot\>j\<cdot\>>-y<rsub|\<cdot\>\<cdot\>k>+y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)>+<around*|(|y<rsub|ijk>-y<rsub|ij\<cdot\>>-y<rsub|\<cdot\>jk>+y<rsub|\<cdot\>j\<cdot\>>|)>.>>>>>>>
+
+  <strong|ANOVA Table><next-line>Let
+
+  <equation*|<tabular|<tformat|<cwith|1|-1|1|1|cell-halign|r>|<cwith|1|-1|2|2|cell-halign|l>|<cwith|1|-1|3|3|cell-halign|r>|<cwith|1|-1|4|4|cell-halign|l>|<table|<row|<cell|<with|math-level|0|math-display|true|SS<rsub|P>>>|<cell|<with|math-level|0|math-display|true|=b<with|mode|text| >q<big|sum><rsub|j=1><rsup|p><around*|(|y<rsub|\<cdot\>j\<cdot\>>-y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>,>>|<cell|<with|math-level|0|math-display|true|df<rsub|P>>>|<cell|<with|math-level|0|math-display|true|=p-1,>>>|<row|<cell|<with|math-level|0|math-display|true|SS<rsub|WP>>>|<cell|<with|math-level|0|math-display|true|=q<big|sum><rsub|i=1><rsup|b><big|sum><rsub|j=1><rsup|p><around*|(|y<rsub|ij\<cdot\>>-y<rsub|\<cdot\>j\<cdot\>>|)><rsup|2>,>>|<cell|<with|math-level|0|math-display|true|df<rsub|WP>>>|<cell|<with|math-level|0|math-display|true|=b<with|mode|text| >p-p,>>>|<row|<cell|<with|math-level|0|math-display|true|SS<rsub|Q>>>|<cell|<with|math-level|0|math-display|true|=b<with|mode|text| >p<big|sum><rsub|k=1><rsup|q><around*|(|y<rsub|\<cdot\>\<cdot\>k>-y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>,>>|<cell|<with|math-level|0|math-display|true|df<rsub|Q>>>|<cell|<with|math-level|0|math-display|true|=q-1,>>>|<row|<cell|<with|math-level|0|math-display|true|SS<rsub|PQ>>>|<cell|<with|math-level|0|math-display|true|=b<big|sum><rsub|j=1><rsup|p><big|sum><rsub|k=1><rsup|q><around*|(|y<rsub|\<cdot\>jk>-y<rsub|\<cdot\>j\<cdot\>>-y<rsub|\<cdot\>\<cdot\>k>+y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>,>>|<cell|<with|math-level|0|math-display|true|df<rsub|PQ>>>|<cell|<with|math-level|0|math-display|true|=<around*|(|p-1|)><around*|(|q-1|)>,>>>|<row|<cell|<with|math-level|0|math-display|true|SS<rsub|SP>>>|<cell|<with|math-level|0|math-display|true|=<big|sum><rsub|i,j,k><around*|(|y<rsub|ijk>-y<rsub|ij\<cdot\>>-y<rsub|\<cdot\>jk>+y<rsub|\<cdot\>j\<cdot\>>|)><rsup|2>,>>|<cell|<with|math-level|0|math-display|true|df<rsub|SP>>>|<cell|<with|math-level|0|math-display|true|=b<with|mode|text| >p<with|mode|text| ><around*|(|q-1|)>,>>>|<row|<cell|<with|math-level|0|math-display|true|SS<rsub|Total>>>|<cell|<with|math-level|0|math-display|true|=<big|sum><rsub|i,j,k><around*|(|y<rsub|ijk>-y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>,>>|<cell|<with|math-level|0|math-display|true|df<rsub|Total>>>|<cell|<with|math-level|0|math-display|true|=b<with|mode|text| >p<with|mode|text| >q-1.>>>>>>>
+
+  Then we have an ANOVA table
+
+  <big-table|<tabular|<tformat|<twith|table-hmode|min>|<twith|table-width|1par>|<cwith|1|-1|1|-1|cell-hyphen|t>|<cwith|2|3|1|1|cell-lborder|0ln>|<cwith|2|3|4|4|cell-rborder|0ln>|<cwith|4|4|1|-1|cell-tborder|1ln>|<cwith|3|3|1|-1|cell-bborder|1ln>|<cwith|6|6|1|-1|cell-bborder|1ln>|<cwith|7|7|1|-1|cell-tborder|1ln>|<cwith|4|6|1|1|cell-lborder|0ln>|<cwith|4|6|4|4|cell-rborder|0ln>|<cwith|1|1|1|-1|cell-tborder|0ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|2|1|-1|cell-tborder|1ln>|<cwith|1|1|1|1|cell-lborder|0ln>|<cwith|1|1|4|4|cell-rborder|0ln>|<table|<row|<\cell>
+    Source
+  </cell>|<\cell>
+    SS
+  </cell>|<\cell>
+    df
+  </cell>|<\cell>
+    EMS
+  </cell>>|<row|<\cell>
+    <math|P>
+  </cell>|<\cell>
+    <math|SS<rsub|P>>
+  </cell>|<\cell>
+    <math|p-1>
+  </cell>|<\cell>
+    <math|b q<rsup|-1>\<sigma\><rsub|s><rsup|2>+q<with|mode|text| >\<sigma\><rsub|w><rsup|2>+b q<with|mode|text| ><with|math-display|true|math-level|0|<frac|\<big-sum\><rsub|j>p<rsub|j><rsup|2>|p-1>>>
+  </cell>>|<row|<\cell>
+    Whole­plot error
+  </cell>|<\cell>
+    <math|SS<rsub|WP>>
+  </cell>|<\cell>
+    <math|p<around*|(|b-1|)>>
+  </cell>|<\cell>
+    <math|q<with|mode|text| >\<sigma\><rsub|w><rsup|2>+\<sigma\><rsub|s><rsup|2>>
+  </cell>>|<row|<\cell>
+    <math|Q>
+  </cell>|<\cell>
+    <math|SS<rsub|Q>>
+  </cell>|<\cell>
+    <math|q-1>
+  </cell>|<\cell>
+    <math|\<sigma\><rsub|s><rsup|2>+b p<with|mode|text| ><with|math-display|true|math-level|0|<frac|\<big-sum\><rsub|k>q<rsub|k><rsup|2>|q-1>>>
+  </cell>>|<row|<\cell>
+    <math|P\<times\>Q>
+  </cell>|<\cell>
+    <math|SS<rsub|PQ>>
+  </cell>|<\cell>
+    <math|<around*|(|p-1|)><around*|(|q-1|)>>
+  </cell>|<\cell>
+    <math|\<sigma\><rsub|s><rsup|2>+b<with|mode|text| ><with|math-display|true|math-level|0|<frac|<big|sum><rsub|j k><around*|(|p q|)><rsub|j k><rsup|2>|<around*|(|p-1|)><around*|(|q-1|)>>>>
+  </cell>>|<row|<\cell>
+    Subplot error
+  </cell>|<\cell>
+    <math|SS<rsub|SP>>
+  </cell>|<\cell>
+    <math|b p<around*|(|q-1|)>>
+  </cell>|<\cell>
+    <math|\<sigma\><rsub|s><rsup|2>>
+  </cell>>|<row|<\cell>
+    <strong|Total>
+  </cell>|<\cell>
+    <math|SS<rsub|Total>>
+  </cell>|<\cell>
+    <math|b p q-1>
+  </cell>|<\cell>
+    —
+  </cell>>>>>|ANOVA Table of Split-plot Design>
+
+  <subsection|Split-plot with Blocks>
+
+  Let
+
+  <equation*|y<rsub|i j k>=<with|mode|text|response<nbsp>in<nbsp>block<nbsp>>i,<with|mode|text|  ><with|mode|text|whole­plot<nbsp>treatment<nbsp>>j,<with|mode|text|  ><with|mode|text|subplot<nbsp>treatment<nbsp>>k,>
+
+  for<nbsp><math|i=1,\<ldots\>,b>,<nbsp><math|j=1,\<ldots\>,p>,<nbsp><math|k=1,\<ldots\>,q>. Under the usual sum­to­zero constraints on all fixed effects, the mixed model is
+
+  <equation*|<with|math-level|0|math-display|false|<with|math-level|0|math-display|false|<with|math-level|0|math-display|true|y<rsub|i j k>=<below|<wide*|\<mu\>+b<rsub|i>+p<rsub|j>+\<epsilon\><rsub|i j><rsup|<around*|(|w|)>>|\<wide-underbrace*\>>|<with|math-level|1|<tabular|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<table|<row|<cell|<with|math-level|1|math-display|false|<with|mode|text|grand<nbsp>mean<nbsp>>\<mu\>,>>>|<row|<cell|<with|math-level|1|math-display|false|<with|mode|text|block<nbsp>effect<nbsp>>b<rsub|i>,>>>|<row|<cell|<with|math-level|1|math-display|false|<with|mode|text|whole­plot<nbsp>(block><with|math-level|0|math-display|false|\<times\>><with|mode|text|P)<nbsp>interaction<nbsp>error><with|mode|text|<nbsp>>\<epsilon\><rsub|i j><rsup|<around*|(|w|)>>\<sim\><around*|(|0,\<sigma\><rsub|w><rsup|2>|)>>>>>>>>><with|mode|text|  >+<with|mode|text|  ><below|<wide*|q<rsub|k>+<around*|(|p q|)><rsub|j k>+\<epsilon\><rsub|i j k><rsup|<around*|(|s|)>>|\<wide-underbrace*\>>|<with|math-level|1|<tabular|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<table|<row|<cell|<with|math-level|1|math-display|false|<with|mode|text|subplot<nbsp>factor<nbsp>>q<rsub|k>,>>>|<row|<cell|<with|math-level|1|math-display|false|P\<times\>Q<with|mode|text|<nbsp>interaction<nbsp>><around*|(|p q|)><rsub|j k>,>>>|<row|<cell|<with|math-level|1|math-display|false|<with|mode|text|subplot<nbsp>error<nbsp>>\<epsilon\><rsub|i j k><rsup|<around*|(|s|)>>\<sim\><around*|(|0,\<sigma\><rsub|s><rsup|2>|)>>>>>>>>>.>>>>
+
+  Each observation decomposes into orthogonal contrasts:
+
+  <equation*|<tabular|<tformat|<cwith|1|-1|1|1|cell-halign|r>|<cwith|1|-1|2|2|cell-halign|l>|<table|<row|<cell|<with|math-level|0|math-display|true|y<rsub|i j k>>>|<cell|<with|math-level|0|math-display|true|=y<rsub|\<cdot\>\<cdot\>\<cdot\>>+<around*|(|y<rsub|i\<cdot\>\<cdot\>>-y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)>+<around*|(|y<rsub|\<cdot\>j\<cdot\>>-y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)>+<around*|(|y<rsub|i j\<cdot\>>-y<rsub|i\<cdot\>\<cdot\>>-y<rsub|\<cdot\>j\<cdot\>>+y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)>>>>|<row|<cell|>|<cell|<with|math-level|0|math-display|true|+<around*|(|y<rsub|\<cdot\>\<cdot\>k>-y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)>+<around*|(|y<rsub|\<cdot\>j k>-y<rsub|\<cdot\>j\<cdot\>>-y<rsub|\<cdot\>\<cdot\>k>+y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)>+<around*|(|y<rsub|i j k>-y<rsub|i j\<cdot\>>-y<rsub|\<cdot\>j k>+y<rsub|\<cdot\>j\<cdot\>>|)>,>>>>>>>
+
+  Define the whole­plot error sum of squares
+
+  <equation*|SS<rsub|WP>=<big|sum><rsub|i=1><rsup|b><big|sum><rsub|j=1><rsup|p><around*|(|y<rsub|ij\<cdot\>>-y<rsub|i\<cdot\>\<cdot\>>-y<rsub|\<cdot\>j\<cdot\>>+y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>.>
+
+  One shows by independence and zero­sum constraints that
+
+  <equation*|\<bbb-E\><around*|[|SS<rsub|WP>|]>=<around*|(|b-1|)><around*|(|p-1|)><with|mode|text| ><around*|(|q<rsup|-1>\<sigma\><rsub|s><rsup|2>+\<sigma\><rsub|w><rsup|2>|)>.>
+
+  Thus the whole­plot error mean square satisfies
+
+  <equation*|\<bbb-E\><around*|[|MS<rsub|WP>|]>=<frac|q|<around*|(|b-1|)><around*|(|p-1|)>><with|mode|text| >\<bbb-E\><around*|[|SS<rsub|WP>|]><with|mode|text|  >=<with|mode|text|  >q<with|mode|text| >\<sigma\><rsub|w><rsup|2><with|mode|text|  >+<with|mode|text|  >\<sigma\><rsub|s><rsup|2>,>
+
+  exactly as in the block­free split­plot design.
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  <strong|>
+
   \;
 
   \;
@@ -1695,12 +2113,20 @@
   <\collection>
     <associate|2^2design|<tuple|3.2.1|17>>
     <associate|2^2not|<tuple|12|17>>
-    <associate|2factmodel|<tuple|1|3>>
+    <associate|2factmodel|<tuple|1|4>>
     <associate|4blocks_2^4|<tuple|18|24>>
     <associate|4blocks_ex1|<tuple|17|23>>
     <associate|FacModel|<tuple|3|17>>
     <associate|auto-1|<tuple|1|2>>
     <associate|auto-10|<tuple|2.4|6>>
+    <associate|auto-100|<tuple|27|39>>
+    <associate|auto-101|<tuple|6.2|39>>
+    <associate|auto-102|<tuple|6.2.1|41>>
+    <associate|auto-103|<tuple|6.2.2|41>>
+    <associate|auto-104|<tuple|28|?>>
+    <associate|auto-105|<tuple|6.3|?>>
+    <associate|auto-106|<tuple|A|?>>
+    <associate|auto-107|<tuple|29|?>>
     <associate|auto-11|<tuple|5|6>>
     <associate|auto-12|<tuple|2.5|6>>
     <associate|auto-13|<tuple|1|7>>
@@ -1751,8 +2177,8 @@
     <associate|auto-54|<tuple|3.2.3|20>>
     <associate|auto-55|<tuple|3.3|21>>
     <associate|auto-56|<tuple|14|21>>
-    <associate|auto-57|<tuple|3.4|22>>
-    <associate|auto-58|<tuple|3.4.1|22>>
+    <associate|auto-57|<tuple|3.4|21>>
+    <associate|auto-58|<tuple|3.4.1|21>>
     <associate|auto-59|<tuple|14|22>>
     <associate|auto-6|<tuple|3|4>>
     <associate|auto-60|<tuple|3.4.2|22>>
@@ -1782,24 +2208,32 @@
     <associate|auto-82|<tuple|4.4.1|31>>
     <associate|auto-83|<tuple|22|31>>
     <associate|auto-84|<tuple|23|31>>
-    <associate|auto-85|<tuple|4.4.2|31>>
+    <associate|auto-85|<tuple|4.4.2|32>>
     <associate|auto-86|<tuple|24|32>>
     <associate|auto-87|<tuple|4.4.3|32>>
-    <associate|auto-88|<tuple|5|32>>
+    <associate|auto-88|<tuple|5|33>>
     <associate|auto-89|<tuple|5.1|33>>
     <associate|auto-9|<tuple|4|5>>
-    <associate|auto-90|<tuple|5.2|33>>
-    <associate|auto-91|<tuple|5.2.1|?>>
-    <associate|auto-92|<tuple|A|?>>
-    <associate|auto-93|<tuple|25|?>>
+    <associate|auto-90|<tuple|5.1.1|34>>
+    <associate|auto-91|<tuple|5.1.2|34>>
+    <associate|auto-92|<tuple|5.2|35>>
+    <associate|auto-93|<tuple|5.2.1|36>>
+    <associate|auto-94|<tuple|5.2.2|37>>
+    <associate|auto-95|<tuple|25|37>>
+    <associate|auto-96|<tuple|5.2.3|37>>
+    <associate|auto-97|<tuple|6|38>>
+    <associate|auto-98|<tuple|6.1|39>>
+    <associate|auto-99|<tuple|26|39>>
     <associate|eq:2block|<tuple|4|23>>
     <associate|eq:box|<tuple|2|7>>
     <associate|eq:defre|<tuple|6|25>>
+    <associate|eq:mix|<tuple|7|33>>
     <associate|fig:ofat|<tuple|15|22>>
     <associate|fold|<tuple|24|32>>
     <associate|model4.1|<tuple|5|24>>
-    <associate|table:BP|<tuple|25|33>>
+    <associate|table:BP|<tuple|29|41>>
     <associate|table:abc|<tuple|16|23>>
+    <associate|table:corr|<tuple|26|39>>
     <associate|table:ofat|<tuple|15|23>>
     <associate|yate|<tuple|14|21>>
   </collection>
@@ -1929,9 +2363,15 @@
 
       <tuple|normal|<surround|<hidden-binding|<tuple>|24>||<with|mode|<quote|math>|2<rsub|IV><rsup|4-1>> in 4 blocks >|<pageref|auto-86>>
 
-      <tuple|normal|<\surround|<hidden-binding|<tuple>|25>|>
+      <tuple|normal|<surround|<hidden-binding|<tuple>|25>||ANOVA Table for Random Effects Model>|<pageref|auto-95>>
+
+      <tuple|normal|<surround|<hidden-binding|<tuple>|26>||Corrosion Resistance Data>|<pageref|auto-99>>
+
+      <tuple|normal|<surround|<hidden-binding|<tuple>|27>||>|<pageref|auto-100>>
+
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|28>|>
         Plackett–Burman Table
-      </surround>|<pageref|auto-90>>
+      </surround>|<pageref|auto-103>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Randomized Block Design> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1><vspace|0.5fn>
@@ -2032,7 +2472,27 @@
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|5<space|2spc>Random Effects Model> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-88><vspace|0.5fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix A<space|2spc>Plackett–Burman Table> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-89><vspace|0.5fn>
+      <with|par-left|<quote|1tab>|5.1<space|2spc>General Case: Mixed Effects Model <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-89>>
+
+      <with|par-left|<quote|2tab>|5.1.1<space|2spc>Recap: estimable function and its properties <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-90>>
+
+      <with|par-left|<quote|2tab>|5.1.2<space|2spc>Estimation of contrasts <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-91>>
+
+      <with|par-left|<quote|1tab>|5.2<space|2spc>One-way Random Effects Model <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-92>>
+
+      <with|par-left|<quote|2tab>|5.2.1<space|2spc>Estimation of random effects <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-93>>
+
+      <with|par-left|<quote|2tab>|5.2.2<space|2spc>Estimation of variances <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-94>>
+
+      <with|par-left|<quote|2tab>|5.2.3<space|2spc>Hypothesis test <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-96>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|6<space|2spc>Split-Plot Design> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-97><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|6.1<space|2spc>Motivating Example: Corrosion Resistance <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-98>>
+
+      <with|par-left|<quote|1tab>|6.2<space|2spc>Model Formulation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-101>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix A<space|2spc>Plackett–Burman Table> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-102><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

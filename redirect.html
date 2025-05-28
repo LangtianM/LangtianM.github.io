@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting to Obsidian…</title>
+  <script>
+    (function() {
+      // parse vault and file parameters from URL
+      const params = new URLSearchParams(window.location.search);
+      const vault = params.get('vault') || '';
+      const file  = params.get('file')  || '';
+      // construct obsidian:// URI
+      const uri = 'obsidian://open?' +
+                  'vault=' + encodeURIComponent(vault) +
+                  '&file='  + encodeURIComponent(file);
+      // try to redirect directly
+      window.location.replace(uri);
+    })();
+  </script>
+</head>
+<body>
+  <p>If not redirecting, please clisk:
+    <a id="fallback" href="#">Open Obsidian</a>
+  </p>
+  <script>
+    // add href to fallback link
+    const params = new URLSearchParams(window.location.search);
+    const vault = params.get('vault') || '';
+    const file  = params.get('file')  || '';
+    const uri = 'obsidian://open?' +
+                'vault=' + encodeURIComponent(vault) +
+                '&file='  + encodeURIComponent(file);
+    document.getElementById('fallback').href = uri;
+  </script>
+</body>
+</html>

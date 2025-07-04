@@ -1,0 +1,1 @@
+{"rule":"USE_TO_VERB","sentence":"^\\QFor example, is gravity an actual force present in the objective world, or is it just a \"model\" physicists use to describe our world?\\E$"}

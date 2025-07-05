@@ -7,7 +7,7 @@ categories: Thoughts
 citation: true
 ---
 
-## What Is Statistics, Really?<d-footnote>TMy mind has been greatly influenced by [Ludwig Wittgenstein](https://en.wikipedia.org/wiki/Ludwig_Wittgenstein) and Analytical Philosophy. This article discusses my thought about statistics from a philosophical perspective. Actually, it is the philosophical significance of statistics that attracts me to this field. Also, [here](https://www.bilibili.com/video/BV1TD421g7Y6/?spm_id_from=333.999.0.0&vd_source=122f65726f0fe678830e7adff2d7c3ff) is a talk (in Chinese) I gave to the junior students at SUSTech about why I chose to study statistics.</d-footnote>
+## What Is Statistics, Really?[^1]
 
 Wikipedia defines statistics as "the discipline that concerns the collection, organization, analysis, interpretation, and presentation of data". However, this definition is too operational and insufficiently general. If I were to define statistics, I would call it **the study of inductive reasoning**.
 
@@ -34,6 +34,9 @@ Unlike the natural sciences, statistics is highly instrumentalist, and this aban
 ## Concluding Remarks
 
 Our discussion reveals how closely statistics is intertwined with epistemology. By employing mathematics and models, statistics offers a framework for making sense of an objective world that we can never fully grasp with certainty. This profound link reminds us that statistics is not merely a technical tool, but an essential part of our ongoing quest to understand the limits of human knowledge.
+
+
+[^1]: My mind has been greatly influenced by [Ludwig Wittgenstein](https://en.wikipedia.org/wiki/Ludwig_Wittgenstein) and Analytical Philosophy. This article discusses my thought about statistics from a philosophical perspective. Actually, it is the philosophical significance of statistics that attracts me to this field. Also, [here](https://www.bilibili.com/video/BV1TD421g7Y6/?spm_id_from=333.999.0.0&vd_source=122f65726f0fe678830e7adff2d7c3ff) is a talk (in Chinese) I gave to the junior students at SUSTech about why I chose to study statistics.
 
 
 

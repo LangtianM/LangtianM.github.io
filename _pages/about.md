@@ -24,9 +24,11 @@ social: true # includes social icons at the bottom of the page
 
 Welcome to my homepage!
 
-I'm a first-year Ph.D. student in Statistics at [University of Wisconsin-Madison](https://www.wisc.edu), advised by Prof. [Kris Sankaran](https://measurement-and-microbes.org/_includes/team) Before coming to Madison, I received my B.Sc with honors in Statistics at [Southern University of Science and Technology](https://www.sustech.edu.cn/en/) (SUSTech). My current research focuses on **generative modeling and simulation for single-cell omics data**.
+I'm a first-year Ph.D. student in Statistics at [University of Wisconsin-Madison](https://www.wisc.edu), advised by Prof. [Kris Sankaran](https://measurement-and-microbes.org/_includes/team) Before coming to Madison, I received my B.Sc with honors in Statistics at [Southern University of Science and Technology](https://www.sustech.edu.cn/en/) (SUSTech). 
 
-Actually, it is the philosophical significance of statistics that attracts me to this field. You can find my thoughts on statistics from a philosophical perspective [here](https://langtianm.github.io/blog/2024/Second-order/).
+I have board interests in statistics, mathematics and computer sciences. My current research focuses on **generative modeling and simulation for single-cell omics data**.
+
+I'm also a philosophy enthusiast with particular interests in philosophy of science and analytic philosophy. It is the philosophical significance of statistics that attracts me to this field. You can find my thoughts on statistics from a philosophical perspective [here](https://langtianm.github.io/blog/2024/Second-order/).
 
 
 

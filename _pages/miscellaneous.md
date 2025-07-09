@@ -8,65 +8,70 @@ nav: true
 
 Thanks for visiting this page! Beside my academic life, I'm also interested in photography, literature and philosophy. I would like to share some of my photography works here.
 
-## Madison
+## Life in Madison
 
 <div style="display: flex; overflow-x: scroll; width: 100%; padding: 10px; gap: 10px;">
-    <img src="../assets/img/photography/Madison/DSC_4280.jpg" alt="Madison 1" style="height: 200px;"/>
-    <img src="../assets/img/photography/Madison/DSC_5505.jpg" alt="Madison 6" style="height: 200px;"/>
-    <img src="../assets/img/photography/Madison/DSC_5512.jpg" alt="Madison 7" style="height: 200px;"/>
-    <img src="../assets/img/photography/Madison/DSC_4291.jpg" alt="Madison 2" style="height: 200px;"/>
-    <img src="../assets/img/photography/Madison/DSC_4310.jpg" alt="Madison 3" style="height: 200px;"/>
-    <img src="../assets/img/photography/Madison/DSC_4962.jpg" alt="Madison 4" style="height: 200px;"/>
-    <img src="../assets/img/photography/Madison/DSC_5096.jpg" alt="Madison 5" style="height: 200px;"/>
+    {% assign image_files = site.static_files | where_exp: "file", "file.path contains '/photography/Madison/' and file.extname == '.jpg'" %}
+    {% for image in image_files %}
+    <img src="{{ image.path | relative_url }}" alt="Madison {{ forloop.index }}" style="height: 200px;"/>
+    {% endfor %}
 </div>
 
+## The Winter of Madison
+
+<div style="display: flex; overflow-x: scroll; width: 100%; padding: 10px; gap: 10px;">
+    {% assign image_files = site.static_files | where_exp: "file", "file.path contains '/photography/Madison_Winter/' and file.extname == '.jpg'" | reverse %}
+    {% for image in image_files %}
+    <img src="{{ image.path | relative_url }}" alt="Winter {{ forloop.index }}" style="height: 200px;"/>
+    {% endfor %}
+</div>
 
 ## Chicago
 
 <div style="display: flex; overflow-x: scroll; width: 100%; padding: 10px; gap: 10px;">
-    <img src="../assets/img/photography/Chicago/Chicago_7.jpg" alt="Chicago 1" style="height: 200px;"/>
-    <img src="../assets/img/photography/Chicago/Chicago_4.jpg" alt="Chicago 2" style="height: 200px;"/>
-    <img src="../assets/img/photography/Chicago/Chicago_9.jpg" alt="Chicago 3" style="height: 200px;"/>
-    <img src="../assets/img/photography/Chicago/Chicago_12.jpg" alt="Chicago 4" style="height: 200px;"/>
-    <img src="../assets/img/photography/Chicago/Chicago_5.jpg" alt="Chicago 5" style="height: 200px;"/>
-    <img src="../assets/img/photography/Chicago/Chicago_6.jpg" alt="Chicago 6" style="height: 200px;"/>
-    <img src="../assets/img/photography/Chicago/Chicago_1.jpg" alt="Chicago 7" style="height: 200px;"/>
-    <img src="../assets/img/photography/Chicago/Chicago_8.jpg" alt="Chicago 8" style="height: 200px;"/>
-    <img src="../assets/img/photography/Chicago/Chicago_3.jpg" alt="Chicago 9" style="height: 200px;"/>
-    <img src="../assets/img/photography/Chicago/Chicago_10.jpg" alt="Chicago 10" style="height: 200px;"/>
-    <img src="../assets/img/photography/Chicago/Chicago_11.jpg" alt="Chicago 11" style="height: 200px;"/>
-    <img src="../assets/img/photography/Chicago/Chicago_2.jpg" alt="Chicago 12" style="height: 200px;"/>
-    <img src="../assets/img/photography/Chicago/Chicago_13.jpg" alt="Chicago 13" style="height: 200px;"/>
+    {% assign image_files = site.static_files | where_exp: "file", "file.path contains '/photography/Chicago/' and file.extname == '.jpg'" %}
+    {% for image in image_files %}
+    <img src="{{ image.path | relative_url }}" alt="Chicago {{ forloop.index }}" style="height: 200px;"/>
+    {% endfor %}
+</div>
+
+## Travels
+
+<div style="display: flex; overflow-x: scroll; width: 100%; padding: 10px; gap: 10px;">
+    {% assign image_files = site.static_files | where_exp: "file", "file.path contains '/photography/Travels/'" %}
+    {% assign image_files = image_files | where_exp: "file", "file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.JPG'" %}
+    {% for image in image_files %}
+    <img src="{{ image.path | relative_url }}" alt="Travels {{ forloop.index }}" style="height: 200px;"/>
+    {% endfor %}
 </div>
 
 ## Xi'an
 
 <div style="display: flex; overflow-x: scroll; width: 100%; padding: 10px; gap: 10px;">
-    <img src="../assets/img/photography/Xi'an/DSC_3957.jpg" alt="Xi'an 6" style="height: 200px;"/>
-    <img src="../assets/img/photography/Xi'an/DSC_3775.jpg" alt="Xi'an 4" style="height: 200px;"/>
-    <img src="../assets/img/photography/Xi'an/DSC_3432.jpg" alt="Xi'an 1" style="height: 200px;"/>
-    <img src="../assets/img/photography/Xi'an/DSC_3565.jpg" alt="Xi'an 2" style="height: 200px;"/>
-    <img src="../assets/img/photography/Xi'an/DSC_3763.jpg" alt="Xi'an 3" style="height: 200px;"/>
-    <img src="../assets/img/photography/Xi'an/DSC_3947.jpg" alt="Xi'an 5" style="height: 200px;"/>
-    <img src="../assets/img/photography/Xi'an/DSC_3981.jpg" alt="Xi'an 7" style="height: 200px;"/>
+    {% assign xian_path = "/photography/Xi'an/" %}
+    {% assign image_files = site.static_files | where_exp: "file", "file.path contains xian_path" %}
+    {% assign image_files = image_files | where_exp: "file", "file.extname == '.jpg'" %}
+    {% for image in image_files %}
+    <img src="{{ image.path | relative_url }}" alt="Xi'an {{ forloop.index }}" style="height: 200px;"/>
+    {% endfor %}
 </div>
 
-## Flowers and Cemeteries
+## Clouds and Sunsets
 
 <div style="display: flex; overflow-x: scroll; width: 100%; padding: 10px; gap: 10px;">
-    <img src="../assets/img/photography/cemetery/20241102-DSC_5551.jpg" alt="Cemetery 4" style="height: 200px;"/>
-    <img src="../assets/img/photography/cemetery/20241102-DSC_5529.jpg" alt="Cemetery 1" style="height: 200px;"/>
-    <img src="../assets/img/photography/cemetery/20241102-DSC_5539.jpg" alt="Cemetery 2" style="height: 200px;"/>
-    <img src="../assets/img/photography/cemetery/20241102-DSC_5547.jpg" alt="Cemetery 3" style="height: 200px;"/>
+    {% assign image_files = site.static_files | where_exp: "file", "file.path contains '/photography/Clouds_and_Sunsets/'" %}
+    {% assign image_files = image_files | where_exp: "file", "file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.JPG'" | reverse %}
+    {% for image in image_files %}
+    <img src="{{ image.path | relative_url }}" alt="Clouds and Sunsets {{ forloop.index }}" style="height: 200px;"/>
+    {% endfor %}
 </div>
 
 ## Others
 
 <div style="display: flex; overflow-x: scroll; width: 100%; padding: 10px; gap: 10px;">
-    <img src="../assets/img/photography/Others/DSC_0793.jpeg" alt="Others 1" style="height: 200px;"/>
-    <img src="../assets/img/photography/Others/DSC_1157.jpeg" alt="Others 2" style="height: 200px;"/>
-    <img src="../assets/img/photography/Others/DSC_1279.jpeg" alt="Others 3" style="height: 200px;"/>
-    <img src="../assets/img/photography/Others/DSC_2244.jpg" alt="Others 4" style="height: 200px;"/>
-    <img src="../assets/img/photography/Others/DSC_2419.JPG" alt="Others 5" style="height: 200px;"/>
-    <img src="../assets/img/photography/Others/DSC_3168.jpg" alt="Others 6" style="height: 200px;"/>
+    {% assign image_files = site.static_files | where_exp: "file", "file.path contains '/photography/Others/'" %}
+    {% assign image_files = image_files | where_exp: "file", "file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.JPG'" %}
+    {% for image in image_files %}
+    <img src="{{ image.path | relative_url }}" alt="Others {{ forloop.index }}" style="height: 200px;"/>
+    {% endfor %}
 </div>

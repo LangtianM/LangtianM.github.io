@@ -1,4 +1,4 @@
-<TMU|<tuple|1.1.0|2025.0.7>>
+<TMU|<tuple|1.1.0|2025.0.10>>
 
 <style|<tuple|generic|number-europe>>
 
@@ -2023,7 +2023,7 @@
 
   <strong|ANOVA Table><next-line>Let
 
-  <equation*|<tabular|<tformat|<cwith|1|-1|1|1|cell-halign|r>|<cwith|1|-1|2|2|cell-halign|l>|<cwith|1|-1|3|3|cell-halign|r>|<cwith|1|-1|4|4|cell-halign|l>|<table|<row|<cell|<with|math-level|0|math-display|true|SS<rsub|P>>>|<cell|<with|math-level|0|math-display|true|=b<with|mode|text| >q<big|sum><rsub|j=1><rsup|p><around*|(|y<rsub|\<cdot\>j\<cdot\>>-y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>,>>|<cell|<with|math-level|0|math-display|true|df<rsub|P>>>|<cell|<with|math-level|0|math-display|true|=p-1,>>>|<row|<cell|<with|math-level|0|math-display|true|SS<rsub|WP>>>|<cell|<with|math-level|0|math-display|true|=q<big|sum><rsub|i=1><rsup|b><big|sum><rsub|j=1><rsup|p><around*|(|y<rsub|ij\<cdot\>>-y<rsub|\<cdot\>j\<cdot\>>|)><rsup|2>,>>|<cell|<with|math-level|0|math-display|true|df<rsub|WP>>>|<cell|<with|math-level|0|math-display|true|=b<with|mode|text| >p-p,>>>|<row|<cell|<with|math-level|0|math-display|true|SS<rsub|Q>>>|<cell|<with|math-level|0|math-display|true|=b<with|mode|text| >p<big|sum><rsub|k=1><rsup|q><around*|(|y<rsub|\<cdot\>\<cdot\>k>-y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>,>>|<cell|<with|math-level|0|math-display|true|df<rsub|Q>>>|<cell|<with|math-level|0|math-display|true|=q-1,>>>|<row|<cell|<with|math-level|0|math-display|true|SS<rsub|PQ>>>|<cell|<with|math-level|0|math-display|true|=b<big|sum><rsub|j=1><rsup|p><big|sum><rsub|k=1><rsup|q><around*|(|y<rsub|\<cdot\>jk>-y<rsub|\<cdot\>j\<cdot\>>-y<rsub|\<cdot\>\<cdot\>k>+y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>,>>|<cell|<with|math-level|0|math-display|true|df<rsub|PQ>>>|<cell|<with|math-level|0|math-display|true|=<around*|(|p-1|)><around*|(|q-1|)>,>>>|<row|<cell|<with|math-level|0|math-display|true|SS<rsub|SP>>>|<cell|<with|math-level|0|math-display|true|=<big|sum><rsub|i,j,k><around*|(|y<rsub|ijk>-y<rsub|ij\<cdot\>>-y<rsub|\<cdot\>jk>+y<rsub|\<cdot\>j\<cdot\>>|)><rsup|2>,>>|<cell|<with|math-level|0|math-display|true|df<rsub|SP>>>|<cell|<with|math-level|0|math-display|true|=b<with|mode|text| >p<with|mode|text| ><around*|(|q-1|)>,>>>|<row|<cell|<with|math-level|0|math-display|true|SS<rsub|Total>>>|<cell|<with|math-level|0|math-display|true|=<big|sum><rsub|i,j,k><around*|(|y<rsub|ijk>-y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>,>>|<cell|<with|math-level|0|math-display|true|df<rsub|Total>>>|<cell|<with|math-level|0|math-display|true|=b<with|mode|text| >p<with|mode|text| >q-1.>>>>>>>
+  <equation*|<tabular|<tformat|<cwith|1|-1|1|1|cell-halign|r>|<cwith|1|-1|2|2|cell-halign|l>|<cwith|1|-1|3|3|cell-halign|r>|<cwith|1|-1|4|4|cell-halign|l>|<table|<row|<cell|<with|math-level|0|math-display|true|SS<rsub|P>>>|<cell|<with|math-level|0|math-display|true|=b<with|mode|text| >q<big|sum><rsub|j=1><rsup|p><around*|(|y<rsub|\<cdot\>j\<cdot\>>-y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>,>>|<cell|<with|math-level|0|math-display|true|df<rsub|P>>>|<cell|<with|math-level|0|math-display|true|=p-1,>>>|<row|<cell|<with|math-level|0|math-display|true|SS<rsub|WP>>>|<cell|<with|math-level|0|math-display|true|=q<big|sum><rsub|i=1><rsup|b><big|sum><rsub|j=1><rsup|p><around*|(|y<rsub|ij\<cdot\>>-y<rsub|\<cdot\>j\<cdot\>>|)><rsup|2>,>>|<cell|<with|math-level|0|math-display|true|df<rsub|WP>>>|<cell|<with|math-level|0|math-display|true|=b<with|mode|text| >p-p,>>>|<row|<cell|<with|math-level|0|math-display|true|SS<rsub|Q>>>|<cell|<with|math-level|0|math-display|true|=b<with|mode|text| >p<big|sum><rsub|k=1><rsup|q><around*|(|y<rsub|\<cdot\>\<cdot\>k>-y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>,>>|<cell|<with|math-level|0|math-display|true|df<rsub|Q>>>|<cell|<with|math-level|0|math-display|true|=q-1,>>>|<row|<cell|<with|math-level|0|math-display|true|SS<rsub|PQ>>>|<cell|<with|math-level|0|math-display|true|=b<big|sum><rsub|j=1><rsup|p><big|sum><rsub|k=1><rsup|q><around*|(|y<rsub|\<cdot\>jk>-y<rsub|\<cdot\>j\<cdot\>>-y<rsub|\<cdot\>\<cdot\>k>+y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>,>>|<cell|<with|math-level|0|math-display|true|df<rsub|PQ>>>|<cell|<with|math-level|0|math-display|true|=<around*|(|p-1|)><around*|(|q-1|)>,>>>|<row|<cell|<with|math-level|0|math-display|true|SS<rsub|SP>>>|<cell|<with|math-level|0|math-display|true|=<big|sum><rsub|i,j,k><around*|(|y<rsub|ijk>-y<rsub|i\<cdot\>\<cdot\>>-y<rsub|\<cdot\>jk>+y<rsub|\<cdot\>j\<cdot\>>|)><rsup|2>,>>|<cell|<with|math-level|0|math-display|true|df<rsub|SP>>>|<cell|<with|math-level|0|math-display|true|=<around*|(|b-1|)>p<around*|(|q-1|)>,>>>|<row|<cell|<with|math-level|0|math-display|true|SS<rsub|Total>>>|<cell|<with|math-level|0|math-display|true|=<big|sum><rsub|i,j,k><around*|(|y<rsub|ijk>-y<rsub|\<cdot\>\<cdot\>\<cdot\>>|)><rsup|2>,>>|<cell|<with|math-level|0|math-display|true|df<rsub|Total>>>|<cell|<with|math-level|0|math-display|true|=b<with|mode|text| >p<with|mode|text| >q-1.>>>>>>>
 
   Then we have an ANOVA table
 
@@ -2066,13 +2066,13 @@
   </cell>|<\cell>
     <math|<around*|(|p-1|)><around*|(|q-1|)>>
   </cell>|<\cell>
-    <math|\<sigma\><rsub|s><rsup|2>+b<with|mode|text| ><with|math-display|true|math-level|0|<frac|<big|sum><rsub|j k><around*|(|p q|)><rsub|j k><rsup|2>|<around*|(|p-1|)><around*|(|q-1|)>>>>
+    <math|\<sigma\><rsub|s><rsup|2>+<with|math-display|true|math-level|0|<frac|b<big|sum><rsub|j k><around*|(|p q|)><rsub|j k><rsup|2>|<around*|(|p-1|)><around*|(|q-1|)>>>>
   </cell>>|<row|<\cell>
     Subplot error
   </cell>|<\cell>
     <math|SS<rsub|SP>>
   </cell>|<\cell>
-    <math|b p<around*|(|q-1|)>>
+    <math|<around*|(|b-1|)>p<around*|(|q-1|)>>
   </cell>|<\cell>
     <math|\<sigma\><rsub|s><rsup|2>>
   </cell>>|<row|<\cell>
@@ -2671,56 +2671,56 @@
     <associate|4blocks_2^4|<tuple|18|24>>
     <associate|4blocks_ex1|<tuple|17|24>>
     <associate|FacModel|<tuple|3|18>>
-    <associate|auto-1|<tuple|1|2>>
-    <associate|auto-10|<tuple|2.4|6>>
-    <associate|auto-100|<tuple|27|40>>
-    <associate|auto-101|<tuple|6.2|40>>
-    <associate|auto-102|<tuple|6.2.1|40>>
-    <associate|auto-103|<tuple|6.2.2|41>>
-    <associate|auto-104|<tuple|28|41>>
+    <associate|auto-1|<tuple|1|3>>
+    <associate|auto-10|<tuple|2.4|7>>
+    <associate|auto-100|<tuple|27|39>>
+    <associate|auto-101|<tuple|6.2|39>>
+    <associate|auto-102|<tuple|6.2.1|39>>
+    <associate|auto-103|<tuple|6.2.2|40>>
+    <associate|auto-104|<tuple|28|40>>
     <associate|auto-105|<tuple|6.3|41>>
-    <associate|auto-106|<tuple|6.4|42>>
-    <associate|auto-107|<tuple|6.4.1|42>>
-    <associate|auto-108|<tuple|6.4.2|43>>
-    <associate|auto-109|<tuple|29|43>>
-    <associate|auto-11|<tuple|5|6>>
-    <associate|auto-110|<tuple|6.5|43>>
-    <associate|auto-111|<tuple|7|44>>
-    <associate|auto-112|<tuple|7.1|44>>
-    <associate|auto-113|<tuple|7.1.0.1|44>>
-    <associate|auto-114|<tuple|7.1.0.2|44>>
-    <associate|auto-115|<tuple|7.1.0.3|44>>
-    <associate|auto-116|<tuple|7.2|45>>
-    <associate|auto-117|<tuple|7.2.0.1|45>>
-    <associate|auto-118|<tuple|7.2.0.2|45>>
-    <associate|auto-119|<tuple|7.3|45>>
+    <associate|auto-106|<tuple|6.4|41>>
+    <associate|auto-107|<tuple|6.4.1|41>>
+    <associate|auto-108|<tuple|6.4.2|42>>
+    <associate|auto-109|<tuple|29|42>>
+    <associate|auto-11|<tuple|5|7>>
+    <associate|auto-110|<tuple|6.5|42>>
+    <associate|auto-111|<tuple|7|43>>
+    <associate|auto-112|<tuple|7.1|43>>
+    <associate|auto-113|<tuple|7.1.0.1|43>>
+    <associate|auto-114|<tuple|7.1.0.2|43>>
+    <associate|auto-115|<tuple|7.1.0.3|43>>
+    <associate|auto-116|<tuple|7.2|44>>
+    <associate|auto-117|<tuple|7.2.0.1|44>>
+    <associate|auto-118|<tuple|7.2.0.2|44>>
+    <associate|auto-119|<tuple|7.3|44>>
     <associate|auto-12|<tuple|2.5|7>>
-    <associate|auto-120|<tuple|30|47>>
-    <associate|auto-121|<tuple|31|47>>
+    <associate|auto-120|<tuple|30|46>>
+    <associate|auto-121|<tuple|31|46>>
     <associate|auto-122|<tuple|32|47>>
-    <associate|auto-123|<tuple|33|48>>
+    <associate|auto-123|<tuple|33|47>>
     <associate|auto-124|<tuple|34|48>>
-    <associate|auto-125|<tuple|7.4|49>>
+    <associate|auto-125|<tuple|7.4|48>>
     <associate|auto-126|<tuple|7.5|49>>
-    <associate|auto-127|<tuple|A|49>>
-    <associate|auto-128|<tuple|35|?>>
-    <associate|auto-13|<tuple|1|7>>
-    <associate|auto-14|<tuple|2.6|7>>
-    <associate|auto-15|<tuple|2.6.1|7>>
-    <associate|auto-16|<tuple|2|8>>
-    <associate|auto-17|<tuple|2.6.2|8>>
+    <associate|auto-127|<tuple|A|51>>
+    <associate|auto-128|<tuple|35|51>>
+    <associate|auto-13|<tuple|1|8>>
+    <associate|auto-14|<tuple|2.6|8>>
+    <associate|auto-15|<tuple|2.6.1|8>>
+    <associate|auto-16|<tuple|2|9>>
+    <associate|auto-17|<tuple|2.6.2|9>>
     <associate|auto-18|<tuple|2.6.3|9>>
     <associate|auto-19|<tuple|3|10>>
-    <associate|auto-2|<tuple|1|2>>
+    <associate|auto-2|<tuple|1|3>>
     <associate|auto-20|<tuple|6|10>>
-    <associate|auto-21|<tuple|2.7|10>>
-    <associate|auto-22|<tuple|2.7.1|10>>
+    <associate|auto-21|<tuple|2.7|11>>
+    <associate|auto-22|<tuple|2.7.1|11>>
     <associate|auto-23|<tuple|2.7.2|12>>
     <associate|auto-24|<tuple|2.8|13>>
     <associate|auto-25|<tuple|2.8.1|13>>
     <associate|auto-26|<tuple|7|13>>
     <associate|auto-27|<tuple|2.8.2|13>>
-    <associate|auto-28|<tuple|8|13>>
+    <associate|auto-28|<tuple|8|14>>
     <associate|auto-29|<tuple|2.8.3|14>>
     <associate|auto-3|<tuple|2|3>>
     <associate|auto-30|<tuple|3|14>>
@@ -2733,7 +2733,7 @@
     <associate|auto-37|<tuple|3.1.2|15>>
     <associate|auto-38|<tuple|6|15>>
     <associate|auto-39|<tuple|7|15>>
-    <associate|auto-4|<tuple|2|3>>
+    <associate|auto-4|<tuple|2|4>>
     <associate|auto-40|<tuple|8|15>>
     <associate|auto-41|<tuple|11|16>>
     <associate|auto-42|<tuple|3.1.3|16>>
@@ -2744,60 +2744,60 @@
     <associate|auto-47|<tuple|3.2|17>>
     <associate|auto-48|<tuple|3.2.1|17>>
     <associate|auto-49|<tuple|12|18>>
-    <associate|auto-5|<tuple|2.1|3>>
+    <associate|auto-5|<tuple|2.1|4>>
     <associate|auto-50|<tuple|12|18>>
     <associate|auto-51|<tuple|3.2.2|19>>
     <associate|auto-52|<tuple|13|19>>
     <associate|auto-53|<tuple|13|20>>
-    <associate|auto-54|<tuple|3.2.3|21>>
+    <associate|auto-54|<tuple|3.2.3|20>>
     <associate|auto-55|<tuple|3.3|21>>
     <associate|auto-56|<tuple|14|22>>
     <associate|auto-57|<tuple|3.4|22>>
     <associate|auto-58|<tuple|3.4.1|22>>
     <associate|auto-59|<tuple|14|22>>
     <associate|auto-6|<tuple|3|4>>
-    <associate|auto-60|<tuple|3.4.2|23>>
+    <associate|auto-60|<tuple|3.4.2|22>>
     <associate|auto-61|<tuple|15|23>>
     <associate|auto-62|<tuple|15|23>>
-    <associate|auto-63|<tuple|16|24>>
+    <associate|auto-63|<tuple|16|23>>
     <associate|auto-64|<tuple|3.4.3|24>>
     <associate|auto-65|<tuple|17|24>>
     <associate|auto-66|<tuple|3.4.4|24>>
     <associate|auto-67|<tuple|18|24>>
-    <associate|auto-68|<tuple|3.4.5|25>>
-    <associate|auto-69|<tuple|4|25>>
-    <associate|auto-7|<tuple|2.2|4>>
-    <associate|auto-70|<tuple|4.1|25>>
+    <associate|auto-68|<tuple|3.4.5|24>>
+    <associate|auto-69|<tuple|4|24>>
+    <associate|auto-7|<tuple|2.2|5>>
+    <associate|auto-70|<tuple|4.1|24>>
     <associate|auto-71|<tuple|4.2|25>>
-    <associate|auto-72|<tuple|19|26>>
-    <associate|auto-73|<tuple|4.3|27>>
+    <associate|auto-72|<tuple|19|25>>
+    <associate|auto-73|<tuple|4.3|26>>
     <associate|auto-74|<tuple|4.3.1|27>>
     <associate|auto-75|<tuple|4.3.2|27>>
-    <associate|auto-76|<tuple|4.3.3|28>>
+    <associate|auto-76|<tuple|4.3.3|27>>
     <associate|auto-77|<tuple|20|28>>
-    <associate|auto-78|<tuple|4.3.4|29>>
+    <associate|auto-78|<tuple|4.3.4|28>>
     <associate|auto-79|<tuple|21|29>>
     <associate|auto-8|<tuple|2.3|5>>
     <associate|auto-80|<tuple|4.3.5|29>>
-    <associate|auto-81|<tuple|4.4|31>>
+    <associate|auto-81|<tuple|4.4|30>>
     <associate|auto-82|<tuple|4.4.1|31>>
-    <associate|auto-83|<tuple|22|32>>
-    <associate|auto-84|<tuple|23|32>>
-    <associate|auto-85|<tuple|4.4.2|32>>
+    <associate|auto-83|<tuple|22|31>>
+    <associate|auto-84|<tuple|23|31>>
+    <associate|auto-85|<tuple|4.4.2|31>>
     <associate|auto-86|<tuple|24|32>>
-    <associate|auto-87|<tuple|4.4.3|33>>
-    <associate|auto-88|<tuple|5|33>>
-    <associate|auto-89|<tuple|5.1|33>>
-    <associate|auto-9|<tuple|4|5>>
-    <associate|auto-90|<tuple|5.1.1|34>>
+    <associate|auto-87|<tuple|4.4.3|32>>
+    <associate|auto-88|<tuple|5|32>>
+    <associate|auto-89|<tuple|5.1|32>>
+    <associate|auto-9|<tuple|4|6>>
+    <associate|auto-90|<tuple|5.1.1|33>>
     <associate|auto-91|<tuple|5.1.2|34>>
     <associate|auto-92|<tuple|5.2|35>>
     <associate|auto-93|<tuple|5.2.1|36>>
-    <associate|auto-94|<tuple|5.2.2|37>>
-    <associate|auto-95|<tuple|25|38>>
-    <associate|auto-96|<tuple|5.2.3|38>>
-    <associate|auto-97|<tuple|6|39>>
-    <associate|auto-98|<tuple|6.1|39>>
+    <associate|auto-94|<tuple|5.2.2|36>>
+    <associate|auto-95|<tuple|25|37>>
+    <associate|auto-96|<tuple|5.2.3|37>>
+    <associate|auto-97|<tuple|6|38>>
+    <associate|auto-98|<tuple|6.1|38>>
     <associate|auto-99|<tuple|26|39>>
     <associate|eq:2block|<tuple|4|23>>
     <associate|eq:box|<tuple|2|8>>
@@ -2805,9 +2805,9 @@
     <associate|eq:mix|<tuple|7|33>>
     <associate|fig:ofat|<tuple|15|23>>
     <associate|fold|<tuple|24|32>>
-    <associate|model4.1|<tuple|5|25>>
-    <associate|table:BP|<tuple|35|49>>
-    <associate|table:abc|<tuple|16|24>>
+    <associate|model4.1|<tuple|5|24>>
+    <associate|table:BP|<tuple|35|51>>
+    <associate|table:abc|<tuple|16|23>>
     <associate|table:corr|<tuple|26|39>>
     <associate|table:ofat|<tuple|15|23>>
     <associate|yate|<tuple|14|22>>
@@ -2960,7 +2960,7 @@
 
       <tuple|normal|<\surround|<hidden-binding|<tuple>|35>|>
         Plackett–Burman Table
-      </surround>|<pageref|auto-127>>
+      </surround>|<pageref|auto-128>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Randomized Block Design> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1><vspace|0.5fn>
@@ -3113,9 +3113,11 @@
 
       <with|par-left|<quote|1tab>|7.3<space|2spc>Balanced Incomplete Block Design <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-119>>
 
-      <with|par-left|<quote|2tab>|7.3.1<space|2spc> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-125>>
+      <with|par-left|<quote|1tab>|7.4<space|2spc><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Cyclic Balanced Incomplete Block Designs> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-125>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix A<space|2spc>Plackett–Burman Table> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-126><vspace|0.5fn>
+      <with|par-left|<quote|1tab>|7.5<space|2spc>Latin Squres <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-126>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix A<space|2spc>Plackett–Burman Table> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-127><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

@@ -9,8 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>6185 Medical Sciences Center</p>
-    <p>1300 University Avenue</p>
+    <p>5615 Morgridge Hall</p>
+    <p>1205 University Ave</p>
     <p>Madison, WI, 53706</p>
     <p>langtian.ma AT wisc.edu</p>
 
@@ -24,7 +24,7 @@ social: true # includes social icons at the bottom of the page
 
 Welcome to my homepage!
 
-I'm a first-year Ph.D. student in Statistics at [University of Wisconsin-Madison](https://www.wisc.edu), advised by Prof. [Kris Sankaran](https://measurement-and-microbes.org/_includes/team). Before coming to Madison, I received my B.Sc with honors in Statistics at [Southern University of Science and Technology](https://www.sustech.edu.cn/en/) (SUSTech). 
+I'm a second-year Ph.D. student in Statistics at [University of Wisconsin-Madison](https://www.wisc.edu), advised by Prof. [Kris Sankaran](https://measurement-and-microbes.org/_includes/team). Before coming to Madison, I received my B.Sc with honors in Statistics at [Southern University of Science and Technology](https://www.sustech.edu.cn/en/). 
 
 I have board interests in statistics, mathematics and computer science. My current research focuses on **generative modeling and simulation for single-cell omics data**.
 

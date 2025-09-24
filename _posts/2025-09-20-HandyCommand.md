@@ -95,10 +95,16 @@ curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh 
 
 ## Example Usage
 
-Jump into a directory you’ve visited before:
+cd into a path once.
 
 ```bash
-z <directory>
+z some/long/path/foo/
+```
+
+Zoxide will remember this path and you can go to it anytime by simply typing:
+
+```bash
+z foo
 ```
 
 Want to completely replace `cd` with Zoxide? Just run:

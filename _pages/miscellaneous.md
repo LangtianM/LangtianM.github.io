@@ -11,7 +11,8 @@ Thanks for visiting this page! Beside my academic life, I'm also interested in p
 ## Life in Madison
 
 <div style="display: flex; overflow-x: scroll; width: 100%; padding: 10px; gap: 10px;">
-    {% assign image_files = site.static_files | where_exp: "file", "file.path contains '/photography/Madison/' and file.extname == '.jpg'" %}
+    {% assign image_files = site.static_files | where_exp: "file", "file.path contains '/photography/Madison/'" %}
+    {% assign image_files = image_files | where_exp: "file", "file.extname == '.jpg' or file.extname == '.JPG'" %}
     {% for image in image_files %}
     <img src="{{ image.path | relative_url }}" alt="Madison {{ forloop.index }}" style="height: 200px;"/>
     {% endfor %}
@@ -20,7 +21,8 @@ Thanks for visiting this page! Beside my academic life, I'm also interested in p
 ## The Winter of Madison
 
 <div style="display: flex; overflow-x: scroll; width: 100%; padding: 10px; gap: 10px;">
-    {% assign image_files = site.static_files | where_exp: "file", "file.path contains '/photography/Madison_Winter/' and file.extname == '.jpg'" | reverse %}
+    {% assign image_files = site.static_files | where_exp: "file", "file.path contains '/photography/Madison_Winter/'" %}
+    {% assign image_files = image_files | where_exp: "file", "file.extname == '.jpg' or file.extname == '.JPG'" | reverse %}
     {% for image in image_files %}
     <img src="{{ image.path | relative_url }}" alt="Winter {{ forloop.index }}" style="height: 200px;"/>
     {% endfor %}
@@ -39,7 +41,8 @@ Thanks for visiting this page! Beside my academic life, I'm also interested in p
 ## Chicago
 
 <div style="display: flex; overflow-x: scroll; width: 100%; padding: 10px; gap: 10px;">
-    {% assign image_files = site.static_files | where_exp: "file", "file.path contains '/photography/Chicago/' and file.extname == '.jpg'" %}
+    {% assign image_files = site.static_files | where_exp: "file", "file.path contains '/photography/Chicago/'" %}
+    {% assign image_files = image_files | where_exp: "file", "file.extname == '.jpg' or file.extname == '.JPG'" %}
     {% for image in image_files %}
     <img src="{{ image.path | relative_url }}" alt="Chicago {{ forloop.index }}" style="height: 200px;"/>
     {% endfor %}
@@ -51,7 +54,7 @@ Thanks for visiting this page! Beside my academic life, I'm also interested in p
 <div style="display: flex; overflow-x: scroll; width: 100%; padding: 10px; gap: 10px;">
     {% assign xian_path = "/photography/Xi'an/" %}
     {% assign image_files = site.static_files | where_exp: "file", "file.path contains xian_path" %}
-    {% assign image_files = image_files | where_exp: "file", "file.extname == '.jpg'" | reverse %}
+    {% assign image_files = image_files | where_exp: "file", "file.extname == '.jpg' or file.extname == '.JPG'" | reverse %}
     {% for image in image_files %}
     <img src="{{ image.path | relative_url }}" alt="Xi'an {{ forloop.index }}" style="height: 200px;"/>
     {% endfor %}

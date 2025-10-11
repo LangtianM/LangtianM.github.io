@@ -7,7 +7,7 @@ categories: Notes
 citation: false
 ---
 
-> Highly recommend Josean Martinez's [blog post](https://www.josean.com/posts/how-to-setup-wezterm-terminal) on how to setup an awesome terminal.
+> Highly recommend Josean Martinez's [blog post](https://www.josean.com/posts/how-to-setup-wezterm-terminal) on how to setup an awesome terminal with [WezTerm](https://wezterm.org).
 
 In this post, I’m sharing some handy command-line tools that have really boosted my productivity in day-to-day work. I’ll keep it up to date as I come across new tools that worth a try. Since I use macOS, all the instructions here are for macOS. You may refer to their official documentation for other platforms.
 

@@ -20,3 +20,5 @@ I would like to share some of my Notes on different subjects here.
 - [Real Analysis Lecture Note](https://langtianm.github.io/assets/documents/Real_Analysis.pdf) (@SUSTech, 2022Fall, with mindmap)
 - [Linear Algebra Done Right Lecture Note](https://langtianm.github.io/assets/documents/Done_Right_Mindmap.pdf) (@SUSTech, 2021Fall, mindmap only, in Chinese)
 
+# Computer Science
+- [Operating Systems Cheatsheet](https://github.com/LangtianM/OS-cheatsheet/blob/master/src/OS_cheatsheet.pdf) (@UW-Madison, 2025Fall)

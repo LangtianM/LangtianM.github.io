@@ -31,5 +31,5 @@ I have board interests in statistics, mathematics, bioinformatics and computer s
 I'm also a philosophy enthusiast with particular interests in philosophy of science and analytic philosophy. It is the [philosophical significance of statistics](https://langtianm.github.io/blog/2024/Second-order/) that attracts me to this field.
 
 
-[\[Curriculum Vitae\]](https://langtianm.github.io/assets/documents/LangtianMa_CV.pdf)
+<!-- [\[Curriculum Vitae\]](https://langtianm.github.io/assets/documents/LangtianMa_CV.pdf) -->
 

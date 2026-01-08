@@ -26,10 +26,8 @@ Welcome to my homepage!
 
 I'm a second-year Ph.D. student in Statistics at [University of Wisconsin-Madison](https://www.wisc.edu), advised by Prof. [Kris Sankaran](https://measurement-and-microbes.org/_includes/team). Before coming to Madison, I received my B.Sc with honors in Statistics at [Southern University of Science and Technology](https://www.sustech.edu.cn/en/). 
 
-I have board interests in statistics, mathematics, bioinformatics and computer science. My current research focuses on **controllable and trustworthy deep generative modeling and simulation for single-cell data**.
+I have board interests in statistics, mathematics, bioinformatics and computer science. It is the [philosophical significance of statistics](https://langtianm.github.io/blog/2024/Second-order/) that attracts me to the study of statistics. My current research focuses on **controllable and trustworthy deep generative modeling and simulation for single-cell data**. 
 
-I'm also a philosophy enthusiast with particular interests in philosophy of science and analytic philosophy. It is the [philosophical significance of statistics](https://langtianm.github.io/blog/2024/Second-order/) that attracts me to the study of statistics.
+[\[Curriculum Vitae\]](https://github.com/LangtianM/LangtianMa_CV/blob/main/LangtianMa_CV.pdf)
 
-
-<!-- [\[Curriculum Vitae\]](https://langtianm.github.io/assets/documents/LangtianMa_CV.pdf) -->
 

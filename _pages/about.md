@@ -28,6 +28,4 @@ I'm a second-year Ph.D. student in Statistics at [University of Wisconsin-Madiso
 
 I have board interests in statistics, mathematics, bioinformatics and computer science. It is the [philosophical significance of statistics](https://langtianm.github.io/blog/2024/Second-order/) that attracts me to the study of statistics. My current research focuses on **controllable and trustworthy deep generative modeling and simulation for single-cell data**. 
 
-[\[Curriculum Vitae\]](https://github.com/LangtianM/LangtianMa_CV/blob/main/LangtianMa_CV.pdf)
-
-
+[\[Curriculum Vitae\]](https://langtianm.github.io/assets/documents/LangtianMa_CV.pdf)

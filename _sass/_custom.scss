@@ -1,0 +1,36 @@
+/*******************************************************************************
+ * Custom styles
+ ******************************************************************************/
+
+// About page background with logo watermark
+.post {
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background-image: url('/assets/img/favicon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.08;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  // Ensure content is above the background
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+// Dark mode adjustment
+html[data-theme='dark'] .post::before {
+  opacity: 0.05;
+}

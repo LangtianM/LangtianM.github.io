@@ -34,3 +34,36 @@
 html[data-theme='dark'] .post.about-page::before {
   opacity: 0.05;
 }
+
+// Blog page background with logo watermark (static)
+.post.blog-page {
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background-image: url('/assets/img/favicon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.05;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  // Ensure content is above the background
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+// Dark mode adjustment for blog page
+html[data-theme='dark'] .post.blog-page::before {
+  opacity: 0.03;
+}

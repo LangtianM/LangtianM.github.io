@@ -2,15 +2,15 @@
  * Custom styles
  ******************************************************************************/
 
-// About page background with logo watermark
-.post {
+// About page background with logo watermark (only on about page)
+.post.about-page {
   position: relative;
   
   &::before {
     content: '';
-    position: fixed;
-    top: 50%;
-    left: 50%;
+    position: absolute;
+    top: 30%;
+    left: 33%;
     transform: translate(-50%, -50%);
     width: 600px;
     height: 600px;
@@ -31,6 +31,6 @@
 }
 
 // Dark mode adjustment
-html[data-theme='dark'] .post::before {
+html[data-theme='dark'] .post.about-page::before {
   opacity: 0.05;
 }
